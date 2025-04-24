@@ -244,28 +244,7 @@ const Technologies = () => {
           </motion.div>
           <p className="text-neutral-400 mt-2">PyTorch</p>
         </div>
-        <div className="flex flex-col items-center">
-          <motion.div
-            variants={iconVariants(4.8)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4"
-          >
-            <MdScience className="text-7xl text-lime-600" />
-          </motion.div>
-          <p className="text-neutral-400 mt-2">NumPy</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <motion.div
-            variants={iconVariants(5.8)}
-            initial="initial"
-            animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4"
-          >
-            <MdScience className="text-7xl text-teal-600" />
-          </motion.div>
-          <p className="text-neutral-400 mt-2">Pandas</p>
-        </div>
+        
         <div className="flex flex-col items-center">
           <motion.div
             variants={iconVariants(6.2)}
