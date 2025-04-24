@@ -6,24 +6,21 @@ import { useEffect, useState } from 'react';
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
-
+  
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-
     // Initial check
     checkScreenSize();
-
     // Add event listener for window resize
     window.addEventListener("resize", checkScreenSize);
-
     // Clean up
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
-
+  
   const heroContainerStyle = isMobile ? { marginTop: '-1.5cm' } : {};
-
+  
   const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
     visible: {
@@ -33,6 +30,12 @@ const Hero = () => {
     },
   });
 
+  // Function to handle resume click - forces in-browser display
+  const handleResumeClick = (e) => {
+    e.preventDefault();
+    window.open(resumePdf + '#view=FitH', '_blank', 'noopener,noreferrer');
+  };
+  
   return (
     <div
       className="border-b border-neutral-900 pb-4 lg:mb-35 flex flex-wrap justify-center -mt-24"
@@ -54,7 +57,7 @@ const Hero = () => {
             animate="visible"
             className="bg-gradient-to-r from-blue-400 via-cyan-500 to-blue-600 bg-clip-text text-3xl tracking-tight text-transparent"
           >
-            Full Stack Web Developer|Data Scientist & AI/ML Engineer
+            Full Stack Web Developer, Data Scientist & AI/ML Engineer
           </motion.span>
           <motion.p
             variants={container(1)}
@@ -64,17 +67,15 @@ const Hero = () => {
           >
             {HERO_CONTENT}
           </motion.p>
-          <motion.a
+          <motion.button
             variants={container(1.5)} 
             initial="hidden"
             animate="visible"
-            href={resumePdf} 
-            target="_blank" 
-            type="application/pdf"
+            onClick={handleResumeClick}
             className="mt-6 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
           >
             My Resume
-          </motion.a>
+          </motion.button>
         </div>
       </div>
       <div className="w-full lg:w-1/3 lg:p-8">
