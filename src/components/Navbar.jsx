@@ -33,7 +33,9 @@ const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6 px-4 relative" style={navbarStyle}>
       <div className="flex flex-shrink-0 items-center ml-[-0.8cm] ">
-        <img className="mx-2 w-20 md:w-28" src={logo} alt="logo" />
+        <a href="/"> {/* Added this <a> tag */}
+          <img className="mx-2 w-20 md:w-28 cursor-pointer" src={logo} alt="logo" /> {/* Added cursor-pointer for better UX */}
+        </a>
       </div>
 
       {/* Mobile menu button */}
