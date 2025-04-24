@@ -55,7 +55,7 @@ const Navbar = () => {
 
       {/* Desktop social icons */}
       <div className="hidden md:flex items-center justify-center gap-4 text-2xl">
-        <a href="https://www.linkedin.com/in/samuel-olubukun-50a57a1a9/"><FaLinkedin /></a>
+        <a href="https://www.linkedin.com/in/samuel-olubukun"><FaLinkedin /></a>
         <a href="https://github.com/samolubukun"><FaGithub /></a>
         <a href="https://www.instagram.com/buksmi_1/"><FaInstagram /></a>
         <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello"><FaWhatsapp /></a>
@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className="flex items-center justify-center gap-6 text-3xl text-white mt-4">
           <a href="https://www.linkedin.com/in/samuel-olubukun-50a57a1a9/"><FaLinkedin /></a>
           <a href="https://github.com/samolubukun"><FaGithub /></a>
-          <a href="https://www.instagram.com/buksmi_1/"><FaInstagram /></a>
+          <a href="https://www.instagram.com/buksmi_1"><FaInstagram /></a>
           <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello"><FaWhatsapp /></a>
         </div>
       </div>

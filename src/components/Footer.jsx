@@ -9,13 +9,13 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 text-2xl mb-4">
-            <a href="https://www.linkedin.com/in/samuel-olubukun-50a57a1a9/" className="hover:opacity-70">
+            <a href="https://www.linkedin.com/in/samuel-olubukun" className="hover:opacity-70">
               <FaLinkedin />
             </a>
             <a href="https://github.com/samolubukun" className="hover:opacity-70">
               <FaGithub />
             </a>
-            <a href="https://www.instagram.com/buksmi_1/" className="hover:opacity-70">
+            <a href="https://www.instagram.com/buksmi_1" className="hover:opacity-70">
               <FaInstagram />
             </a>
             <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello" className="hover:opacity-70">
