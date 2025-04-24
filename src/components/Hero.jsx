@@ -68,8 +68,7 @@ const Hero = () => {
             variants={container(1.5)} 
             initial="hidden"
             animate="visible"
-            href={resumePdf} 
-            target="_blank" 
+            href="/samuel_olubukun_resume.pdf"
             className="mt-6 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
           >
             My Resume
