@@ -17,27 +17,28 @@ const Navbar = () => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     // Initial check
     checkScreenSize();
-    
+
     // Add event listener for window resize
     window.addEventListener("resize", checkScreenSize);
-    
+
     // Clean up
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
+  const navbarStyle = isMobile ? {} : { transform: "translateY(-0.7cm)" };
+
   return (
-    <nav className="mb-20 flex items-center justify-between py-6 px-4 relative"
-    style={{ transform: "translateY(-0.7cm)" }}>
-      <div className="flex flex-shrink-0 items-center">
+    <nav className="mb-20 flex items-center justify-between py-6 px-4 relative" style={navbarStyle}>
+      <div className="flex flex-shrink-0 items-center ml-[-0.8cm] ">
         <img className="mx-2 w-20 md:w-28" src={logo} alt="logo" />
       </div>
 
       {/* Mobile menu button */}
-      <button 
-        className="md:hidden text-2xl z-20" 
+      <button
+        className="md:hidden text-2xl z-20"
         onClick={toggleMenu}
         aria-label="Toggle menu"
       >
@@ -62,7 +63,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu overlay */}
-      <div 
+      <div
         className={`fixed inset-0 bg-black bg-opacity-90 z-10 flex flex-col justify-center items-center transition-all duration-300 ${
           isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
