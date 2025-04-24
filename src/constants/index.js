@@ -9,10 +9,7 @@ import project8 from "../assets/projects/project-8.jpg";
 
 export const HERO_CONTENT = `I build modern web applications and intelligent, data-driven solutions. With expertise in both front-end and back-end development, as well as advanced AI/ML and data science techniques, I create scalable systems that solve real-world problems. My work blends technology and data to deliver impactful, innovative solutions.`;
 
-export const ABOUT_TEXT = `I'm Samuel Olubukun, a Full Stack Web Developer and AI/ML Engineer passionate about building intelligent solutions to complex problems.
-My expertise spans web development with MERN stack (MongoDB, Express, React, Node.js) and frameworks like Django and Laravel, alongside strong data science capabilities in Python. I specialize in artificial intelligence, including deep learning, computer vision, NLP, and working with large language models.
-From developing e-commerce platforms to creating deepfake detection systems and RAG-powered document chatbots, I combine technical knowledge with creative problem-solving to deliver scalable applications and data-driven solutions.
-With hands-on experience in various technologies and a computer science background from Bingham University, I continuously seek opportunities to innovate and transform ideas into reality.`;
+export const ABOUT_TEXT = `I'm Samuel Olubukun, a software developer, data scientist, and AI/ML engineer based in Abuja, Nigeria. I'm passionate about building innovative websites and intelligent solutions, specializing in web development, data science, and creating AI-powered applications that solve complex problems. My journey began with a deep interest in software development, where I honed my skills in building functional and scalable web applications. Over time, this curiosity evolved into a fascination with data and artificial intelligence, driving me to explore machine learning and data science. Today, I focus on combining these skills to craft intelligent systems that transform data into actionable insights and innovative solutions.`;
 
 
 export const PROJECTS = [
