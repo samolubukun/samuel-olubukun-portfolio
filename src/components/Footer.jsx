@@ -23,10 +23,12 @@ const Footer = () => {
             </a>
           </div>
           
-          {/* Copyright */}
-          <div className="text-sm text-neutral-600 dark:text-neutral-400">
+        {/* Copyright */}
+        <div className="text-sm text-neutral-600 dark:text-neutral-400">
+          <a href="/"> 
             © {currentYear} Olubukun Samuel
-          </div>
+          </a>
+        </div>
         </div>
       </div>
     </footer>
