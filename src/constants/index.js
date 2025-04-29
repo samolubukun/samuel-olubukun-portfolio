@@ -33,13 +33,13 @@ export const PROJECTS = [
     technologies: ["Python", "TensorFlow", "Keras", "OpenCV", "Streamlit", "MTCNN"],
   },
 
-  {
-  "title": "Socially",
-  "link": "https://github.com/samolubukun/Socially-NextJS",
-  "image": "project-9",
-  "description": "A modern social media application built with Next.js, featuring user authentication, posts, comments, likes, notifications, profiles, a follow system, and dark mode.",
-  "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Clerk", "UploadThing"]
-},
+    {
+    title: "Socially",
+    link: "https://github.com/samolubukun/Socially-NextJS",
+    image: "project-9",
+    description: "A modern social media application built with Next.js, featuring user authentication, posts, comments, likes, notifications, profiles, a follow system, and dark mode.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Clerk", "UploadThing"]
+  },
 
   {
     title: "AI Medical Chatbot",
