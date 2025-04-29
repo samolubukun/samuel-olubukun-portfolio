@@ -84,6 +84,30 @@ const Technologies = () => {
           </motion.div>
           <p className="text-neutral-400 mt-2">React</p>
         </div>
+                {/* Add Next.js icon */}
+        <div className="flex flex-col items-center">
+          <motion.div
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            <SiNextdotjs className="text-7xl text-gray-800 dark:text-gray-200" />
+          </motion.div>
+          <p className="text-neutral-400 mt-2">Next.js</p>
+        </div>
+        {/* Add TypeScript icon */}
+        <div className="flex flex-col items-center">
+          <motion.div
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            <SiTypescript className="text-7xl text-blue-600" />
+          </motion.div>
+          <p className="text-neutral-400 mt-2">TypeScript</p>
+        </div>
         <div className="flex flex-col items-center">
           <motion.div
             variants={iconVariants(3.8)}
