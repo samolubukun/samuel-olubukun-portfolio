@@ -1,5 +1,5 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb, SiTensorflow, SiFastapi, SiExpress, SiMysql, SiTailwindcss, SiGooglecloud } from "react-icons/si";
+import { SiMongodb, SiTensorflow, SiFastapi, SiExpress, SiMysql, SiTailwindcss, SiGooglecloud, SiNextdotjs, SiTypescript } from "react-icons/si";
 import { FaNodeJs, FaJava, FaPython, FaGitAlt, FaGithub, FaBootstrap } from "react-icons/fa";
 import { BiLogoPhp, BiLogoDjango } from "react-icons/bi";
 import { AiOutlineHtml5 } from "react-icons/ai";
