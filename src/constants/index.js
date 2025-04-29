@@ -6,6 +6,8 @@ import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
+import project8 from "../assets/projects/project-9.jpg";
+
 
 export const HERO_CONTENT = `I create modern web applications and data-driven solutions, specializing in full-stack development, data science, and AI/ML. My work focuses on building scalable systems that tackle real-world challenges with innovative, impactful results.`;
 
@@ -32,13 +34,12 @@ export const PROJECTS = [
   },
 
   {
-    title: "Food Delivery Website",
-    link: "https://github.com/samolubukun/Food-Delivery-MERN",
-    image: project3,
-    description:
-      "A full-stack food ordering website built with the MERN stack (MongoDB, Express, React, Node.js) and integrated with Stripe for payment processing. This platform allows users to browse food options, place orders, and make secure payments, featuring a clean, user-friendly interface.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe", "JavaScript", "CSS", "HTML"],
-  },
+  "title": "Socially",
+  "link": "https://github.com/samolubukun/Socially-NextJS",
+  "image": "project-9",
+  "description": "A modern social media application built with Next.js, featuring user authentication, posts, comments, likes, notifications, profiles, a follow system, and dark mode.",
+  "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Clerk", "UploadThing"]
+},
 
   {
     title: "AI Medical Chatbot",
@@ -83,8 +84,16 @@ export const PROJECTS = [
     description:
       "A machine learning project for detecting spam emails using natural language processing (NLP) techniques. The system is trained on the 190k Spam-Ham Email Dataset and utilizes algorithms like logistic regression to classify emails as spam or ham. The app is built with Streamlit for an interactive user interface.",
     technologies: ["Python", "Streamlit", "scikit-learn", "Jupyter Notebook", "NLP"],
-  }
+  },
 
+    {
+    title: "Food Delivery Website",
+    link: "https://github.com/samolubukun/Food-Delivery-MERN",
+    image: project3,
+    description:
+      "A full-stack food ordering website built with the MERN stack (MongoDB, Express, React, Node.js) and integrated with Stripe for payment processing. This platform allows users to browse food options, place orders, and make secure payments, featuring a clean, user-friendly interface.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe", "JavaScript", "CSS", "HTML"],
+  }
 
 ];
 
