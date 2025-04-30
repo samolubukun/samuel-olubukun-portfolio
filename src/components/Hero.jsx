@@ -1,6 +1,6 @@
 import { HERO_CONTENT } from "../constants/index";
 import profilePic from "../assets/SamuelOlubukun.png";
-import resumePdf from "../assets/samuel_olubukun_resum.pdf"; 
+import resumePdf from "../assets/samuel_olubukun_resume.pdf"; 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react'; 
 
@@ -68,7 +68,7 @@ const Hero = () => {
             variants={container(1.5)} 
             initial="hidden"
             animate="visible"
-            href="/samuel_olubukun_resume.pdf"
+            href="/samuel_olubukun_resu.pdf"
             className="mt-6 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
           >
             My Resume
