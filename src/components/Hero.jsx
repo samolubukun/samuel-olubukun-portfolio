@@ -1,6 +1,6 @@
 import { HERO_CONTENT } from "../constants/index";
 import profilePic from "../assets/SamuelOlubukun.png";
-import resumePdf from "../assets/samuel_olubukun_resume.pdf"; 
+import resumePdf from "../assets/samuel_olubukun_resum.pdf"; 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react'; 
 
