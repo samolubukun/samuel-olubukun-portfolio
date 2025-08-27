@@ -98,7 +98,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "FCT Abuja, Nigeria",
+  address: "",
   phoneNo: "+234 8083273795",
   email: "samuelolubukun@gmail.com",
 };
