@@ -50,6 +50,22 @@ const Contact = () => {
         >
           {CONTACT.email}
         </motion.a>
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          transition={{ duration: 1.2 }}
+          className="mt-8 flex justify-center"
+        >
+          <a
+            href="https://wa.me/2348083273795"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 bg-neutral-800 hover:bg-neutral-700 text-blue-400 hover:text-blue-300 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 border border-neutral-700"
+          >
+            <FaWhatsapp className="mr-3 text-xl" />
+            Chat on WhatsApp
+          </a>
+        </motion.div>
       </div>
     </div>
   );

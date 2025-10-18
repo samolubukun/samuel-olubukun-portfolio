@@ -1,4 +1,5 @@
-import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,14 +10,14 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 text-2xl mb-4">
-            <a href="https://www.linkedin.com/in/samuel-olubukun" className="hover:opacity-70">
-              <FaLinkedin />
-            </a>
             <a href="https://github.com/samolubukun" className="hover:opacity-70">
               <FaGithub />
             </a>
-            <a href="https://www.instagram.com/buksmi_1" className="hover:opacity-70">
-              <FaInstagram />
+            <a href="https://www.linkedin.com/in/samuel-olubukun" className="hover:opacity-70">
+              <FaLinkedin />
+            </a>
+            <a href="https://x.com/samuelolubukun" className="hover:opacity-70">
+              <FaXTwitter />
             </a>
             <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello" className="hover:opacity-70">
               <FaWhatsapp />

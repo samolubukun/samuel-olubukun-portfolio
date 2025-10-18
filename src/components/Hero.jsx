@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants/index";
-import profilePic from "../assets/SamuelOlubukun.png";
+import aboutImg from "../assets/so.jpg";
 import resumePdf from "../assets/samuel_olubukun_resume.pdf"; 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react'; 
@@ -54,13 +54,13 @@ const Hero = () => {
             animate="visible"
             className="bg-gradient-to-r from-blue-400 via-cyan-500 to-blue-600 bg-clip-text text-3xl tracking-tight text-transparent"
           >
-            Full Stack Web Developer, Data Scientist & AI/ML Engineer
+            Full Stack AI/ML Developer
           </motion.span>
           <motion.p
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className="my-2 max-w-xl py-6 font-light tracking-tighter"
+            className="my-2 max-w-xl py-6 font-light tracking-tighter lg:text-lg"
           >
             {HERO_CONTENT}
           </motion.p>
@@ -69,7 +69,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
             href="/samuel_olubukun_resume.pdf"
-            className="mt-6 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
+            className="mt-6 mb-8 md:mb-0 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
           >
             My Resume
           </motion.a>
@@ -81,7 +81,7 @@ const Hero = () => {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
-            src={profilePic}
+            src={aboutImg}
             alt="Samuel Olubukun"
             className="rounded-lg"
           />

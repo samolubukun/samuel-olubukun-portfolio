@@ -12,17 +12,17 @@ const Project = () => {
       >
         Projects
       </motion.h1>
-      <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center items-center">
+          <div key={index} className="flex flex-wrap lg:justify-center items-center mb-8 lg:mb-0">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="w-full lg:w-1/3 mb-6 lg:mb-0 lg:mr-8"
+              className="w-full lg:w-7/10 mb-4 lg:mb-0 lg:mr-8"
             >
               <img
-                className="rounded w-full h-auto object-cover"
+                className="rounded w-full h-auto lg:h-64 object-cover"
                 src={project.image}
                 alt={project.title}
               />
@@ -31,22 +31,28 @@ const Project = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-2/3"
+              className="w-full lg:w-5/10"
             >
-              <h6 className="mb-2 font-semibold">
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  {project.title}
-                </a>
-              </h6>
+              <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-blue-600"
-                >
-                  {tech}
-                </span>
-              ))}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="rounded bg-neutral-900 px-2 py-1 text-xs sm:text-sm font-medium text-blue-600"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center mt-2 px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300"
+              >
+                View Project
+              </a>
             </motion.div>
           </div>
         ))}
