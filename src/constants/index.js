@@ -6,15 +6,31 @@ import project9 from "../assets/projects/project-9.jpg";
 import pixareact from "../assets/projects/pixareact.jpg";
 import careerprofilegem from "../assets/projects/careerprofilegem.jpg";
 import vocalvista from "../assets/projects/vocalvista.jpg";
+import mentora from "../assets/projects/mentora.jpg";
+import restoirhealth from "../assets/projects/restoirhealth.jpg";
 
 
 export const HERO_CONTENT = `I create modern web applications and data-driven solutions, specializing in full-stack development, data science, and AI/ML. My work focuses on building scalable systems that tackle real-world challenges with innovative, impactful results.`;
-export const ABOUT_TEXT = `Hi! I'm Samuel Olubukun, a Full Stack AI/ML Developer passionate about creating intelligent, modern web solutions. I have strong skills and experience in data science, artificial intelligence, and machine learning, and have built several projects that showcase the blend of web development and AI innovation.
+export const ABOUT_TEXT = `Hi! I'm Samuel Olubukun, a Full Stack AI/ML Engineer passionate about creating intelligent, modern web solutions. I have strong skills and experience in data science, artificial intelligence, and machine learning, and have built several projects that showcase the blend of web development and AI innovation.
 
 I enjoy working across frontend, backend, and AI systems, combining creativity, problem-solving, and technical precision to build seamless and impactful applications. I'm continuously learning and applying new technologies to develop smarter solutions that deliver real value and meaningful user experiences.`;
 
 
 export const PROJECTS = [
+  {
+    title: "Réstoir Health",
+    link: "https://restoir-health.vercel.app",
+    image: restoirhealth,
+    description: "AI-Powered Skincare. Detects, analyzes, and helps you manage acne, eczema, and other skin conditions. Combines dermatology-grade AI analysis with personalized skincare routines and product recommendations.",
+    technologies: ["Next.js", "React", "TailwindCSS", "Gemini Vision", "Convex", "Stack Auth", "Node.js"],
+  },
+  {
+    title: "Mentora",
+    link: "",
+    image: mentora,
+    description: "Master Your Voice with AI. The AI-powered voice coach that trains you for high-stakes interviews, negotiation, and public speaking. Built with FastAPI and LiveKit, it offers low-latency voice interaction and deep performance analytics.",
+    technologies: ["Python", "FastAPI", "LiveKit", "Deepgram", "OpenAI", "Prisma", "TailwindCSS"],
+  },
   {
     title: "VOCAL VISTA",
     link: "https://vocalvista.netlify.app/",
@@ -84,6 +100,73 @@ export const PROJECTS = [
     technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe", "JavaScript", "CSS", "HTML"],
   }
 
+
+];
+
+export const CERTIFICATIONS = [
+  {
+    title: "AI Engineer for Data Scientists Associate",
+    issuer: "DataCamp",
+    year: "2026",
+    credentialLink: "https://www.datacamp.com/certificate/AEDS0015262278164",
+    badge: "https://media.datacamp.com/cms/certification-ai-engineer-for-data-scientist-associate-badge.png",
+  },
+  {
+    title: "Data Engineer Associate",
+    issuer: "DataCamp",
+    year: "2026",
+    credentialLink: "https://www.datacamp.com/certificate/DEA0019923677771",
+    badge: "https://media.datacamp.com/legacy/Certification/Badges%202024/outline/DE_Associate_-_badge_with_outline.png",
+  },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
+    issuer: "Oracle",
+    year: "2025",
+    credentialLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=54322DC910FC0EC0BA2166D4D15FB71DE80BACDB1557365AF7F2FE62969CC7F1",
+    badge: "https://brm-workforce.oracle.com/pdf/certview/images/OCI25DSOCP.png",
+  },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+    issuer: "Oracle",
+    year: "2025",
+    credentialLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=17F0F8251C018763FC5DD8E5ED12B529BFE8C3F9118D81C15739DA8CD2D76BE2",
+    badge: "https://brm-workforce.oracle.com/pdf/certview/images/OCI25GAIOCP.png",
+  },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    issuer: "Oracle",
+    year: "2025",
+    credentialLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=E7E1299BDEBFB56D9C28D359A2DB82F0089B8E450D2D7902633EA7AFC46D0AD4",
+    badge: "https://brm-workforce.oracle.com/pdf/certview/images/OCI25AICFAV1.png",
+  },
+  {
+    title: "Applied AI Lab: Deep Learning for Computer Vision",
+    issuer: "WorldQuant University",
+    year: "2025",
+    credentialLink: "https://www.credly.com/badges/83db4c53-9bd6-4ff0-a02f-0bc9a2a0a077/linked_in_profile",
+    badge: "https://images.credly.com/size/680x680/images/9c380126-9170-46a7-a8b6-1e82f8314c50/blob",
+  },
+  {
+    title: "Applied Data Science Lab",
+    issuer: "WorldQuant University",
+    year: "2025",
+    credentialLink: "https://www.credly.com/badges/3fcf8ac0-8b1b-4a7d-8a5a-40e2788211f1/linked_in_profile",
+    badge: "https://images.credly.com/size/680x680/images/876b01ef-23aa-4a29-b6d2-56c230b89935/image.png",
+  },
+  {
+    title: "Data Analysis with Python",
+    issuer: "freeCodeCamp",
+    year: "2024",
+    credentialLink: "https://freecodecamp.org/certification/samuelolubukun/data-analysis-with-python-v7",
+    badge: "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
+  },
+  {
+    title: "Machine Learning with Python",
+    issuer: "freeCodeCamp",
+    year: "2024",
+    credentialLink: "https://freecodecamp.org/certification/samuelolubukun/machine-learning-with-python-v7",
+    badge: "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
+  },
 ];
 export const CONTACT = {
   address: "",

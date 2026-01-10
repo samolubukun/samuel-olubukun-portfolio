@@ -84,7 +84,7 @@ const Technologies = () => {
           </motion.div>
           <p className="text-neutral-400 mt-2 text-sm sm:text-base">React</p>
         </div>
-                {/* Add Next.js icon */}
+        {/* Add Next.js icon */}
         <div className="flex flex-col items-center w-full">
           <motion.div
             variants={iconVariants(4)}
@@ -268,7 +268,7 @@ const Technologies = () => {
           </motion.div>
           <p className="text-neutral-400 mt-2 text-sm sm:text-base">PyTorch</p>
         </div>
-        
+
         <div className="flex flex-col items-center w-full">
           <motion.div
             variants={iconVariants(6.2)}

@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="py-6 border-t border-neutral-200 dark:border-neutral-800">
       <div className="container mx-auto px-4">
@@ -23,13 +23,13 @@ const Footer = () => {
               <FaWhatsapp />
             </a>
           </div>
-          
-        {/* Copyright */}
-        <div className="text-sm text-neutral-600 dark:text-neutral-400">
-          <a href="/"> 
-            © {currentYear} Olubukun Samuel
-          </a>
-        </div>
+
+          {/* Copyright */}
+          <div className="text-sm text-neutral-600 dark:text-neutral-400">
+            <a href="/">
+              © {currentYear} Samuel Olubukun
+            </a>
+          </div>
         </div>
       </div>
     </footer>

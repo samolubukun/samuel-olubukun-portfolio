@@ -22,7 +22,7 @@ const Project = () => {
               className="w-full lg:w-7/10 mb-4 lg:mb-0 lg:mr-8"
             >
               <img
-                className="rounded w-full h-auto lg:h-64 object-cover"
+                className="rounded w-full h-auto object-contain bg-neutral-900/10"
                 src={project.image}
                 alt={project.title}
               />
