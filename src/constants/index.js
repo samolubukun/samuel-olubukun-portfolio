@@ -1,4 +1,4 @@
-import project1 from "../assets/projects/project-1.jpg";
+﻿import project1 from "../assets/projects/project-1.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
@@ -9,6 +9,15 @@ import vocalvista from "../assets/projects/vocalvista.jpg";
 import mentora from "../assets/projects/mentora.jpg";
 import restoirhealth from "../assets/projects/restoirhealth.jpg";
 
+// Deep Dives
+// Deep Dives
+import multiTenantSaas from "../assets/deep-dives/multi-tenant-saas.png";
+import advancedRag from "../assets/deep-dives/advanced-rag.png";
+import distributedJobQueue from "../assets/deep-dives/distributed-job-queue.png";
+import notificationSystem from "../assets/deep-dives/notification-system.png";
+import aiContentPlatform from "../assets/deep-dives/ai-content-platform.png";
+import voiceAiGateway from "../assets/deep-dives/voice-ai-gateway.png";
+import analyticsEngine from "../assets/deep-dives/analytics-engine.png";
 
 export const HERO_CONTENT = `I create modern web applications and data-driven solutions, specializing in full-stack development, data science, and AI/ML. My work focuses on building scalable systems that tackle real-world challenges with innovative, impactful results.`;
 export const ABOUT_TEXT = `Hi! I'm Samuel Olubukun, a Full Stack AI/ML Engineer passionate about creating intelligent, modern web solutions. I have strong skills and experience in data science, artificial intelligence, and machine learning, and have built several projects that showcase the blend of web development and AI innovation.
@@ -18,7 +27,7 @@ I enjoy working across frontend, backend, and AI systems, combining creativity, 
 
 export const PROJECTS = [
   {
-    title: "Réstoir Health",
+    title: "RÃ©stoir Health",
     link: "https://restoir-health.vercel.app",
     image: restoirhealth,
     description: "AI-Powered Skincare. Detects, analyzes, and helps you manage acne, eczema, and other skin conditions. Combines dermatology-grade AI analysis with personalized skincare routines and product recommendations.",
@@ -168,8 +177,93 @@ export const CERTIFICATIONS = [
     badge: "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
   },
 ];
+
+export const TECHNICAL_DEEP_DIVES = [
+  {
+    title: "Multi-Tenant SaaS Architecture",
+    image: multiTenantSaas,
+    technologies: ["Next.js", "Prisma", "PostgreSQL", "Stack Auth"],
+    challenge: "Isolating tenant data and ensuring security while sharing infrastructure to minimize costs.",
+    solutions: [
+      "PostgreSQL Row-Level Security (RLS) policies to enforce tenant data isolation",
+      "Workspace scoping with middleware that injects tenant context into all queries",
+      "Stack Auth integration with custom claims to identify tenant and user permissions"
+    ]
+  },
+  {
+    title: "Advanced RAG Pipeline",
+    image: advancedRag,
+    technologies: ["LangChain", "Pinecone", "Cohere", "Python"],
+    challenge: "Improving retrieval accuracy for complex user queries across large, unstructured datasets where standard keyword search fails.",
+    solutions: [
+      "Implemented hybrid search combining sparse (BM25) and dense vector retrieval",
+      "Added a re-ranking step using Cohere to prioritize context relevancy before LLM ingestion",
+      "Designed a sliding context window strategy to handle token limits effectively"
+    ]
+  },
+  {
+    title: "Distributed Job Queue",
+    image: distributedJobQueue,
+    technologies: ["Redis", "BullMQ", "Node.js", "Docker"],
+    challenge: "Processing millions of background tasks (emails, report generation) reliably without data loss during traffic spikes.",
+    solutions: [
+      "Decoupled producers and consumers using Redis-backed persistent queues",
+      "Implemented an atomic job locking mechanism to prevent race conditions across workers",
+      "Configured exponential backoff retries and dead letter queues for failed tasks"
+    ]
+  },
+  {
+    title: "Scalable Notification System",
+    image: notificationSystem,
+    technologies: ["Node.js", "Redis Pub/Sub", "Socket.io", "MongoDB"],
+    challenge: "Delivering ephemeral live notifications to online users while guaranteeing delivery persistence for offline users.",
+    solutions: [
+      "Utilized Redis Pub/Sub for horizontal scaling of WebSocket servers (Fan-out)",
+      "Implemented a hybrid delivery pipeline: Direct socket push for online, queue for offline",
+      "Designed a batch-write strategy for MongoDB to handle high-throughput log storage"
+    ]
+  },
+  {
+    title: "AI-Powered Content Platform",
+    image: aiContentPlatform,
+    technologies: ["Next.js", "Gemini AI", "Prisma", "PostgreSQL"],
+    challenge: "Serving personalized AI-generated content at scale while managing costs through rate limiting and caching.",
+    solutions: [
+      "Credit-based system with Prisma transactions to prevent race conditions",
+      "Prompt engineering layer to optimize token usage and response quality",
+      "Redis caching strategy for frequently requested AI responses to reduce API calls"
+    ]
+  },
+  {
+    title: "Low-Latency Voice AI Gateway",
+    image: voiceAiGateway,
+    technologies: ["WebRTC", "Node.js Streams", "OpenAI Realtime", "Redis"],
+    challenge: "Orchestrating full-duplex voice conversations with AI models while maintaining sub-500ms latency.",
+    solutions: [
+      "Built a custom Node.js stream pipeline to handle audio buffering and transcoding",
+      "Implemented VAD (Voice Activity Detection) to minimize token costs and interrupt latency",
+      "Optimized WebSocket packet sizes for real-time streaming reliability"
+    ]
+  },
+  {
+    title: "Real-Time User Analytics Engine",
+    image: analyticsEngine,
+    technologies: ["PostgreSQL", "Node.js", "Redis", "Timescale"],
+    challenge: "Visualizing live user behavior trends across millions of event records with sub-second dashboard load times.",
+    solutions: [
+      "Utilized partitioned time-series tables for efficient querying of historical data",
+      "Implemented incremental materialized views to pre-aggregate high-cost metrics",
+      "Designed a multi-layered caching strategy for dashboard API endpoints"
+    ]
+  }
+];
+
+export { BLOG_POSTS } from './blogs';
+
 export const CONTACT = {
   address: "",
   phoneNo: "+234 8083273795",
   email: "samuelolubukun@gmail.com",
 };
+
+
