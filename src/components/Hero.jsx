@@ -63,6 +63,7 @@ const Hero = () => {
             src={aboutImg}
             alt="Samuel Olubukun"
             className="rounded-2xl shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_40px_rgba(56,189,248,0.5)] transition-all duration-500 filter brightness-95 hover:brightness-110 object-cover"
+            fetchpriority="high"
           />
           <motion.a
             initial={{ opacity: 0, y: 50 }}

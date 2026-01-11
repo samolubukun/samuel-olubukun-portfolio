@@ -25,6 +25,7 @@ const Project = () => {
                 className="rounded w-full h-auto object-contain bg-neutral-900/10"
                 src={project.image}
                 alt={project.title}
+                loading="lazy"
               />
             </motion.div>
             <motion.div
