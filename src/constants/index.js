@@ -27,7 +27,7 @@ I enjoy working across frontend, backend, and AI systems, combining creativity, 
 
 export const PROJECTS = [
   {
-    title: "RÃ©stoir Health",
+    title: "Restoir Health",
     link: "https://restoir-health.vercel.app",
     image: restoirhealth,
     description: "AI-Powered Skincare. Detects, analyzes, and helps you manage acne, eczema, and other skin conditions. Combines dermatology-grade AI analysis with personalized skincare routines and product recommendations.",
