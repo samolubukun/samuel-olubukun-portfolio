@@ -4,6 +4,7 @@ import { BLOG_POSTS } from "../constants/blogs";
 import { Calendar, Clock, Tag, ArrowLeft, Copy, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 // Code block component with copy button
 const CodeBlock = ({ children, inline }) => {
@@ -122,6 +123,7 @@ const BlogPostPage = () => {
                 {/* Content */}
                 <div className="prose prose-invert prose-lg max-w-none">
                     <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
                         components={{
                             h1: ({ node, ...props }) => <h1 className="text-3xl font-bold mt-8 mb-4 text-white" {...props} />,
                             h2: ({ node, ...props }) => <h2 className="text-2xl font-bold mt-6 mb-3 text-white" {...props} />,
@@ -159,6 +161,8 @@ const BlogPostPage = () => {
                             blockquote: ({ node, ...props }) => <blockquote className="border-l-4 border-blue-500 pl-4 italic text-neutral-400 my-4" {...props} />,
                             table: ({ node, ...props }) => <div className="overflow-x-auto mb-6"><table className="min-w-full border border-neutral-700 text-neutral-300" {...props} /></div>,
                             thead: ({ node, ...props }) => <thead className="bg-neutral-900" {...props} />,
+                            tbody: ({ node, ...props }) => <tbody {...props} />,
+                            tr: ({ node, ...props }) => <tr className="hover:bg-neutral-800/30 transition-colors" {...props} />,
                             th: ({ node, ...props }) => <th className="border border-neutral-700 px-4 py-2 font-bold text-left" {...props} />,
                             td: ({ node, ...props }) => <td className="border border-neutral-700 px-4 py-2" {...props} />,
                         }}
