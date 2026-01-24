@@ -1,14 +1,14 @@
 ﻿export const BLOG_POSTS = [
-    {
-        id: 1,
-        slug: "production-rag-systems",
-        title: "Building Production RAG Systems: Vector Databases & Hybrid Search",
-        excerpt: "Learn how to build robust Retrieval-Augmented Generation systems with vector databases, hybrid search, and re-ranking for production environments.",
-        category: "AI/ML",
-        date: "2024-12-15",
-        readTime: "8 min read",
-        tags: ["RAG", "Vector Databases", "AI", "LangChain", "Pinecone"],
-        content: `
+  {
+    id: 1,
+    slug: "production-rag-systems",
+    title: "Building Production RAG Systems: Vector Databases & Hybrid Search",
+    excerpt: "Learn how to build robust Retrieval-Augmented Generation systems with vector databases, hybrid search, and re-ranking for production environments.",
+    category: "AI/ML",
+    date: "2024-12-15",
+    readTime: "8 min read",
+    tags: ["RAG", "Vector Databases", "AI", "LangChain", "Pinecone"],
+    content: `
 # Building Production RAG Systems: Vector Databases & Hybrid Search
 
 Retrieval-Augmented Generation (RAG) has become the gold standard for building AI applications that need to work with domain-specific knowledge. However, moving from a prototype to a production-ready RAG system requires careful attention to retrieval accuracy, latency, and cost.
@@ -129,17 +129,17 @@ Production RAG systems require more than just embedding documents. By combining 
 - Metadata filtering reduces noise
 - Monitor retrieval quality continuously
 `
-    },
-    {
-        id: 2,
-        slug: "prompt-engineering-vs-fine-tuning",
-        title: "Prompt Engineering vs Fine-Tuning: When to Use Which",
-        excerpt: "A practical guide to choosing between prompt engineering and fine-tuning for your LLM applications, with real-world examples and cost comparisons.",
-        category: "AI/ML",
-        date: "2024-12-10",
-        readTime: "7 min read",
-        tags: ["LLMs", "Prompt Engineering", "Fine-Tuning", "AI"],
-        content: `
+  },
+  {
+    id: 2,
+    slug: "prompt-engineering-vs-fine-tuning",
+    title: "Prompt Engineering vs Fine-Tuning: When to Use Which",
+    excerpt: "A practical guide to choosing between prompt engineering and fine-tuning for your LLM applications, with real-world examples and cost comparisons.",
+    category: "AI/ML",
+    date: "2024-12-10",
+    readTime: "7 min read",
+    tags: ["LLMs", "Prompt Engineering", "Fine-Tuning", "AI"],
+    content: `
 # Prompt Engineering vs Fine-Tuning: When to Use Which
 
 One of the most common questions when building LLM applications is: should I use prompt engineering or fine-tune a model? The answer depends on your specific use case, budget, and technical requirements.
@@ -316,17 +316,17 @@ Start with prompt engineering:
 
 **Use both** for production systems that need reliable core behavior with adaptable features.
 `
-    },
-    {
-        id: 3,
-        slug: "ai-rate-limiting-caching",
-        title: "Deploying AI Apps: Rate Limiting, Caching & Cost Management",
-        excerpt: "Practical strategies for managing costs and performance when deploying AI applications at scale, with code examples for Redis caching and credit systems.",
-        category: "AI/ML",
-        date: "2024-12-05",
-        readTime: "9 min read",
-        tags: ["AI", "Cost Optimization", "Redis", "Rate Limiting"],
-        content: `
+  },
+  {
+    id: 3,
+    slug: "ai-rate-limiting-caching",
+    title: "Deploying AI Apps: Rate Limiting, Caching & Cost Management",
+    excerpt: "Practical strategies for managing costs and performance when deploying AI applications at scale, with code examples for Redis caching and credit systems.",
+    category: "AI/ML",
+    date: "2024-12-05",
+    readTime: "9 min read",
+    tags: ["AI", "Cost Optimization", "Redis", "Rate Limiting"],
+    content: `
 # Deploying AI Apps: Rate Limiting, Caching & Cost Management
 
 AI APIs like OpenAI, Anthropic, and Gemini charge per token. Without proper controls, costs can spiral quickly. Here's how to build production-ready AI applications that are both fast and economical.
@@ -578,17 +578,17 @@ Building AI applications requires careful cost management. By implementing credi
 
 **Remember**: Start with strict limits, then relax them as you validate demand. It's easier to increase limits than to recover from a surprise $50K bill.
 `
-    },
-    {
-        id: 4,
-        slug: "modern-react-patterns-2024",
-        title: "Modern React Patterns: Hooks, State Management & Performance",
-        excerpt: "A comprehensive guide to React best practices in 2024, covering hooks, state management strategies, and performance optimization techniques.",
-        category: "Full-Stack",
-        date: "2024-11-28",
-        readTime: "10 min read",
-        tags: ["React", "JavaScript", "State Management", "Performance"],
-        content: `# Modern React Patterns: Hooks, State Management & Performance
+  },
+  {
+    id: 4,
+    slug: "modern-react-patterns-2024",
+    title: "Modern React Patterns: Hooks, State Management & Performance",
+    excerpt: "A comprehensive guide to React best practices in 2024, covering hooks, state management strategies, and performance optimization techniques.",
+    category: "Full-Stack",
+    date: "2024-11-28",
+    readTime: "10 min read",
+    tags: ["React", "JavaScript", "State Management", "Performance"],
+    content: `# Modern React Patterns: Hooks, State Management & Performance
 
 React has evolved significantly since hooks were introduced. Here's what modern React development looks like in 2024, with practical patterns you should be using.
 
@@ -942,17 +942,17 @@ Modern React is about:
 
 Master these patterns and you'll write cleaner, faster React code.
 `
-    },
-    {
-        id: 5,
-        slug: "rest-vs-graphql-api-design",
-        title: "API Design: REST vs GraphQL - Choosing the Right Approach",
-        excerpt: "Compare REST and GraphQL architectures with practical examples. Learn when to use each approach based on your application's needs.",
-        category: "Full-Stack",
-        date: "2024-11-20",
-        readTime: "8 min read",
-        tags: ["API Design", "REST", "GraphQL", "Backend"],
-        content: `# API Design: REST vs GraphQL - Choosing the Right Approach
+  },
+  {
+    id: 5,
+    slug: "rest-vs-graphql-api-design",
+    title: "API Design: REST vs GraphQL - Choosing the Right Approach",
+    excerpt: "Compare REST and GraphQL architectures with practical examples. Learn when to use each approach based on your application's needs.",
+    category: "Full-Stack",
+    date: "2024-11-20",
+    readTime: "8 min read",
+    tags: ["API Design", "REST", "GraphQL", "Backend"],
+    content: `# API Design: REST vs GraphQL - Choosing the Right Approach
 
 Choosing between REST and GraphQL can make or break your API's developer experience. Both have their place—here's how to decide.
 
@@ -1144,17 +1144,17 @@ Don't choose based on hype. Choose based on your actual needs:
 - **Enterprise with both** → Hybrid
 
 The best API is the one your team can build and maintain effectively.`
-    },
-    {
-        id: 6,
-        slug: "database-optimization-techniques",
-        title: "Database Optimization: Indexing, Queries & Connection Pooling",
-        excerpt: "Practical strategies for optimizing database performance with proper indexing, query optimization, and connection management.",
-        category: "Full-Stack",
-        date: "2024-11-15",
-        readTime: "9 min read",
-        tags: ["Database", "Performance", "PostgreSQL", "Optimization"],
-        content: `# Database Optimization: Indexing, Queries & Connection Pooling
+  },
+  {
+    id: 6,
+    slug: "database-optimization-techniques",
+    title: "Database Optimization: Indexing, Queries & Connection Pooling",
+    excerpt: "Practical strategies for optimizing database performance with proper indexing, query optimization, and connection management.",
+    category: "Full-Stack",
+    date: "2024-11-15",
+    readTime: "9 min read",
+    tags: ["Database", "Performance", "PostgreSQL", "Optimization"],
+    content: `# Database Optimization: Indexing, Queries & Connection Pooling
 
 Database performance can make or break your application. Here's how to optimize for speed without over-engineering.
 
@@ -1174,7 +1174,7 @@ CREATE INDEX idx_users_email ON users(email);
 
 -- Same query (index scan)
 SELECT * FROM users WHERE email = 'test@example.com';
--- Execution time: 3ms ✅
+-- Execution time: 3ms
 \`\`\`
 
 **Result**: 283x faster!
@@ -1235,7 +1235,7 @@ const users = await db.users.findAll();
 for (const user of users) {
   user.posts = await db.posts.findByUserId(user.id);
 }
-// Total: 1 + 100 = 101 queries 😱
+// Total: 1 + 100 = 101 queries
 \`\`\`
 
 **Good** (1 query with JOIN):
@@ -1243,7 +1243,7 @@ for (const user of users) {
 const users = await db.users.findAll({
   include: [{ model: db.posts }]
 });
-// Total: 1 query ✅
+// Total: 1 query
 \`\`\`
 
 ### SELECT Only What You Need
@@ -1299,7 +1299,7 @@ try {
 \`\`\`
 
 **Without pooling**: 50ms per query (connection overhead)
-**With pooling**: 5ms per query ✅
+**With pooling**: 5ms per query
 
 ## 4. Caching Strategies
 
@@ -1384,14 +1384,14 @@ LIMIT 20;  -- Pagination
 
 ## Common Mistakes
 
-❌ **Index every column** → Slows down writes
-✅ **Index based on queries** → Fast reads, reasonable writes
+**Index every column** → Slows down writes
+**Index based on queries** → Fast reads, reasonable writes
 
-❌ **No connection pooling** → High latency
-✅ **Pool with 10-20 connections** → Low latency
+**No connection pooling** → High latency
+**Pool with 10-20 connections** → Low latency
 
-❌ **Caching everything forever** → Stale data
-✅ **Cache with reasonable TTL** → Fresh enough data
+**Caching everything forever** → Stale data
+**Cache with reasonable TTL** → Fresh enough data
 
 ## Conclusion
 
@@ -1400,17 +1400,17 @@ LIMIT 20;  -- Pagination
 - 80% of performance gains
 
 Start with indexes, add pooling, then cache. Don't over-optimize prematurely!`
-    },
-    {
-        id: 7,
-        slug: "scalability-patterns-web-apps",
-        title: "Scalability Patterns: From Monolith to Distributed Systems",
-        excerpt: "Learn essential scalability patterns including load balancing, caching, database sharding, and microservices architecture.",
-        category: "System Design",
-        date: "2024-11-10",
-        readTime: "10 min read",
-        tags: ["Scalability", "System Design", "Architecture", "Microservices"],
-        content: `# Scalability Patterns: From Monolith to Distributed Systems
+  },
+  {
+    id: 7,
+    slug: "scalability-patterns-web-apps",
+    title: "Scalability Patterns: From Monolith to Distributed Systems",
+    excerpt: "Learn essential scalability patterns including load balancing, caching, database sharding, and microservices architecture.",
+    category: "System Design",
+    date: "2024-11-10",
+    readTime: "10 min read",
+    tags: ["Scalability", "System Design", "Architecture", "Microservices"],
+    content: `# Scalability Patterns: From Monolith to Distributed Systems
 
 Scalability isn't about microservices from day one. It's about making smart architectural decisions as you grow.
 
@@ -1607,14 +1607,14 @@ Microservices (Year 3+)
 
 ## Common Mistakes
 
-❌ **Microservices from day 1** → Over-engineered
-✅ **Start monolith** → Extract services later
+**Microservices from day 1** → Over-engineered
+**Start monolith** → Extract services later
 
-❌ **No monitoring** → Flying blind
-✅ **Track metrics** → Response times, error rates
+**No monitoring** → Flying blind
+**Track metrics** → Response times, error rates
 
-❌ **Premature sharding** → Unnecessary complexity
-✅ **Use replicas first** → Simpler and effective
+**Premature sharding** → Unnecessary complexity
+**Use replicas first** → Simpler and effective
 
 ## The Scaling Mindset
 
@@ -1635,17 +1635,17 @@ Scaling is a journey, not a destination.
 - Extract microservices only when needed
 
 Don't scale for hypothetical traffic. Scale for actual bottlenecks.`
-    },
-    {
-        id: 8,
-        slug: "real-time-architecture-websockets",
-        title: "Real-Time Architecture: WebSockets, Pub/Sub & Event Streaming",
-        excerpt: "Build real-time features with WebSockets, Redis Pub/Sub, and event-driven architectures. Practical examples for chat, notifications, and live updates.",
-        category: "System Design",
-        date: "2024-11-05",
-        readTime: "9 min read",
-        tags: ["Real-Time", "WebSockets", "Pub/Sub", "System Design"],
-        content: `# Real-Time Architecture: WebSockets, Pub/Sub & Event Streaming
+  },
+  {
+    id: 8,
+    slug: "real-time-architecture-websockets",
+    title: "Real-Time Architecture: WebSockets, Pub/Sub & Event Streaming",
+    excerpt: "Build real-time features with WebSockets, Redis Pub/Sub, and event-driven architectures. Practical examples for chat, notifications, and live updates.",
+    category: "System Design",
+    date: "2024-11-05",
+    readTime: "9 min read",
+    tags: ["Real-Time", "WebSockets", "Pub/Sub", "System Design"],
+    content: `# Real-Time Architecture: WebSockets, Pub/Sub & Event Streaming
 
 Building real-time features requires the right architecture. Here's how to choose between WebSockets, Server-Sent Events, and Pub/Sub.
 
@@ -1883,17 +1883,17 @@ Real-time doesn't have to be complex:
 3. **Add Redis Pub/Sub** when scaling horizontally
 
 The key is choosing based on your use case, not the latest hype.`
-    },
-    {
-        id: 9,
-        slug: "event-driven-architecture-message-queues",
-        title: "Event-Driven Architecture: Message Queues & Async Processing",
-        excerpt: "Master event-driven architecture with RabbitMQ, Kafka, and AWS SQS. Learn when to use message queues vs event streams for scalable async processing.",
-        category: "System Design",
-        date: "2024-11-01",
-        readTime: "10 min read",
-        tags: ["Event-Driven", "Message Queues", "Kafka", "RabbitMQ", "Async"],
-        content: `# Event-Driven Architecture: Message Queues & Async Processing
+  },
+  {
+    id: 9,
+    slug: "event-driven-architecture-message-queues",
+    title: "Event-Driven Architecture: Message Queues & Async Processing",
+    excerpt: "Master event-driven architecture with RabbitMQ, Kafka, and AWS SQS. Learn when to use message queues vs event streams for scalable async processing.",
+    category: "System Design",
+    date: "2024-11-01",
+    readTime: "10 min read",
+    tags: ["Event-Driven", "Message Queues", "Kafka", "RabbitMQ", "Async"],
+    content: `# Event-Driven Architecture: Message Queues & Async Processing
 
 Event-driven architecture (EDA) is essential for building scalable, decoupled systems. Here's how to choose between message queues and event streams.
 
@@ -2254,5 +2254,5 @@ Event-driven architecture is essential for scalable systems.
 4. Scale workers based on load
 
 **Remember**: Events enable loose coupling. Design for failure, handle retries, and always use dead letter queues.`
-    }
+  }
 ];
