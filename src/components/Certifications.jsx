@@ -14,7 +14,7 @@ const Certifications = () => {
         return () => window.removeEventListener("resize", checkMobile);
     }, []);
 
-    const displayedCerts = isMobile && !showAll ? CERTIFICATIONS.slice(0, 4) : CERTIFICATIONS;
+    const displayedCerts = isMobile && !showAll ? CERTIFICATIONS.slice(0, 5) : CERTIFICATIONS;
 
     return (
         <div className="border-b border-neutral-900 pb-24">
@@ -72,7 +72,7 @@ const Certifications = () => {
                 ))}
             </div>
 
-            {isMobile && CERTIFICATIONS.length > 4 && (
+            {isMobile && CERTIFICATIONS.length > 5 && (
                 <div className="flex justify-center mt-8">
                     <button
                         onClick={() => setShowAll(!showAll)}

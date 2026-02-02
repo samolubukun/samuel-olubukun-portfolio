@@ -114,6 +114,13 @@ export const PROJECTS = [
 
 export const CERTIFICATIONS = [
   {
+    title: "AI Engineer for Developers Associate",
+    issuer: "DataCamp",
+    year: "2026",
+    credentialLink: "https://www.datacamp.com/certificate/AIEDA0012559370840",
+    badge: "https://media.datacamp.com/cms/certification-ai-engineer-for-developers-associate-badge.png",
+  },
+  {
     title: "AI Engineer for Data Scientists Associate",
     issuer: "DataCamp",
     year: "2026",
