@@ -155,34 +155,6 @@ export const CERTIFICATIONS = [
     credentialLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=E7E1299BDEBFB56D9C28D359A2DB82F0089B8E450D2D7902633EA7AFC46D0AD4",
     badge: "https://brm-workforce.oracle.com/pdf/certview/images/OCI25AICFAV1.png",
   },
-  {
-    title: "Applied AI Lab: Deep Learning for Computer Vision",
-    issuer: "WorldQuant University",
-    year: "2025",
-    credentialLink: "https://www.credly.com/badges/83db4c53-9bd6-4ff0-a02f-0bc9a2a0a077/linked_in_profile",
-    badge: "https://images.credly.com/size/680x680/images/9c380126-9170-46a7-a8b6-1e82f8314c50/blob",
-  },
-  {
-    title: "Applied Data Science Lab",
-    issuer: "WorldQuant University",
-    year: "2025",
-    credentialLink: "https://www.credly.com/badges/3fcf8ac0-8b1b-4a7d-8a5a-40e2788211f1/linked_in_profile",
-    badge: "https://images.credly.com/size/680x680/images/876b01ef-23aa-4a29-b6d2-56c230b89935/image.png",
-  },
-  {
-    title: "Data Analysis with Python",
-    issuer: "freeCodeCamp",
-    year: "2024",
-    credentialLink: "https://freecodecamp.org/certification/samuelolubukun/data-analysis-with-python-v7",
-    badge: "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
-  },
-  {
-    title: "Machine Learning with Python",
-    issuer: "freeCodeCamp",
-    year: "2024",
-    credentialLink: "https://freecodecamp.org/certification/samuelolubukun/machine-learning-with-python-v7",
-    badge: "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
-  },
 ];
 
 export const TECHNICAL_DEEP_DIVES = [
