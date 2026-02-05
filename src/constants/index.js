@@ -40,7 +40,7 @@ export const PROJECTS = [
     title: "ThrivePath Psychiatry",
     link: "https://thrivepathpsychiatry.com/",
     image: thrivepath,
-    description: "A HIPAA-aligned digital gateway for modern mental health care. Bridges the gap between clinicians and patients with an automated appointment booking workflow, reducing administrative overhead while providing a secure portal for critical medication management and therapy resources.",
+    description: "A premium corporate presence for a specialized psychiatric practice, engineered to establish professional trust and brand authority. The platform serves as a high-conversion business gateway, featuring a streamlined service showcase and a direct integration to a secure patient appointment and medication management portal.",
     technologies: ["PHP", "HTML", "CSS", "JavaScript"],
   },
   {
