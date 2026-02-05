@@ -29,7 +29,7 @@ I enjoy working across frontend, backend, and AI systems, combining creativity, 
 
 export const PROJECTS = [
   {
-    title: "Meerahzz Bridals Ecommerce Website",
+    title: "Meerahzz Bridals",
     link: "http://meerahzzbridals.com/",
     image: project1,
     description:
