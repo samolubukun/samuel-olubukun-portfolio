@@ -33,10 +33,10 @@ const Project = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="w-full lg:w-7/10 mb-4 lg:mb-0 lg:mr-8"
+              className="w-full lg:w-7/10 mb-4 lg:mb-0 lg:mr-8 overflow-hidden rounded-xl"
             >
               <img
-                className="rounded w-full h-auto object-contain bg-neutral-900/10"
+                className="rounded-xl w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] object-cover bg-neutral-900/10 transition-transform duration-500 hover:scale-105"
                 src={project.image}
                 alt={project.title}
                 loading="lazy"

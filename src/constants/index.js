@@ -8,6 +8,8 @@ import careerprofilegem from "../assets/projects/careerprofilegem.jpg";
 import vocalvista from "../assets/projects/vocalvista.jpg";
 import mentora from "../assets/projects/mentora.jpg";
 import restoirhealth from "../assets/projects/restoirhealth.jpg";
+import thrivepath from "../assets/projects/thrivepath.jpg";
+import dabaras from "../assets/projects/dabaras.jpg";
 
 // Deep Dives
 // Deep Dives
@@ -27,24 +29,46 @@ I enjoy working across frontend, backend, and AI systems, combining creativity, 
 
 export const PROJECTS = [
   {
+    title: "Meerahzz Bridals Ecommerce Website",
+    link: "http://meerahzzbridals.com/",
+    image: project1,
+    description:
+      "A high-conversion boutique eCommerce platform connecting brides with premium bridal accessories. Features a streamlined seasonal inventory management system and secure Paystack integration, handling local and international orders with a focus on elegant, low-friction user experience.",
+    technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "Paystack API"],
+  },
+  {
+    title: "ThrivePath Psychiatry",
+    link: "https://thrivepathpsychiatry.com/",
+    image: thrivepath,
+    description: "A HIPAA-aligned digital gateway for modern mental health care. Bridges the gap between clinicians and patients with an automated appointment booking workflow, reducing administrative overhead while providing a secure portal for critical medication management and therapy resources.",
+    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Dabara Solutions",
+    link: "http://dabaras.com/",
+    image: dabaras,
+    description: "A high-performance corporate hub for an emerging tech firm, engineered to establish brand authority in AI and Cybersecurity. Includes a conversion-optimized project inquiry portal that captures and routes specialized service requests directly to the engineering team.",
+    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
+  },
+  {
     title: "Restoir Health",
     link: "https://restoir-health.vercel.app",
     image: restoirhealth,
-    description: "AI-Powered Skincare. Detects, analyzes, and helps you manage acne, eczema, and other skin conditions. Combines dermatology-grade AI analysis with personalized skincare routines and product recommendations.",
+    description: "Empowering users to take control of their skin health through clinical-grade AI vision. This platform provides instant diagnostic analysis for various dermatological conditions, offering personalized treatment routines and helping thousands navigate skincare management from home.",
     technologies: ["Next.js", "React", "TailwindCSS", "Gemini Vision", "Convex", "Stack Auth", "Node.js"],
   },
   {
     title: "Mentora",
     link: "",
     image: mentora,
-    description: "Master Your Voice with AI. The AI-powered voice coach that trains you for high-stakes interviews, negotiation, and public speaking. Built with FastAPI and LiveKit, it offers low-latency voice interaction and deep performance analytics.",
+    description: "Transforming professional communication with a real-time AI voice coach. Facilitates high-stakes interview prep and negotiation training with sub-500ms latency, providing users with actionable, data-driven performance analytics to master their public speaking skills.",
     technologies: ["Python", "FastAPI", "LiveKit", "Deepgram", "OpenAI", "Prisma", "TailwindCSS"],
   },
   {
     title: "VOCAL VISTA",
     link: "https://vocalvista.netlify.app/",
     image: vocalvista,
-    description: "An AI voice coach using STT-LLM-TTS pipeline for real-time personalized coaching feedback with diverse modes like Mock Interviews and Language Learning. Utilizes Convex for a real-time, instantly synchronized backend.",
+    description: "A real-time AI linguistic partner designed to break communication barriers via a low-latency STT-LLM-TTS pipeline. Provides instant, personalized coaching feedback for language learners and professionals, synchronized across all devices for a seamless learning workflow.",
     technologies: ["Next.js", "TypeScript", "Deepgram", "Gemini AI", "Convex", "TTS/STT"],
   },
 
@@ -52,7 +76,7 @@ export const PROJECTS = [
     title: "PIXAREACT",
     link: "https://pixareactgemini.netlify.app/",
     image: pixareact,
-    description: "An AI tool that converts screenshots/sketches into functional React/TypeScript applications with TailwindCSS using multimodal Gemini AI. Includes client-side resizing and server-side code sanitization and repair.",
+    description: "Hyper-accelerating the frontend development lifecycle by converting UI sketches into production-ready React code. This multimodal AI tool bridges the gap between design and development, saving engineers hours of manual boilerplate coding through intelligent code generation.",
     technologies: ["Next.js", "TypeScript", "TailwindCSS", "Gemini AI", "Multimodal"],
   },
 
@@ -60,7 +84,7 @@ export const PROJECTS = [
     title: "CAREERPROFILE GEM",
     link: "https://github.com/samolubukun/CareerProfileGEM",
     image: careerprofilegem,
-    description: "An AI-powered assistant for generating cover letters and resumes, supporting AI generation, manual editing, and PDF import with credit management. Built with Wasp, React, and Prisma, using Google Gemini for content generation.",
+    description: "A career acceleration engine that helps job seekers land interviews at scale. Utilizes multimodal AI to craft high-conversion resumes and cover letters, managing thousands of user-generated documents through a robust credit and secure file management system.",
     technologies: ["Wasp", "React", "TypeScript", "Prisma", "Google Gemini", "Stripe"],
   },
 
@@ -68,17 +92,8 @@ export const PROJECTS = [
     title: "Socially",
     link: "https://socially-delta-eight.vercel.app/",
     image: project9,
-    description: "A modern social media application built with Next.js, featuring user authentication, posts, comments, likes, notifications, profiles, a follow system, and dark mode.",
+    description: "A full-featured community engagement platform designed for high interactivity. Manages complex social graphs, real-time notifications, and media-rich content feeds, providing a scalable, modern foundation for digital networking and user-driven communities.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Clerk", "UploadThing"],
-  },
-
-  {
-    title: "Meerahzz Bridals Ecommerce Website",
-    link: "http://meerahzzbridals.com/",
-    image: project1,
-    description:
-      "An elegant eCommerce platform for bridal accessories and bouquets, featuring categorized product listings, real-time cart updates, Paystack payment integration, and an intuitive shopping experience built with PHP and core web technologies.",
-    technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "Paystack API"],
   },
 
   {
@@ -86,7 +101,7 @@ export const PROJECTS = [
     link: "https://github.com/samolubukun/EcommerceApp-MERN",
     image: project5,
     description:
-      "A fully functional, deployable e-commerce platform built with the MERN stack. This app includes product management, a shopping cart, user authentication, and payment gateway integration using Braintree for secure transactions.",
+      "A robust multi-vendor retail ecosystem engineered for high-volume transactions and inventory scale. Features an intensive administrative dashboard for real-time stock management and a secure, low-friction checkout experience integrated with global payment gateways.",
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Braintree", "CSS", "HTML"],
   },
 
@@ -96,7 +111,7 @@ export const PROJECTS = [
     link: "https://rag-aided-document-chatbot-with-llms-fdpwspctq43ydglhl5ibcn.streamlit.app/",
     image: project6,
     description:
-      "A powerful document question-answering system that uses Retrieval-Augmented Generation (RAG) to process documents and generate answers based on their content. This system integrates large language models (LLMs) like Cohere to answer questions derived from documents in PDF, PPTX, or DOCX formats.",
+      "An enterprise-grade knowledge extraction system that turns static data into interactive intelligence. Processes complex datasets (PDF/PPTX/DOCX) via a RAG pipeline to provide instantly searchable, context-aware insights for teams working with large documentation sets.",
     technologies: ["Python", "Streamlit", "LangChain", "Cohere", "FAISS", "HuggingFace", "Python-docx", "PyPDF2", "python-pptx"],
   },
 
@@ -105,11 +120,9 @@ export const PROJECTS = [
     link: "https://github.com/samolubukun/Food-Delivery-MERN",
     image: project3,
     description:
-      "A full-stack food ordering website built with the MERN stack (MongoDB, Express, React, Node.js) and integrated with Stripe for payment processing. This platform allows users to browse food options, place orders, and make secure payments, featuring a clean, user-friendly interface.",
+      "A frictionless food logistics platform connecting artisanal vendors with local customers. Features a real-time ordering workflow and secure Stripe integration, optimized for a high-performance, mobile-first dining and delivery experience.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe", "JavaScript", "CSS", "HTML"],
   }
-
-
 ];
 
 export const CERTIFICATIONS = [
