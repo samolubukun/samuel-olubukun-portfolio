@@ -36,7 +36,7 @@ const Project = () => {
               className="w-full lg:w-7/10 mb-4 lg:mb-0 lg:mr-8 overflow-hidden rounded-xl"
             >
               <img
-                className="rounded-xl w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] object-cover bg-neutral-900/10 transition-transform duration-500 hover:scale-105"
+                className="rounded-xl w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] object-fill bg-neutral-900 border border-neutral-800 transition-transform duration-500 hover:scale-105"
                 src={project.image}
                 alt={project.title}
                 loading="lazy"
@@ -50,11 +50,11 @@ const Project = () => {
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-4 overflow-hidden max-h-[3.2rem] lg:max-h-[1.6rem]">
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="rounded bg-neutral-900 px-2 py-1 text-xs sm:text-sm font-medium text-blue-600"
+                    className="rounded bg-neutral-900 px-1.5 py-0.5 text-[10px] sm:text-[11px] font-medium text-blue-600"
                   >
                     {tech}
                   </span>

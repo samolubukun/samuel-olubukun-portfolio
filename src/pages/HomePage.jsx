@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Expertise from "../components/Expertise";
 import Hero from "../components/Hero";
 import Project from "../components/Project";
 import Technologies from "../components/Technologies";
@@ -16,17 +17,20 @@ const HomePage = () => {
             <section id="about">
                 <About />
             </section>
-            <section id="technologies" style={{ scrollMarginTop: '3cm' }}>
-                <Technologies />
+            <section id="expertise">
+                <Expertise />
             </section>
             <section id="project" style={{ scrollMarginTop: '3cm' }}>
                 <Project />
             </section>
+            <section id="certifications" style={{ scrollMarginTop: '3cm' }}>
+                <Certifications />
+            </section>
             <section id="deep-dives" style={{ scrollMarginTop: '3cm' }}>
                 <TechnicalDeepDives />
             </section>
-            <section id="certifications" style={{ scrollMarginTop: '3cm' }}>
-                <Certifications />
+            <section id="technologies" style={{ scrollMarginTop: '3cm' }}>
+                <Technologies />
             </section>
             <section id="contact">
                 <Contact />

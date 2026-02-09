@@ -1,13 +1,13 @@
-﻿import project1 from "../assets/projects/project-1.jpg";
+﻿import meerahzz from "../assets/projects/meerahzz.png";
 import project3 from "../assets/projects/project-3.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project9 from "../assets/projects/project-9.jpg";
-import pixareact from "../assets/projects/pixareact.jpg";
-import careerprofilegem from "../assets/projects/careerprofilegem.jpg";
-import vocalvista from "../assets/projects/vocalvista.jpg";
+import voxeval from "../assets/projects/voxeval.jpg";
+import careerprofilegem from "../assets/projects/careerprofilegem.png";
+import vocalvista from "../assets/projects/vocalvista.png";
 import mentora from "../assets/projects/mentora.jpg";
-import restoirhealth from "../assets/projects/restoirhealth.jpg";
+import restoirhealth from "../assets/projects/restoirhealth.png";
 import thrivepath from "../assets/projects/thrivepath.jpg";
 import dabaras from "../assets/projects/dabaras.jpg";
 
@@ -31,60 +31,60 @@ export const PROJECTS = [
   {
     title: "Meerahzz Bridals",
     link: "http://meerahzzbridals.com/",
-    image: project1,
+    image: meerahzz,
     description:
-      "A high-conversion boutique eCommerce platform connecting brides with premium bridal accessories. Features a streamlined seasonal inventory management system and secure Paystack integration, handling local and international orders with a focus on elegant, low-friction user experience.",
+      "A boutique online store helping brides find the perfect accessories. I built a smooth shopping experience with secure payments and an easy-to-use inventory system for the shop owner.",
     technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "Paystack API"],
   },
   {
     title: "ThrivePath Psychiatry",
     link: "https://thrivepathpsychiatry.com/",
     image: thrivepath,
-    description: "A premium corporate presence for a specialized psychiatric practice, engineered to establish professional trust and brand authority. The platform serves as a high-conversion business gateway, featuring a streamlined service showcase and a direct integration to a secure patient appointment and medication management portal.",
+    description: "A professional website for a psychiatry practice designed to build trust. It makes it easy for patients to learn about services and book appointments securely.",
     technologies: ["PHP", "HTML", "CSS", "JavaScript"],
   },
   {
     title: "Dabara Solutions",
     link: "http://dabaras.com/",
     image: dabaras,
-    description: "A high-performance corporate hub for an emerging tech firm, engineered to establish brand authority in AI and Cybersecurity. Includes a conversion-optimized project inquiry portal that captures and routes specialized service requests directly to the engineering team.",
+    description: "A comprehensive corporate site that showcases the firm’s expertise in Software Development and ICT through detailed service offerings, company insights, and integrated contact channels.",
     technologies: ["PHP", "HTML", "CSS", "JavaScript"],
   },
   {
     title: "Restoir Health",
     link: "https://restoir-health.vercel.app",
     image: restoirhealth,
-    description: "Empowering users to take control of their skin health through clinical-grade AI vision. This platform provides instant diagnostic analysis for various dermatological conditions, offering personalized treatment routines and helping thousands navigate skincare management from home.",
+    description: "An AI-powered skin health companion that analyzes conditions from photos. It includes a daily tracker and timeline visualization to monitor your progress, plus a specialized AI dermatology chatbot for instant, personalized guidance.",
     technologies: ["Next.js", "React", "TailwindCSS", "Gemini Vision", "Convex", "Stack Auth", "Node.js"],
   },
   {
     title: "Mentora",
-    link: "",
+    link: "https://samuelolubukun-mentora.hf.space",
     image: mentora,
-    description: "Transforming professional communication with a real-time AI voice coach. Facilitates high-stakes interview prep and negotiation training with sub-500ms latency, providing users with actionable, data-driven performance analytics to master their public speaking skills.",
+    description: "Your personal AI voice coach for mastering high-stakes communication. From public speaking and storytelling to social mastery and conflict resolution, it provides real-time feedback to help you communicate with confidence and impact.",
     technologies: ["Python", "FastAPI", "LiveKit", "Deepgram", "OpenAI", "Prisma", "TailwindCSS"],
   },
   {
     title: "VOCAL VISTA",
     link: "https://vocalvista.netlify.app/",
     image: vocalvista,
-    description: "A real-time AI linguistic partner designed to break communication barriers via a low-latency STT-LLM-TTS pipeline. Provides instant, personalized coaching feedback for language learners and professionals, synchronized across all devices for a seamless learning workflow.",
+    description: "A versatile AI partner for voice-first interactions. It supports everything from immersive language learning and topic-based lectures to polished presentations and mock interviews, all with instant speech feedback.",
     technologies: ["Next.js", "TypeScript", "Deepgram", "Gemini AI", "Convex", "TTS/STT"],
   },
 
   {
-    title: "PIXAREACT",
-    link: "https://pixareactgemini.netlify.app/",
-    image: pixareact,
-    description: "Hyper-accelerating the frontend development lifecycle by converting UI sketches into production-ready React code. This multimodal AI tool bridges the gap between design and development, saving engineers hours of manual boilerplate coding through intelligent code generation.",
-    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Gemini AI", "Multimodal"],
+    title: "VoxEval",
+    link: "https://voxeval.netlify.app/",
+    image: voxeval,
+    description: "An AI mock-interview platform that conducts voice-first interviews. It listens to your answers, transcribes them in real-time, and uses AI to give you instant feedback, helping you master your interviewing skills.",
+    technologies: ["Next.js", "Supabase", "Google Gemini", "Deepgram", "Web Speech API", "Tailwind CSS"],
   },
 
   {
     title: "CAREERPROFILE GEM",
     link: "https://github.com/samolubukun/CareerProfileGEM",
     image: careerprofilegem,
-    description: "A career acceleration engine that helps job seekers land interviews at scale. Utilizes multimodal AI to craft high-conversion resumes and cover letters, managing thousands of user-generated documents through a robust credit and secure file management system.",
+    description: "An AI tool that helps you land more interviews. It builds high-quality resumes and cover letters tailored to your profile, making the job hunt much easier.",
     technologies: ["Wasp", "React", "TypeScript", "Prisma", "Google Gemini", "Stripe"],
   },
 
@@ -92,7 +92,7 @@ export const PROJECTS = [
     title: "Socially",
     link: "https://socially-delta-eight.vercel.app/",
     image: project9,
-    description: "A full-featured community engagement platform designed for high interactivity. Manages complex social graphs, real-time notifications, and media-rich content feeds, providing a scalable, modern foundation for digital networking and user-driven communities.",
+    description: "A modern social platform built for community engagement. It features real-time notifications, media sharing, and everything you need to connect and interact with others.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Clerk", "UploadThing"],
   },
 
@@ -101,27 +101,46 @@ export const PROJECTS = [
     link: "https://github.com/samolubukun/EcommerceApp-MERN",
     image: project5,
     description:
-      "A robust multi-vendor retail ecosystem engineered for high-volume transactions and inventory scale. Features an intensive administrative dashboard for real-time stock management and a secure, low-friction checkout experience integrated with global payment gateways.",
+      "A powerful multi-seller online store. I built it to handle high-volume sales with a clean dashboard for managing inventory and a secure checkout process.",
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Braintree", "CSS", "HTML"],
   },
 
   // keep remaining projects below (preserve existing entries)
-  {
+  /* {
     title: "RAG-Aided Document Chatbot with LLMs",
     link: "https://rag-aided-document-chatbot-with-llms-fdpwspctq43ydglhl5ibcn.streamlit.app/",
     image: project6,
     description:
-      "An enterprise-grade knowledge extraction system that turns static data into interactive intelligence. Processes complex datasets (PDF/PPTX/DOCX) via a RAG pipeline to provide instantly searchable, context-aware insights for teams working with large documentation sets.",
+      "A smart chatbot that talks to your documents. Upload PDFs or slides, and it uses AI to answer questions based on the content, making it easy to find information in large files.",
     technologies: ["Python", "Streamlit", "LangChain", "Cohere", "FAISS", "HuggingFace", "Python-docx", "PyPDF2", "python-pptx"],
-  },
+  }, */
 
-  {
+  /* {
     title: "Food Delivery Website",
     link: "https://github.com/samolubukun/Food-Delivery-MERN",
     image: project3,
     description:
-      "A frictionless food logistics platform connecting artisanal vendors with local customers. Features a real-time ordering workflow and secure Stripe integration, optimized for a high-performance, mobile-first dining and delivery experience.",
+      "A smooth food delivery app for ordering from local vendors. It handles everything from real-time orders to secure payments, optimized to work great on mobile phones.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe", "JavaScript", "CSS", "HTML"],
+  } */
+];
+
+export const EXPERT_AREAS = [
+  {
+    title: "Web Applications",
+    description: "I build modern web apps, high-converting landing pages, and robust eCommerce platforms. My focus is on creating fast, secure, and responsive designs that deliver a premium user experience."
+  },
+  {
+    title: "AI & Machine Learning",
+    description: "I specialize in AI Engineering, building autonomous agents and intelligent, context-aware applications. I move beyond simple integration to create production-grade systems that automate workflows and solve high-impact challenges."
+  },
+  {
+    title: "Data Science",
+    description: "I perform deep data analysis and advanced visualization to uncover trends. By combining statistical modeling with data processing, I transform raw numbers into clear, actionable business strategies."
+  },
+  {
+    title: "Full-Stack Engineering",
+    description: "I manage the complete development lifecycle, from architecting scalable back-end systems to engineering polished, interactive front-end interfaces."
   }
 ];
 
@@ -175,7 +194,7 @@ export const TECHNICAL_DEEP_DIVES = [
     title: "Multi-Tenant SaaS Architecture",
     image: multiTenantSaas,
     technologies: ["Next.js", "Prisma", "PostgreSQL", "Stack Auth"],
-    challenge: "Isolating tenant data and ensuring security while sharing infrastructure to minimize costs.",
+    challenge: "Keeping different customers' data separate and secure while sharing the same system to keep costs low.",
     solutions: [
       "PostgreSQL Row-Level Security (RLS) policies to enforce tenant data isolation",
       "Workspace scoping with middleware that injects tenant context into all queries",
@@ -186,7 +205,7 @@ export const TECHNICAL_DEEP_DIVES = [
     title: "Advanced RAG Pipeline",
     image: advancedRag,
     technologies: ["LangChain", "Pinecone", "Cohere", "Python"],
-    challenge: "Improving retrieval accuracy for complex user queries across large, unstructured datasets where standard keyword search fails.",
+    challenge: "Making sure the AI finds the right information in a huge pile of documents, even when the questions are complicated.",
     solutions: [
       "Implemented hybrid search combining sparse (BM25) and dense vector retrieval",
       "Added a re-ranking step using Cohere to prioritize context relevancy before LLM ingestion",
@@ -197,7 +216,7 @@ export const TECHNICAL_DEEP_DIVES = [
     title: "Distributed Job Queue",
     image: distributedJobQueue,
     technologies: ["Redis", "BullMQ", "Node.js", "Docker"],
-    challenge: "Processing millions of background tasks (emails, report generation) reliably without data loss during traffic spikes.",
+    challenge: "Making sure millions of tasks (like sending emails) happen reliably without slowing down the site or losing data.",
     solutions: [
       "Decoupled producers and consumers using Redis-backed persistent queues",
       "Implemented an atomic job locking mechanism to prevent race conditions across workers",
@@ -208,7 +227,7 @@ export const TECHNICAL_DEEP_DIVES = [
     title: "Scalable Notification System",
     image: notificationSystem,
     technologies: ["Node.js", "Redis Pub/Sub", "Socket.io", "MongoDB"],
-    challenge: "Delivering ephemeral live notifications to online users while guaranteeing delivery persistence for offline users.",
+    challenge: "Sending live notifications to users when they are online, and making sure they see them later if they were offline.",
     solutions: [
       "Utilized Redis Pub/Sub for horizontal scaling of WebSocket servers (Fan-out)",
       "Implemented a hybrid delivery pipeline: Direct socket push for online, queue for offline",
@@ -219,7 +238,7 @@ export const TECHNICAL_DEEP_DIVES = [
     title: "AI-Powered Content Platform",
     image: aiContentPlatform,
     technologies: ["Next.js", "Gemini AI", "Prisma", "PostgreSQL"],
-    challenge: "Serving personalized AI-generated content at scale while managing costs through rate limiting and caching.",
+    challenge: "Giving users personalized AI content quickly while managing API costs and preventing system overload.",
     solutions: [
       "Credit-based system with Prisma transactions to prevent race conditions",
       "Prompt engineering layer to optimize token usage and response quality",
@@ -230,7 +249,7 @@ export const TECHNICAL_DEEP_DIVES = [
     title: "Low-Latency Voice AI Gateway",
     image: voiceAiGateway,
     technologies: ["WebRTC", "Node.js Streams", "OpenAI Realtime", "Redis"],
-    challenge: "Orchestrating full-duplex voice conversations with AI models while maintaining sub-500ms latency.",
+    challenge: "Making AI voice conversations feel natural with almost zero delay between the user speaking and the AI responding.",
     solutions: [
       "Built a custom Node.js stream pipeline to handle audio buffering and transcoding",
       "Implemented VAD (Voice Activity Detection) to minimize token costs and interrupt latency",
@@ -241,7 +260,7 @@ export const TECHNICAL_DEEP_DIVES = [
     title: "Real-Time User Analytics Engine",
     image: analyticsEngine,
     technologies: ["PostgreSQL", "Node.js", "Redis", "Timescale"],
-    challenge: "Visualizing live user behavior trends across millions of event records with sub-second dashboard load times.",
+    challenge: "Showing live user data trends instantly, even when there are millions of records to analyze.",
     solutions: [
       "Utilized partitioned time-series tables for efficient querying of historical data",
       "Implemented incremental materialized views to pre-aggregate high-cost metrics",

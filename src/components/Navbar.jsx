@@ -17,7 +17,7 @@ const Navbar = () => {
         restDelta: 0.001
     });
 
-    const sections = ["home", "about", "technologies", "project", "certifications", "contact"];
+    const sections = ["home", "about", "project", "certifications", "technologies", "contact"];
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -75,9 +75,9 @@ const Navbar = () => {
                 <div className="hidden md:flex items-center justify-center gap-8 text-lg">
                     <Link to="/" className={location.pathname === "/" && activeSection === "home" ? "text-cyan-400 font-bold transition-colors duration-300" : "text-neutral-300 hover:text-cyan-400 transition-colors duration-300"}>Home</Link>
                     <a href="#about" className={getLinkClasses("about")}>About</a>
-                    <a href="#technologies" className={getLinkClasses("technologies")}>Skills</a>
                     <a href="#project" className={getLinkClasses("project")}>Projects</a>
                     <a href="#certifications" className={getLinkClasses("certifications")}>Certifications</a>
+                    <a href="#technologies" className={getLinkClasses("technologies")}>Skills</a>
                     <Link to="/blog" className={location.pathname === "/blog" ? "text-cyan-400 font-bold transition-colors duration-300" : "text-neutral-300 hover:text-cyan-400 transition-colors duration-300"}>Blog</Link>
                     <a href="#contact" className={getLinkClasses("contact")}>Contact</a>
                 </div>
@@ -96,9 +96,9 @@ const Navbar = () => {
                     <div className="flex flex-col items-center gap-6 text-xl text-white mb-10">
                         <Link to="/" onClick={toggleMenu} className={location.pathname === "/" && activeSection === "home" ? "text-cyan-400 font-bold transition-colors duration-300" : "text-neutral-300 hover:text-cyan-400 transition-colors duration-300"}>Home</Link>
                         <a href="#about" onClick={toggleMenu} className={getLinkClasses("about")}>About</a>
-                        <a href="#technologies" onClick={toggleMenu} className={getLinkClasses("technologies")}>Skills</a>
                         <a href="#project" onClick={toggleMenu} className={getLinkClasses("project")}>Projects</a>
                         <a href="#certifications" onClick={toggleMenu} className={getLinkClasses("certifications")}>Certifications</a>
+                        <a href="#technologies" onClick={toggleMenu} className={getLinkClasses("technologies")}>Skills</a>
                         <Link to="/blog" onClick={toggleMenu} className={location.pathname === "/blog" ? "text-cyan-400 font-bold transition-colors duration-300" : "text-neutral-300 hover:text-cyan-400 transition-colors duration-300"}>Blog</Link>
                         <a href="#contact" onClick={toggleMenu} className={getLinkClasses("contact")}>Contact</a>
                     </div>
