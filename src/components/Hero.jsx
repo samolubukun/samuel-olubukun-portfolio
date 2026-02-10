@@ -47,7 +47,7 @@ const Hero = () => {
             variants={container(1.5)}
             initial="hidden"
             animate="visible"
-            href="/samuel_olubukun_resume.pdf"
+            href={resumePdf}
             className="hidden lg:inline-block mt-6 mb-8 md:mb-0 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
           >
             My Resume
@@ -69,7 +69,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
-            href="/samuel_olubukun_resume.pdf"
+            href={resumePdf}
             className="lg:hidden mt-8 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
           >
             My Resume

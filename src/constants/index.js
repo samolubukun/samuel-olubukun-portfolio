@@ -21,10 +21,9 @@ import aiContentPlatform from "../assets/deep-dives/ai-content-platform.png";
 import voiceAiGateway from "../assets/deep-dives/voice-ai-gateway.png";
 import analyticsEngine from "../assets/deep-dives/analytics-engine.png";
 
-export const HERO_CONTENT = `I create modern web applications and data-driven solutions, specializing in full-stack development, data science, and AI/ML. My work focuses on building scalable systems that tackle real-world challenges with innovative, impactful results.`;
-export const ABOUT_TEXT = `Hi! I'm Samuel Olubukun, a Full Stack AI/ML Engineer passionate about creating intelligent, modern web solutions. I have strong skills and experience in data science, artificial intelligence, and machine learning, and have built several projects that showcase the blend of web development and AI innovation.
+export const HERO_CONTENT = `I’m Samuel Olubukun, a Full-Stack AI/ML Engineer. My expertise spans specializing in frontend and backend development, data science, and applied artificial intelligence.
 
-I enjoy working across frontend, backend, and AI systems, combining creativity, problem-solving, and technical precision to build seamless and impactful applications. I'm continuously learning and applying new technologies to develop smarter solutions that deliver real value and meaningful user experiences.`;
+I build modern software systems that integrate AI models, intelligent agents, and automation workflows into real-world applications.`;
 
 
 export const PROJECTS = [
@@ -276,5 +275,3 @@ export const CONTACT = {
   phoneNo: "+234 8083273795",
   email: "samuelolubukun@gmail.com",
 };
-
-

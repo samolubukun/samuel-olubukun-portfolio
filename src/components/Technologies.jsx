@@ -1,247 +1,84 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb, SiTensorflow, SiFastapi, SiExpress, SiMysql, SiTailwindcss, SiGooglecloud, SiNextdotjs, SiTypescript, SiDocker } from "react-icons/si";
-import { FaNodeJs, FaJava, FaPython, FaGitAlt, FaGithub, FaBootstrap } from "react-icons/fa";
-import { BiLogoPhp, BiLogoDjango } from "react-icons/bi";
-import { AiOutlineHtml5 } from "react-icons/ai";
-import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
-import { MdScience } from "react-icons/md";
-import { animate, motion } from "framer-motion";
-import { SiPytorch } from "react-icons/si";
-import { TbNotebook } from "react-icons/tb";
+import { motion } from "framer-motion";
 
-const iconVariants = (duration) => ({
-  initial: { y: -10 },
-  animate: {
-    y: [10, -10],
+const techCategories = [
+  {
+    name: "Languages",
+    skills: ["Python", "JavaScript", "TypeScript", "PHP", "Java", "SQL", "HTML", "CSS"],
+    color: "text-blue-400",
+  },
+  {
+    name: "Frameworks",
+    skills: ["React", "Next.js", "Node.js", "Express.js", "FastAPI", "Flask", "Django", "Tailwind CSS", "Bootstrap"],
+    color: "text-green-400",
+  },
+  {
+    name: "AI & Data Science",
+    skills: ["Generative AI", "Autonomous AI Agents", "Multi-Agent Systems", "Agentic Workflows", "RAG Pipelines", "Vector Databases", "Prompt Engineering", "OpenAI", "Gemini", "Deep Learning", "NLP", "Machine Learning", "Scikit-learn", "TensorFlow", "PyTorch", "Hugging Face"],
+    color: "text-orange-400",
+  },
+  {
+    name: "Tools & Databases",
+    skills: ["Git", "GitHub", "Docker", "Google Cloud Platform", "MongoDB", "PostgreSQL", "MySQL", "VS Code", "Jupyter Notebook"],
+    color: "text-purple-400",
+  },
+];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
     transition: {
-      duration: duration,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "reverse",
+      staggerChildren: 0.05,
     },
   },
-});
+};
+
+const itemVariants = {
+  hidden: { x: -10, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-12">
+    <div className="border-b border-neutral-800 pb-24">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-10 text-center text-4xl"
+        className="my-20 text-center text-4xl"
       >
-        Technologies
+        Technologies & Skills
       </motion.h2>
-      <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 gap-2 justify-items-center items-center"
-      >
-        {/* Front-end */}
-        <motion.div
-          variants={iconVariants(3.2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <AiOutlineHtml5 className="text-2xl sm:text-3xl text-orange-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3.2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <IoLogoCss3 className="text-2xl sm:text-3xl text-blue-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3.2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <IoLogoJavascript className="text-2xl sm:text-3xl text-yellow-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <RiReactjsLine className="text-2xl sm:text-3xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiNextdotjs className="text-2xl sm:text-3xl text-gray-200" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiTypescript className="text-2xl sm:text-3xl text-blue-600" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3.8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiTailwindcss className="text-2xl sm:text-3xl text-sky-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4.2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <FaBootstrap className="text-2xl sm:text-3xl text-purple-600" />
-        </motion.div>
-
-        {/* Back-end */}
-        <motion.div
-          variants={iconVariants(2.8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <FaNodeJs className="text-2xl sm:text-3xl text-green-600" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2.8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiExpress className="text-2xl sm:text-3xl text-lime-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <FaPython className="text-2xl sm:text-3xl text-yellow-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <BiLogoDjango className="text-2xl sm:text-3xl text-green-700" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiFastapi className="text-2xl sm:text-3xl text-teal-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <BiLogoPhp className="text-2xl sm:text-3xl text-sky-700" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(5.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <FaJava className="text-2xl sm:text-3xl text-red-500" />
-        </motion.div>
-
-        {/* Databases */}
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiMongodb className="text-2xl sm:text-3xl text-green-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiMysql className="text-2xl sm:text-3xl text-blue-600" />
-        </motion.div>
-
-        {/* AI/ML/Data Science */}
-        <motion.div
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiTensorflow className="text-2xl sm:text-3xl text-orange-600" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiDocker className="text-2xl sm:text-3xl text-blue-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(5.2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiPytorch className="text-2xl sm:text-3xl text-red-500" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(6.2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <TbNotebook className="text-2xl sm:text-3xl text-indigo-500" />
-        </motion.div>
-
-        {/* DevOps/Other */}
-        <motion.div
-          variants={iconVariants(3.6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <SiGooglecloud className="text-2xl sm:text-3xl text-blue-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4.6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <FaGitAlt className="text-2xl sm:text-3xl text-orange-700" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(5.6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-lg border border-neutral-800 p-1.5 sm:p-2"
-        >
-          <FaGithub className="text-2xl sm:text-3xl text-neutral-300" />
-        </motion.div>
-      </motion.div>
+      <div className="flex flex-col gap-8 px-4 max-w-6xl mx-auto">
+        {techCategories.map((category, index) => (
+          <motion.div
+            key={index}
+            whileInView="visible"
+            initial="hidden"
+            variants={containerVariants}
+            className="flex flex-col md:flex-row md:items-start gap-3 md:gap-6"
+          >
+            <h3 className={`w-full md:w-1/5 text-lg md:text-xl font-bold ${category.color} border-l-2 border-current pl-3 md:mt-1`}>
+              {category.name}
+            </h3>
+            <div className="flex flex-wrap gap-2 w-full md:w-4/5 items-start">
+              {category.skills.map((skill, sIndex) => (
+                <motion.span
+                  key={sIndex}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.05)" }}
+                  className="rounded border border-neutral-800 bg-neutral-900/30 px-2 py-1 text-xs md:text-sm font-medium text-neutral-400 transition-all hover:border-cyan-500/50 hover:text-cyan-400 cursor-default whitespace-nowrap"
+                >
+                  {skill}
+                </motion.span>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };

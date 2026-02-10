@@ -1,4 +1,3 @@
-import About from "../components/About";
 import Expertise from "../components/Expertise";
 import Hero from "../components/Hero";
 import Project from "../components/Project";
@@ -13,9 +12,6 @@ const HomePage = () => {
         <>
             <section id="home">
                 <Hero />
-            </section>
-            <section id="about">
-                <About />
             </section>
             <section id="expertise">
                 <Expertise />
