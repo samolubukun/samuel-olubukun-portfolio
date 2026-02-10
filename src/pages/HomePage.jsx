@@ -19,14 +19,14 @@ const HomePage = () => {
             <section id="project" style={{ scrollMarginTop: '3cm' }}>
                 <Project />
             </section>
+            <section id="technologies" style={{ scrollMarginTop: '3cm' }}>
+                <Technologies />
+            </section>
             <section id="certifications" style={{ scrollMarginTop: '3cm' }}>
                 <Certifications />
             </section>
             <section id="deep-dives" style={{ scrollMarginTop: '3cm' }}>
                 <TechnicalDeepDives />
-            </section>
-            <section id="technologies" style={{ scrollMarginTop: '3cm' }}>
-                <Technologies />
             </section>
             <section id="contact">
                 <Contact />
