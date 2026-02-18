@@ -10,6 +10,8 @@ import mentora from "../assets/projects/mentora.jpg";
 import restoirhealth from "../assets/projects/restoirhealth.png";
 import thrivepath from "../assets/projects/thrivepath.jpg";
 import dabaras from "../assets/projects/dabaras.jpg";
+import contentnova from "../assets/projects/contentnova.png";
+import commitpulse from "../assets/projects/commitpulse.png";
 
 // Deep Dives
 // Deep Dives
@@ -27,6 +29,29 @@ I build modern software systems that integrate AI models, intelligent agents, an
 
 
 export const PROJECTS = [
+  {
+    title: "ContentNova",
+    link: "https://www.contentnova.app/",
+    image: contentnova,
+    description:
+      "An AI-powered creator workspace unifying ideation, creation, repurposing, planning, publishing, and tracking across six platforms. I engineered the platform to automate distribution and scale content production, cutting manual effort by 85% while maintaining a seamless end-to-end workflow.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Gemini",
+      "Deepgram",
+      "Hugging Face",
+      "DigitalOcean Spaces",
+      "Creem",
+      "FFmpeg",
+      "Framer Motion",
+      "AI Orchestration",
+      "Distributed Workers",
+    ],
+  },
   {
     title: "Meerahzz Bridals",
     link: "http://meerahzzbridals.com/",
@@ -62,6 +87,13 @@ export const PROJECTS = [
     image: mentora,
     description: "Your personal AI voice coach for mastering high-stakes communication. From public speaking and storytelling to social mastery and conflict resolution, it provides real-time feedback to help you communicate with confidence and impact.",
     technologies: ["Python", "FastAPI", "LiveKit", "Deepgram", "OpenAI", "Prisma", "TailwindCSS"],
+  },
+  {
+    title: "CommitPulse",
+    link: "http://commitpulse.pxxl.click/",
+    image: commitpulse,
+    description: "A dual-component system featuring a PyPI package that crawls local Git metadata and a cloud platform for visualizing engineering impact. It allows developers to showcase hidden contributions from private and organizational repositories with premium analytics dashboards.",
+    technologies: ["Python", "Next.js", "React", "PostgreSQL", "Drizzle", "Tailwind CSS"],
   },
   {
     title: "VOCAL VISTA",
