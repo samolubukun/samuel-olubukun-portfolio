@@ -41,7 +41,7 @@ export const PROJECTS = [
     title: "Dabara Prep",
     link: "https://dabaraprep.dabaras.com",
     image: dabaraprep,
-    description: "A learning platform with AI-powered features designed for the Nigerian SSCE students. It features a multi-modal Socratic AI tutor for guided academic mastery, collaborative 'Dabara Circles' for community-driven resource sharing, and a robust suite of productivity tools—including a gamified Study Marathon and intelligent progress tracker—to foster elite study habits.",
+    description: "A learning platform with AI-powered features designed for the Nigerian SSCE students. It features a multi-modal Socratic AI tutor for guided academic mastery, collaborative Dabara Circle for community-driven resource sharing, and a robust suite of productivity tools including a gamified Study Marathon and intelligent progress tracker to foster elite study habits.",
     technologies: ["Next.js", "React", "Convex", "Stack Auth", "Gemini AI", "TailwindCSS", "Node.js"],
   },
   {
