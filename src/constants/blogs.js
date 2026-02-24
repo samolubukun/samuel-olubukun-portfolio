@@ -2254,5 +2254,59 @@ Event-driven architecture is essential for scalable systems.
 4. Scale workers based on load
 
 **Remember**: Events enable loose coupling. Design for failure, handle retries, and always use dead letter queues.`
+  },
+  {
+    id: 10,
+    slug: "creem-convex-integration",
+    title: "Creem Convex Integration: Real-Time Payments Simplified",
+    excerpt: "Discover how to integrate Creem payments with Convex for a seamless, type-safe, and reactive payment experience in your TypeScript applications.",
+    category: "Full-Stack",
+    date: "2026-02-24",
+    readTime: "6 min read",
+    tags: ["Convex", "Creem", "TypeScript", "Payments", "Real-Time"],
+    content: `# Creem Convex Integration: Real-Time Payments Simplified
+
+Payment processing is often one of the most complex parts of any application. Handling webhooks, managing subscription states, and ensuring your frontend reflects the latest payment status in real-time can be a major headache.
+
+In my latest project, I built a comprehensive integration between **Creem** and **Convex** to solve these exact problems.
+
+## Why Creem and Convex?
+
+**[Creem](https://creem.io)** is a modern payment processor designed for developers who want simplicity without sacrificing power. It handles the heavy lifting of global payments and subscriptions.
+
+**[Convex](https://convex.dev)** is a reactive backend-as-a-service that makes it incredibly easy to build real-time applications. Combining the two allows for a payment flow that feels instant and is robustly type-safe.
+
+## Key Technical Features
+
+### 1. Zero-Latency Reactivity
+By using Convex's reactive queries, the frontend automatically updates as soon as a payment is processed. No more "Payment Pending" screens that require a refresh; the UI updates the moment the webhook hits the backend.
+
+### 2. Strict Type Safety
+The integration is built with **Strict TypeScript**. There are no \`any\` leaks, ensuring that your payment logic is caught by the compiler before it ever hits production.
+
+### 3. Secure Multi-Step Webhooks
+Security is paramount. The integration includes HMAC-SHA256 signature verification with timestamp tolerance to protect against replay attacks and ensure all incoming data is legitimate.
+
+## Developer Experience First
+
+I designed this to be a drop-in solution. With custom React hooks like \`useCreemCheckout\` and \`usePaymentStatus\`, you can trigger a checkout flow and monitor its progress with just a few lines of code:
+
+\\\`\\\`\\\`tsx
+const { createCheckout, isLoading } = useCreemCheckout();
+
+const handleBuy = async () => {
+  const { checkoutUrl } = await createCheckout({ productId: "..." });
+  if (checkoutUrl) window.location.href = checkoutUrl;
+};
+\\\`\\\`\\\`
+
+## Open Source and Ready to Use
+
+I've made the entire integration open-source. You can use it as a starter template or copy the specific components you need into your existing Convex project.
+
+**Source Code**: [Creem-Convex on GitHub](https://github.com/samolubukun/Creem-Convex)
+
+Whether you're building a SaaS platform or an e-commerce store, this integration provides a solid foundation for handling payments at scale with modern tools.
+`
   }
 ];

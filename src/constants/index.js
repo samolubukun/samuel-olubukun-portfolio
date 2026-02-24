@@ -1,6 +1,5 @@
 ﻿import meerahzz from "../assets/projects/meerahzz.png";
 import project3 from "../assets/projects/project-3.jpg";
-import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project9 from "../assets/projects/project-9.jpg";
 import voxeval from "../assets/projects/voxeval.jpg";
@@ -12,6 +11,7 @@ import thrivepath from "../assets/projects/thrivepath.jpg";
 import dabaras from "../assets/projects/dabaras.jpg";
 import contentnova from "../assets/projects/contentnova.png";
 import commitpulse from "../assets/projects/commitpulse.png";
+import dabaraprep from "../assets/projects/dabaraprep.png";
 
 // Deep Dives
 // Deep Dives
@@ -35,22 +35,14 @@ export const PROJECTS = [
     image: contentnova,
     description:
       "An AI-powered creator workspace unifying ideation, creation, repurposing, planning, publishing, and tracking across six platforms. I engineered the platform to automate distribution and scale content production, cutting manual effort by 85% while maintaining a seamless end-to-end workflow.",
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "Gemini",
-      "Deepgram",
-      "Hugging Face",
-      "DigitalOcean Spaces",
-      "Creem",
-      "FFmpeg",
-      "Framer Motion",
-      "AI Orchestration",
-      "Distributed Workers",
-    ],
+    technologies: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Gemini", "Deepgram", "Hugging Face", "DigitalOcean Spaces", "Creem", "FFmpeg", "Framer Motion", "AI Orchestration", "Distributed Workers"],
+  },
+  {
+    title: "Dabara Prep",
+    link: "https://dabaraprep.dabaras.com",
+    image: dabaraprep,
+    description: "A learning platform with AI-powered features designed for the Nigerian SSCE students. It features a multi-modal Socratic AI tutor for guided academic mastery, collaborative 'Dabara Circles' for community-driven resource sharing, and a robust suite of productivity tools—including a gamified Study Marathon and intelligent progress tracker—to foster elite study habits.",
+    technologies: ["Next.js", "React", "Convex", "Stack Auth", "Gemini AI", "TailwindCSS", "Node.js"],
   },
   {
     title: "Meerahzz Bridals",
@@ -58,7 +50,7 @@ export const PROJECTS = [
     image: meerahzz,
     description:
       "A boutique online store helping brides find the perfect accessories. I built a smooth shopping experience with secure payments and an easy-to-use inventory system for the shop owner.",
-    technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "Paystack API"],
+    technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "Paystack"],
   },
   {
     title: "ThrivePath Psychiatry",
@@ -125,15 +117,6 @@ export const PROJECTS = [
     image: project9,
     description: "A modern social platform built for community engagement. It features real-time notifications, media sharing, and everything you need to connect and interact with others.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Clerk", "UploadThing"],
-  },
-
-  {
-    title: "Ecommerce Platform",
-    link: "https://github.com/samolubukun/EcommerceApp-MERN",
-    image: project5,
-    description:
-      "A powerful multi-seller online store. I built it to handle high-volume sales with a clean dashboard for managing inventory and a secure checkout process.",
-    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Braintree", "CSS", "HTML"],
   },
 
   // keep remaining projects below (preserve existing entries)
