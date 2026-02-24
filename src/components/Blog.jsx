@@ -9,9 +9,10 @@ const Blog = () => {
 
     const categories = ["All", "AI/ML", "Full-Stack", "System Design"];
 
-    const filteredPosts = selectedCategory === "All"
+    const filteredPosts = (selectedCategory === "All"
         ? BLOG_POSTS
-        : BLOG_POSTS.filter(post => post.category === selectedCategory);
+        : BLOG_POSTS.filter(post => post.category === selectedCategory))
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
 
     return (
         <div className="border-b border-neutral-900 pb-20">
