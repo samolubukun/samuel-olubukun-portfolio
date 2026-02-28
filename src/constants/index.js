@@ -12,6 +12,7 @@ import dabaras from "../assets/projects/dabaras.jpg";
 import contentnova from "../assets/projects/contentnova.png";
 import commitpulse from "../assets/projects/commitpulse.png";
 import dabaraprep from "../assets/projects/dabaraprep.png";
+import pdfaxis from "../assets/projects/pdfaxis.png";
 
 // Deep Dives
 // Deep Dives
@@ -77,8 +78,15 @@ export const PROJECTS = [
     title: "Mentora",
     link: "https://samuelolubukun-mentora.hf.space",
     image: mentora,
-    description: "Your personal AI voice coach for mastering high-stakes communication. From public speaking and storytelling to social mastery and conflict resolution, it provides real-time feedback to help you communicate with confidence and impact.",
+    description: "An AI voice coaching platform for mastering high-stakes communication. From public speaking and storytelling to social mastery and conflict resolution, it provides real-time feedback to help you communicate with confidence and impact.",
     technologies: ["Python", "FastAPI", "LiveKit", "Deepgram", "OpenAI", "Prisma", "TailwindCSS"],
+  },
+  {
+    title: "PDFAxis",
+    link: "https://pdfaxis.dabaras.com",
+    image: pdfaxis,
+    description: "A high-performance PDF platform ensuring absolute privacy with 100% local processing. It features professional tools that manage sensitive documents with zero data leakage, achieving enterprise-grade speed, 100% security, reliability.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "WASM", "WebAssembly"],
   },
   {
     title: "CommitPulse",

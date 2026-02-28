@@ -2306,7 +2306,7 @@ I've made the entire integration open-source. You can use it as a starter templa
 
 **Source Code**: [Creem-Convex on GitHub](https://github.com/samolubukun/Creem-Convex)
 
-Whether you're building a SaaS platform or an e-commerce store, this integration provides a solid foundation for handling payments at scale with modern tools.
+Whether you're building a SaaS platform, a digital product marketplace, or a developer tool, this integration provides a solid foundation for handling global payments at scale with modern tools.
 `
   }
 ];
