@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.samuelolubukun.com/sitemap.xml
+
+# Full-Stack AI/ML Engineer
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

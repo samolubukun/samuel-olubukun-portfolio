@@ -3,7 +3,8 @@ import project3 from "../assets/projects/project-3.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project9 from "../assets/projects/project-9.jpg";
 import voxeval from "../assets/projects/voxeval.jpg";
-import careerprofilegem from "../assets/projects/careerprofilegem.png";
+import dealspotng from "../assets/projects/dealspotng.png";
+import zenithmeet from "../assets/projects/zenithmeet.png";
 import vocalvista from "../assets/projects/vocalvista.png";
 import mentora from "../assets/projects/mentora.jpg";
 import restoirhealth from "../assets/projects/restoirhealth.png";
@@ -104,19 +105,27 @@ export const PROJECTS = [
   },
 
   {
+    "title": "DealSpotNG",
+    "link": "http://dealspotng.dabaras.com",
+    "image": dealspotng,
+    "description": "A high-performance classifieds marketplace tailored for the Nigerian market. It features a real-time negotiation system with price history tracking, advanced geolocation discovery, and a comprehensive admin suite for ad moderation and user verification.",
+    "technologies": ["React", "Firebase Auth", "Firestore", "Cloud Storage", "Bootstrap", "React Helmet"]
+  },
+
+  {
+    "title": "ZenithMeet",
+    "link": "https://zenithmeet.samuelolubukun.workers.dev",
+    "image": zenithmeet,
+    "description": "A premium video conferencing platform built for high-end enterprise collaboration. Utilizing ultra-low latency infrastructure, it provides encrypted meeting rooms, role-based access controls, and a minimalist celestial-inspired UI for focused professional communication.",
+    "technologies": ["React", "TypeScript", "Tailwind CSS", "Cloudflare Workers", "RealtimeKit", "Vite"]
+  },
+
+  {
     title: "VoxEval",
     link: "https://voxeval.netlify.app/",
     image: voxeval,
     description: "An AI mock-interview platform that conducts voice-first interviews. It listens to your answers, transcribes them in real-time, and uses AI to give you instant feedback, helping you master your interviewing skills.",
     technologies: ["Next.js", "Supabase", "Google Gemini", "Deepgram", "Web Speech API", "Tailwind CSS"],
-  },
-
-  {
-    title: "CAREERPROFILE GEM",
-    link: "https://github.com/samolubukun/CareerProfileGEM",
-    image: careerprofilegem,
-    description: "An AI tool that helps you land more interviews. It builds high-quality resumes and cover letters tailored to your profile, making the job hunt much easier.",
-    technologies: ["Wasp", "React", "TypeScript", "Prisma", "Google Gemini", "Stripe"],
   },
 
   {
