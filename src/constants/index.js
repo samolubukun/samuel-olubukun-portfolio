@@ -76,6 +76,20 @@ export const PROJECTS = [
     technologies: ["Next.js", "React", "TailwindCSS", "Gemini Vision", "Convex", "Stack Auth", "Node.js"],
   },
   {
+    title: "DealSpotNG",
+    link: "http://dealspotng.dabaras.com",
+    image: dealspotng,
+    description: "A high-performance classifieds marketplace tailored for the Nigerian market. It features a real-time negotiation system with price history tracking, advanced geolocation discovery, and a comprehensive admin suite for ad moderation and user verification.",
+    technologies: ["React", "Firebase Auth", "Firestore", "Cloud Storage", "Bootstrap", "React Helmet"]
+  },
+  {
+    title: "ZenithMeet",
+    link: "https://zenithmeet.samuelolubukun.workers.dev",
+    image: zenithmeet,
+    description: "A premium video conferencing platform built for high-end enterprise collaboration. Utilizing ultra-low latency infrastructure, it provides encrypted meeting rooms, role-based access controls, and a minimalist celestial-inspired UI for focused professional communication.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Cloudflare Workers", "RealtimeKit", "Vite"]
+  },
+  {
     title: "Mentora",
     link: "https://samuelolubukun-mentora.hf.space",
     image: mentora,
@@ -105,22 +119,7 @@ export const PROJECTS = [
   },
 
   {
-    "title": "DealSpotNG",
-    "link": "http://dealspotng.dabaras.com",
-    "image": dealspotng,
-    "description": "A high-performance classifieds marketplace tailored for the Nigerian market. It features a real-time negotiation system with price history tracking, advanced geolocation discovery, and a comprehensive admin suite for ad moderation and user verification.",
-    "technologies": ["React", "Firebase Auth", "Firestore", "Cloud Storage", "Bootstrap", "React Helmet"]
-  },
 
-  {
-    "title": "ZenithMeet",
-    "link": "https://zenithmeet.samuelolubukun.workers.dev",
-    "image": zenithmeet,
-    "description": "A premium video conferencing platform built for high-end enterprise collaboration. Utilizing ultra-low latency infrastructure, it provides encrypted meeting rooms, role-based access controls, and a minimalist celestial-inspired UI for focused professional communication.",
-    "technologies": ["React", "TypeScript", "Tailwind CSS", "Cloudflare Workers", "RealtimeKit", "Vite"]
-  },
-
-  {
     title: "VoxEval",
     link: "https://voxeval.netlify.app/",
     image: voxeval,
