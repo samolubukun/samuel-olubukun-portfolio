@@ -19,13 +19,10 @@ import ainewsroomcrew from "../assets/projects/ainewsroomcrew.png";
 
 // Deep Dives
 // Deep Dives
-import multiTenantSaas from "../assets/deep-dives/multi-tenant-saas.png";
-import advancedRag from "../assets/deep-dives/advanced-rag.png";
-import distributedJobQueue from "../assets/deep-dives/distributed-job-queue.png";
-import notificationSystem from "../assets/deep-dives/notification-system.png";
-import aiContentPlatform from "../assets/deep-dives/ai-content-platform.png";
-import voiceAiGateway from "../assets/deep-dives/voice-ai-gateway.png";
-import analyticsEngine from "../assets/deep-dives/analytics-engine.png";
+import nextjssupabase from "../assets/deep-dives/nextjssupabase creemsaas.png";
+import ainewsroomcrewDeep from "../assets/deep-dives/ainewsroomcrew.png";
+import videoclipperai from "../assets/deep-dives/videoclipperai.png";
+import zenithmeetDeep from "../assets/deep-dives/zenithmeet.png";
 
 export const HERO_CONTENT = `I’m Samuel Olubukun, a Full-Stack AI/ML Engineer. My expertise spans specializing in frontend and backend development, data science, and applied artificial intelligence.
 
@@ -237,80 +234,47 @@ export const CERTIFICATIONS = [
 
 export const TECHNICAL_DEEP_DIVES = [
   {
-    title: "Multi-Tenant SaaS Architecture",
-    image: multiTenantSaas,
-    technologies: ["Next.js", "Prisma", "PostgreSQL", "Stack Auth"],
-    challenge: "Keeping different customers' data separate and secure while sharing the same system to keep costs low.",
+    title: "Next.js & Supabase SaaS Architecture (Creem)",
+    image: nextjssupabase,
+    technologies: ["Next.js 15", "Supabase", "React 19", "BullMQ", "Drizzle ORM", "Resend", "Better Stack"],
+    challenge: "Building a high-performance, scalable SaaS foundation that handles complex background jobs and consistent data state across global users.",
     solutions: [
-      "PostgreSQL Row-Level Security (RLS) policies to enforce tenant data isolation",
-      "Workspace scoping with middleware that injects tenant context into all queries",
-      "Stack Auth integration with custom claims to identify tenant and user permissions"
+      "Architected an async background environment using BullMQ and Redis to decouple heavy processes like billing and webhooks from the main UI thread.",
+      "Utilized Supabase with Row Level Security (RLS) and Drizzle ORM for type-safe, secure database interactions and efficient migrations.",
+      "Integrated a unified logging and observability stack with Better Stack and PostHog to track lifecycle events and system health in real-time."
     ]
   },
   {
-    title: "Advanced RAG Pipeline",
-    image: advancedRag,
-    technologies: ["LangChain", "Pinecone", "Cohere", "Python"],
-    challenge: "Making sure the AI finds the right information in a huge pile of documents, even when the questions are complicated.",
+    title: "AI Newsroom Crew: Multi-Agent Content Pipeline",
+    image: ainewsroomcrewDeep,
+    technologies: ["Gemini 2.5", "Next.js", "Upstash Redis", "Deepgram Aura", "Crawl4AI", "Neon PostgreSQL"],
+    challenge: "Automating the end-to-end process of news discovery, fact-checking, and multi-modal distribution (articles and podcasts) without losing editorial nuance.",
     solutions: [
-      "Implemented hybrid search combining sparse (BM25) and dense vector retrieval",
-      "Added a re-ranking step using Cohere to prioritize context relevancy before LLM ingestion",
-      "Designed a sliding context window strategy to handle token limits effectively"
+      "Implemented a 6-agent hierarchical crew using Gemini 2.5 to handle specialized tasks from web research to conversational script generation.",
+      "Integrated a Redis-backed queue system to manage asynchronous ingestion and agent orchestration reliably.",
+      "Deployed Deepgram Aura for high-speed text-to-speech production, enabling near-instant audio versions of researched news stories."
     ]
   },
   {
-    title: "Distributed Job Queue",
-    image: distributedJobQueue,
-    technologies: ["Redis", "BullMQ", "Node.js", "Docker"],
-    challenge: "Making sure millions of tasks (like sending emails) happen reliably without slowing down the site or losing data.",
+    title: "NovaClipper AI: Viral Short-Form Video Engine",
+    image: videoclipperai,
+    technologies: ["Gemini 2.5 Flash-Lite", "FFmpeg.wasm", "Deepgram", "TensorFlow.js", "Face-api.js", "IndexedDB"],
+    challenge: "Processing long-form video content to identify and render viral short-form clips entirely within the browser to reduce server costs and latency.",
     solutions: [
-      "Decoupled producers and consumers using Redis-backed persistent queues",
-      "Implemented an atomic job locking mechanism to prevent race conditions across workers",
-      "Configured exponential backoff retries and dead letter queues for failed tasks"
+      "Leveraged FFmpeg.wasm and browser-native Audio Extraction to perform heavy video manipulation on the client side.",
+      "Used Gemini 2.5 Flash-Lite for intelligent 'hook' detection and viral moment identification via timestamped transcripts.",
+      "Implemented client-side AI tracking using Face-api.js to ensure speakers remain centered in 9:16 vertical crops during the rendering process."
     ]
   },
   {
-    title: "Scalable Notification System",
-    image: notificationSystem,
-    technologies: ["Node.js", "Redis Pub/Sub", "Socket.io", "MongoDB"],
-    challenge: "Sending live notifications to users when they are online, and making sure they see them later if they were offline.",
+    title: "Zenith Meet: Edge-Optimized Video Conferencing",
+    image: zenithmeetDeep,
+    technologies: ["Cloudflare Workers", "WebRTC", "Cloudflare Realtime Kit", "JWT Auth", "React", "Signal Service"],
+    challenge: "Providing low-latency, secure video communication with global scalability without the overhead of traditional centralized media servers.",
     solutions: [
-      "Utilized Redis Pub/Sub for horizontal scaling of WebSocket servers (Fan-out)",
-      "Implemented a hybrid delivery pipeline: Direct socket push for online, queue for offline",
-      "Designed a batch-write strategy for MongoDB to handle high-throughput log storage"
-    ]
-  },
-  {
-    title: "AI-Powered Content Platform",
-    image: aiContentPlatform,
-    technologies: ["Next.js", "Gemini AI", "Prisma", "PostgreSQL"],
-    challenge: "Giving users personalized AI content quickly while managing API costs and preventing system overload.",
-    solutions: [
-      "Credit-based system with Prisma transactions to prevent race conditions",
-      "Prompt engineering layer to optimize token usage and response quality",
-      "Redis caching strategy for frequently requested AI responses to reduce API calls"
-    ]
-  },
-  {
-    title: "Low-Latency Voice AI Gateway",
-    image: voiceAiGateway,
-    technologies: ["WebRTC", "Node.js Streams", "OpenAI Realtime", "Redis"],
-    challenge: "Making AI voice conversations feel natural with almost zero delay between the user speaking and the AI responding.",
-    solutions: [
-      "Built a custom Node.js stream pipeline to handle audio buffering and transcoding",
-      "Implemented VAD (Voice Activity Detection) to minimize token costs and interrupt latency",
-      "Optimized WebSocket packet sizes for real-time streaming reliability"
-    ]
-  },
-  {
-    title: "Real-Time User Analytics Engine",
-    image: analyticsEngine,
-    technologies: ["PostgreSQL", "Node.js", "Redis", "Timescale"],
-    challenge: "Showing live user data trends instantly, even when there are millions of records to analyze.",
-    solutions: [
-      "Utilized partitioned time-series tables for efficient querying of historical data",
-      "Implemented incremental materialized views to pre-aggregate high-cost metrics",
-      "Designed a multi-layered caching strategy for dashboard API endpoints"
+      "Deployed a Worker-based backend on Cloudflare's edge to handle authentication and meeting orchestration with minimal cold-start latency.",
+      "Integrated Cloudflare Realtime Kit and an SFU (Selective Forwarding Unit) global network to optimize WebRTC media stream routing.",
+      "Implemented a dual-layer security model using Cloudflare API Tokens and JWT-based session authorization for secure meeting access."
     ]
   }
 ];
