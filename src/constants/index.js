@@ -14,6 +14,8 @@ import contentnova from "../assets/projects/contentnova.png";
 import commitpulse from "../assets/projects/commitpulse.png";
 import dabaraprep from "../assets/projects/dabaraprep.png";
 import pdfaxis from "../assets/projects/pdfaxis.png";
+import novaclipperai from "../assets/projects/novaclipperai.png";
+import ainewsroomcrew from "../assets/projects/ainewsroomcrew.png";
 
 // Deep Dives
 // Deep Dives
@@ -38,6 +40,20 @@ export const PROJECTS = [
     description:
       "An AI-powered creator workspace unifying ideation, creation, repurposing, planning, publishing, and tracking across six platforms. I engineered the platform to automate distribution and scale content production, cutting manual effort by 85% while maintaining a seamless end-to-end workflow.",
     technologies: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Gemini", "Deepgram", "Hugging Face", "DigitalOcean Spaces", "Creem", "FFmpeg", "Framer Motion", "AI Orchestration", "Distributed Workers"],
+  },
+  {
+    title: "Nova Clipper AI",
+    link: "https://samuelolubukun-novaclipperai.hf.space/",
+    image: novaclipperai,
+    description: "Nova Video Clipper is an advanced browser-native platform for repurposing long-form video into high-impact shorts. Drop a podcast, interview, or presentation into the browser and get back ready-to-post clips with premium captions, dynamic AI face tracking, and smart cropping. Everything runs securely via WebAssembly and browser-native AI integrations.",
+    technologies: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "FFmpeg.wasm", "face-api.js", "TensorFlow.js", "Google Gemini", "Deepgram"],
+  },
+  {
+    title: "AI Newsroom Crew",
+    link: "https://autonomous-ai-newsroom-crew.pxxl.click/",
+    image: ainewsroomcrew,
+    description: "AI Newsroom is a fully automated, multi-agent content generation crew targeting the latest in AI Agents, LLM research, and industry developments. By scouring the web for raw data on emerging AI technologies and flawlessly relaying it through a highly specialized crew of agents, it automatically publishes curated daily news roundups alongside ultra-realistic auto-generated podcasts.",
+    technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini 2.5 Flash/Pro", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis"],
   },
   {
     title: "Dabara Prep",
