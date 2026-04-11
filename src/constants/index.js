@@ -54,13 +54,6 @@ export const PROJECTS = [
     technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "Paystack"],
   },
   {
-    title: "ThrivePath Psychiatry",
-    link: "https://thrivepathpsychiatry.com/",
-    image: thrivepath,
-    description: "A professional website for a psychiatry practice designed to build trust. It makes it easy for patients to learn about services and book appointments securely.",
-    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
-  },
-  {
     title: "Restoir Health",
     link: "https://restoir-health.vercel.app",
     image: restoirhealth,
@@ -108,6 +101,13 @@ export const PROJECTS = [
     image: dabaraprep,
     description: "A learning platform with AI-powered features designed for the Nigerian SSCE students. It features a multi-modal Socratic AI tutor for guided academic mastery, collaborative Dabara Circle for community-driven resource sharing, and a robust suite of productivity tools including a gamified Study Marathon and intelligent progress tracker to foster elite study habits.",
     technologies: ["Next.js", "React", "Convex", "Stack Auth", "Gemini AI", "TailwindCSS", "Node.js"],
+  },
+  {
+    title: "ThrivePath Psychiatry",
+    link: "https://thrivepathpsychiatry.com/",
+    image: thrivepath,
+    description: "A professional website for a psychiatry practice designed to build trust. It makes it easy for patients to learn about services and book appointments securely.",
+    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
   },
   {
     title: "PDFAxis",
@@ -234,47 +234,49 @@ export const CERTIFICATIONS = [
 
 export const TECHNICAL_DEEP_DIVES = [
   {
-    title: "Next.js & Supabase SaaS Architecture (Creem)",
+    title: "SaaScreem: Enterprise-Grade Next.js 16 Boilerplate",
     image: nextjssupabase,
-    technologies: ["Next.js 15", "Supabase", "React 19", "BullMQ", "Drizzle ORM", "Resend", "Better Stack"],
-    challenge: "Building a high-performance, scalable SaaS foundation that handles complex background jobs and consistent data state across global users.",
+    technologies: ["Next.js 16", "React 19", "Supabase (Auth/DB/RLS)", "Creem Billing", "BullMQ + ioredis", "Upstash Redis", "Drizzle ORM", "Better Stack", "S3/R2/MinIO"],
+    challenge: "Building a mission-critical SaaS foundation that handles complex billing lifecycles, atomic credit transactions, and high-volume background jobs.",
     solutions: [
-      "Architected an async background environment using BullMQ and Redis to decouple heavy processes like billing and webhooks from the main UI thread.",
-      "Utilized Supabase with Row Level Security (RLS) and Drizzle ORM for type-safe, secure database interactions and efficient migrations.",
-      "Integrated a unified logging and observability stack with Better Stack and PostHog to track lifecycle events and system health in real-time."
+      "Engineered a robust 'Creem' integration for hosted checkouts and idempotent webhook handling of subscription lifecycles, refunds, and license validation (activate/deactivate).",
+      "Architected an atomic 'Credits Wallet' system via Postgres RPC with unlimited-credit sentinel support and an AI assistant with per-response credit deduction logic.",
+      "Implemented a multi-tier 'Async Environment' using BullMQ for retriable jobs (emails/webhooks) and Upstash-powered rate limiting for sensitive endpoints like /api/chat and /api/checkout.",
+      "Optimized performance with Redis cache-aside patterns for MDX blog reads and S3-compatible storage using presigned URLs for secure file metadata management."
     ]
   },
   {
     title: "AI Newsroom Crew: Multi-Agent Content Pipeline",
     image: ainewsroomcrewDeep,
-    technologies: ["Gemini 2.5", "Next.js", "Upstash Redis", "Deepgram Aura", "Crawl4AI", "Neon PostgreSQL"],
-    challenge: "Automating the end-to-end process of news discovery, fact-checking, and multi-modal distribution (articles and podcasts) without losing editorial nuance.",
+    technologies: ["Gemini 2.5", "Next.js 14", "Upstash Redis", "Deepgram Aura", "Crawl4AI / Firecrawl", "Neon PostgreSQL", "DigitalOcean Spaces"],
+    challenge: "Orchestrating an autonomous end-to-end news cycle from raw web signals to high-fidelity audio and long-form articles.",
     solutions: [
-      "Implemented a 6-agent hierarchical crew using Gemini 2.5 to handle specialized tasks from web research to conversational script generation.",
-      "Integrated a Redis-backed queue system to manage asynchronous ingestion and agent orchestration reliably.",
-      "Deployed Deepgram Aura for high-speed text-to-speech production, enabling near-instant audio versions of researched news stories."
+      "Architected a 'Web Ingestion' pipeline using Crawl4AI and Firecrawl that funnels data through an Upstash Redis Queue System for reliable task handoff.",
+      "Developed a 6-Agent AI Newsroom Crew (Investigator, Triage, Editor, Reporter, Podcast Writer, Voice Agent) using Gemini 2.5 to handle research, structured refinement, and Deepgram Aura TTS production.",
+      "Implemented a 'State & Persistence' architecture using Neon PostgreSQL for article metadata and DigitalOcean Spaces for multi-modal asset storage (Audio + Reports)."
     ]
   },
   {
-    title: "NovaClipper AI: Viral Short-Form Video Engine",
-    image: videoclipperai,
-    technologies: ["Gemini 2.5 Flash-Lite", "FFmpeg.wasm", "Deepgram", "TensorFlow.js", "Face-api.js", "IndexedDB"],
-    challenge: "Processing long-form video content to identify and render viral short-form clips entirely within the browser to reduce server costs and latency.",
-    solutions: [
-      "Leveraged FFmpeg.wasm and browser-native Audio Extraction to perform heavy video manipulation on the client side.",
-      "Used Gemini 2.5 Flash-Lite for intelligent 'hook' detection and viral moment identification via timestamped transcripts.",
-      "Implemented client-side AI tracking using Face-api.js to ensure speakers remain centered in 9:16 vertical crops during the rendering process."
-    ]
-  },
-  {
-    title: "Zenith Meet: Edge-Optimized Video Conferencing",
+    title: "Zenith Meet: Edge-Native Realtime Conferencing",
     image: zenithmeetDeep,
-    technologies: ["Cloudflare Workers", "WebRTC", "Cloudflare Realtime Kit", "JWT Auth", "React", "Signal Service"],
-    challenge: "Providing low-latency, secure video communication with global scalability without the overhead of traditional centralized media servers.",
+    technologies: ["Cloudflare Workers", "Cloudflare Realtime Kit", "WebRTC", "Global SFU", "JWT Auth", "React"],
+    challenge: "Constructing a low-latency video infrastructure capable of global scale by processing signaling and media distribution at the network perimeter.",
     solutions: [
-      "Deployed a Worker-based backend on Cloudflare's edge to handle authentication and meeting orchestration with minimal cold-start latency.",
-      "Integrated Cloudflare Realtime Kit and an SFU (Selective Forwarding Unit) global network to optimize WebRTC media stream routing.",
-      "Implemented a dual-layer security model using Cloudflare API Tokens and JWT-based session authorization for secure meeting access."
+      "Deployed a 'Worker Backend' on Cloudflare Edge to handle API routing, token issuance, and static asset serving with sub-millisecond cold starts.",
+      "Leveraged 'Cloudflare Realtime Kit' to create a bidirectional signaling service between the Client-Side Media Engine and a Global SFU network for optimal stream routing.",
+      "Implemented an Edge-level Security Layer for JWT Authentication and CF API Token verification to ensure secure, low-overhead session establishment."
+    ]
+  },
+  {
+    title: "NovaClipper AI: Client-Side Viral Processing Engine",
+    image: videoclipperai,
+    technologies: ["Gemini 2.5 Flash-Lite", "FFmpeg.wasm", "Deepgram", "TensorFlow.js", "Face-api.js", "IndexedDB", "Next.js 15"],
+    challenge: "Eliminating expensive server-side rendering costs and latency by identifying and generating viral clips entirely within the browser context.",
+    solutions: [
+      "Built a 'Client-Side Processing Engine' that leverages browser-native Audio Extraction to feed Deepgram for high-precision, word-level and speaker-level transcription.",
+      "Utilized the Deepgram-generated timestamped transcripts within a Gemini 2.5 Flash-Lite 'AI Decision Layer' to programmatically identify viral hooks and 'viral moments'.",
+      "Architected a local rendering pipeline using FFmpeg.wasm and Face-api.js for real-time face tracking, ensuring 9:16 vertical crops are generated without data leaving the client.",
+      "Optimized storage through a 'Local + Browser State Layer' using IndexedDB and local cache to manage long-form video input and multi-modal project states."
     ]
   }
 ];

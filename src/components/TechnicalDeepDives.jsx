@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { TECHNICAL_DEEP_DIVES } from "../constants";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
 
 const TechnicalDeepDives = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [direction, setDirection] = useState(0);
+    const [selectedImage, setSelectedImage] = useState(null);
 
     const slideVariants = {
         enter: (direction) => ({
@@ -57,8 +58,7 @@ const TechnicalDeepDives = () => {
 
             <div className="container mx-auto px-4 max-w-7xl">
                 <div className="relative">
-                    {/* Grid Layout for Stacking Slides (Solves Height Cutoff) */}
-                    <div className="grid grid-cols-1 grid-rows-1 relative min-h-[600px]">
+                    <div className="grid grid-cols-1 grid-rows-1 relative min-h-[650px] md:min-h-[550px]">
                         <AnimatePresence initial={false} custom={direction} mode="popLayout">
                             <motion.div
                                 key={currentIndex}
@@ -85,12 +85,14 @@ const TechnicalDeepDives = () => {
                                 }}
                                 className="col-start-1 row-start-1 w-full h-full cursor-grab active:cursor-grabbing"
                             >
-                                <CaseStudyCard study={TECHNICAL_DEEP_DIVES[currentIndex]} />
+                                <CaseStudyCard 
+                                    study={TECHNICAL_DEEP_DIVES[currentIndex]} 
+                                    onImageClick={(img) => setSelectedImage(img)}
+                                />
                             </motion.div>
                         </AnimatePresence>
                     </div>
 
-                    {/* Navigation Arrows - Repositioned to sides */}
                     <button
                         onClick={() => paginate(-1)}
                         className="absolute -left-2 md:-left-12 top-1/2 -translate-y-1/2 z-20 bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-700/50 rounded-full p-3 backdrop-blur-md transition-all duration-300 group shadow-xl"
@@ -107,7 +109,6 @@ const TechnicalDeepDives = () => {
                     </button>
                 </div>
 
-                {/* Modern Progress Bar */}
                 <div className="flex justify-center items-center gap-3 mt-12">
                     {TECHNICAL_DEEP_DIVES.map((_, index) => (
                         <button
@@ -116,8 +117,7 @@ const TechnicalDeepDives = () => {
                                 setDirection(index > currentIndex ? 1 : -1);
                                 setCurrentIndex(index);
                             }}
-                            className={`h-1.5 rounded-full transition-all duration-500 relative overflow-hidden ${index === currentIndex ? "w-12 bg-blue-600" : "w-2 bg-neutral-800 hover:bg-neutral-700"
-                                }`}
+                            className={`h-1.5 rounded-full transition-all duration-500 relative overflow-hidden ${index === currentIndex ? "w-12 bg-blue-600" : "w-2 bg-neutral-800 hover:bg-neutral-700"}`}
                         >
                             {index === currentIndex && (
                                 <motion.div
@@ -129,35 +129,75 @@ const TechnicalDeepDives = () => {
                     ))}
                 </div>
             </div>
+
+            <AnimatePresence>
+                {selectedImage && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        <button
+                            className="absolute top-4 right-4 p-2 bg-neutral-800/50 hover:bg-neutral-700 rounded-full text-neutral-400 hover:text-white transition-colors z-50"
+                            onClick={() => setSelectedImage(null)}
+                        >
+                            <X className="w-6 h-6" />
+                        </button>
+                        
+                        <motion.div
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            className="relative max-w-6xl w-full"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <img
+                                src={selectedImage}
+                                alt="Architecture Diagram"
+                                className="w-full h-auto max-h-[90vh] object-contain rounded-lg shadow-2xl"
+                            />
+                        </motion.div>
+
+                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-neutral-400 text-sm">
+                            Click outside or press X to close
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };
 
-const CaseStudyCard = ({ study }) => {
+const CaseStudyCard = ({ study, onImageClick }) => {
     return (
         <div className="h-full bg-neutral-900/40 backdrop-blur-xl border border-neutral-800/60 rounded-3xl overflow-hidden shadow-2xl hover:border-neutral-700/80 transition-colors duration-500">
             <div className="flex flex-col lg:flex-row h-full">
-                {/* Left Column: Visual (Diagram) */}
-                <div className="lg:w-5/12 relative bg-gradient-to-br from-neutral-950/80 to-neutral-900/80 p-6 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-neutral-800/50 group">
+                <div className="lg:w-5/12 relative bg-gradient-to-br from-neutral-950/80 to-neutral-900/80 p-4 md:p-6 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-neutral-800/50 group min-h-[200px] lg:min-h-[500px]">
                     <div className="absolute top-2 left-4 md:top-4 z-10">
                         <div className="px-3 py-1 rounded-full bg-neutral-900/60 border border-neutral-700/50 text-xs font-mono text-neutral-400 backdrop-blur-sm">
                             SYSTEM ARCHITECTURE
                         </div>
                     </div>
 
-                    <div className="relative rounded-xl overflow-hidden shadow-lg border border-neutral-800/50 bg-neutral-950 group-hover:scale-[1.02] transition-transform duration-500 mt-6 md:mt-0">
+                    <div 
+                        className="relative rounded-xl overflow-hidden shadow-lg border border-neutral-800/50 bg-neutral-950 group-hover:scale-[1.02] transition-transform duration-500 mt-8 md:mt-0 cursor-zoom-in h-[150px] lg:h-[350px] flex items-center justify-center"
+                        onClick={() => onImageClick(study.image)}
+                    >
                         <img
                             src={study.image}
                             alt={`${study.title} Architecture`}
-                            className="w-full h-auto object-contain p-2"
+                            className="w-full h-full object-contain p-2 md:p-4"
                             loading="eager"
                         />
-                        {/* Overlay Gradient */}
                         <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/20 to-transparent pointer-events-none"></div>
+                        <div className="absolute bottom-3 right-3 p-2 bg-neutral-900/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                            <ZoomIn className="w-4 h-4 text-neutral-400" />
+                        </div>
                     </div>
                 </div>
 
-                {/* Right Column: Content */}
                 <div className="lg:w-7/12 p-6 md:p-10 flex flex-col">
                     <div className="flex items-start justify-between mb-6">
                         <div>
@@ -178,7 +218,6 @@ const CaseStudyCard = ({ study }) => {
                     </div>
 
                     <div className="space-y-8 flex-grow">
-                        {/* Challenge Section */}
                         <div className="bg-neutral-800/20 rounded-xl p-5 border border-neutral-800/50">
                             <h4 className="flex items-center gap-2 text-sm font-semibold text-orange-400/90 uppercase tracking-wider mb-2">
                                 <span className="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-md shadow-orange-500/50"></span>
@@ -189,7 +228,6 @@ const CaseStudyCard = ({ study }) => {
                             </p>
                         </div>
 
-                        {/* Solutions Section */}
                         <div>
                             <h4 className="flex items-center gap-2 text-sm font-semibold text-emerald-400/90 uppercase tracking-wider mb-4">
                                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-md shadow-emerald-500/50"></span>
