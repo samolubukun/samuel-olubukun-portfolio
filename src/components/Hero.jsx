@@ -23,7 +23,7 @@ const Hero = () => {
             variants={container(0)}
             initial="hidden"
             animate="visible"
-            className="pb-8 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl"
+            className="pb-8 text-6xl font-bold tracking-tight lg:mt-16 lg:text-6xl font-display"
           >
             Samuel Olubukun
           </motion.h1>
@@ -55,14 +55,14 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-full lg:w-5/12 lg:p-8">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center lg:items-end lg:justify-center justify-center">
           <motion.img
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
             src={aboutImg}
             alt="Samuel Olubukun"
-            className="rounded-2xl shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_40px_rgba(56,189,248,0.5)] transition-all duration-500 filter brightness-95 hover:brightness-110 object-cover"
+            className="w-56 h-56 md:w-64 md:h-64 lg:w-96 lg:h-96 lg:ml-8 rounded-full shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_40px_rgba(56,189,248,0.5)] transition-all duration-500 filter brightness-95 hover:brightness-110 object-cover"
             fetchpriority="high"
           />
           <motion.a

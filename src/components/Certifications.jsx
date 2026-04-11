@@ -22,7 +22,7 @@ const Certifications = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.5 }}
-                className="my-20 text-center text-4xl"
+                className="my-20 text-center text-4xl font-bold"
             >
                 Certifications
             </motion.h1>

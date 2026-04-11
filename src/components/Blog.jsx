@@ -22,7 +22,7 @@ const Blog = () => {
                 transition={{ duration: 0.5 }}
                 className="mt-0 mb-8 text-center"
             >
-                <h2 className="text-4xl md:text-5xl font-light tracking-wide mb-4">
+                <h2 className="text-4xl md:text-5xl font-bold tracking-wide mb-4">
                     Blog <span className="text-neutral-500">Posts</span>
                 </h2>
                 <p className="text-neutral-400 max-w-2xl mx-auto mb-8">

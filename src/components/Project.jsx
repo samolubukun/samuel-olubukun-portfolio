@@ -22,7 +22,7 @@ const Project = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className='my-20 text-center text-4xl'
+        className='my-20 text-center text-4xl font-bold'
       >
         Projects
       </motion.h1>
@@ -35,12 +35,19 @@ const Project = () => {
               transition={{ duration: 0.5 }}
               className="w-full lg:w-7/10 mb-4 lg:mb-0 lg:mr-8 overflow-hidden rounded-xl"
             >
-              <img
-                className="rounded-xl w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] object-fill bg-neutral-900 border border-neutral-800 transition-transform duration-500 hover:scale-105"
-                src={project.image}
-                alt={project.title}
-                loading="lazy"
-              />
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <img
+                  className="rounded-xl w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] object-fill bg-neutral-900 border border-neutral-800 transition-transform duration-500 hover:scale-105"
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                />
+              </a>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -48,13 +55,22 @@ const Project = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-5/10"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
+              <h6 className="mb-2 font-semibold">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors"
+                >
+                  {project.title}
+                </a>
+              </h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4 overflow-hidden max-h-[3.2rem] lg:max-h-[1.6rem]">
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="rounded bg-neutral-900 px-1.5 py-0.5 text-[10px] sm:text-[11px] font-medium text-blue-600"
+                    className="rounded bg-neutral-900 px-1.5 py-0.5 text-[10px] sm:text-[11px] font-medium text-blue-600 font-mono"
                   >
                     {tech}
                   </span>

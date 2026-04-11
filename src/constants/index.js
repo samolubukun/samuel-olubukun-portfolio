@@ -16,6 +16,7 @@ import dabaraprep from "../assets/projects/dabaraprep.png";
 import pdfaxis from "../assets/projects/pdfaxis.png";
 import novaclipperai from "../assets/projects/novaclipperai.png";
 import ainewsroomcrew from "../assets/projects/ainewsroomcrew.png";
+import saasxcreem from "../assets/projects/saasxcreem.png";
 
 // Deep Dives
 // Deep Dives
@@ -42,8 +43,8 @@ export const PROJECTS = [
     title: "AI Newsroom Crew",
     link: "https://autonomous-ai-newsroom-crew.pxxl.click/",
     image: ainewsroomcrew,
-    description: "AI Newsroom is a fully automated, multi-agent content generation crew targeting the latest in AI Agents, LLM research, and industry developments. By scouring the web for raw data on emerging AI technologies and flawlessly relaying it through a highly specialized crew of agents, it automatically publishes curated daily news roundups alongside ultra-realistic auto-generated podcasts.",
-    technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis"],
+    description: "A fully automated, multi-agent AI news crew that researches the latest AI trends and LLM developments, scours the web for raw data on emerging AI technologies and industry developments, and publishes curated daily news roundups alongside ultra-realistic AI-generated podcasts.",
+    technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis", "AI Agents"],
   },
   {
     title: "Meerahzz Bridals",
@@ -85,8 +86,15 @@ export const PROJECTS = [
     title: "Nova Clipper AI",
     link: "https://samuelolubukun-novaclipperai.hf.space/",
     image: novaclipperai,
-    description: "Nova Video Clipper is an advanced browser-native platform for repurposing long-form video into high-impact shorts. Drop a podcast, interview, or presentation into the browser and get back ready-to-post clips with premium captions, dynamic AI face tracking, and smart cropping. Everything runs securely via WebAssembly and browser-native AI integrations.",
+    description: "Advanced browser-native platform for repurposing long-form video into high-impact shorts. Drop a podcast, interview, or presentation into the browser and get ready-to-post clips with premium captions, dynamic AI face tracking, and smart cropping. Runs securely via WebAssembly.",
     technologies: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "FFmpeg.wasm", "face-api.js", "TensorFlow.js", "Google Gemini", "Deepgram"],
+  },
+  {
+    title: "SaaScreem",
+    link: "https://saasxcreem.vercel.app/",
+    image: saasxcreem,
+    description: "Production-focused SaaS boilerplate built with Next.js 16, Supabase, and Creem. It ships with authentication, subscriptions, credits, licensing, admin tooling, email workflows, and an AI chat surface so you can start from a real billing-ready foundation instead of a landing-page template.",
+    technologies: ["Next.js", "Creem", "Supabase", "TypeScript", "Tailwind", "Upstash", "BullMQ", "S3", "Radix", "Resend", "PostHog", "BetterStack", "Drizzle", "Vercel", "Docker"],
   },
   {
     title: "Dabara Solutions",

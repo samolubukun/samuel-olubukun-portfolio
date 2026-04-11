@@ -51,7 +51,7 @@ const TechnicalDeepDives = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.5 }}
-                className="my-20 text-center text-4xl font-light tracking-wide"
+                className="my-20 text-center text-4xl font-bold tracking-wide"
             >
                 Technical <span className="text-neutral-500 font-normal">Deep Dives</span>
             </motion.div>
@@ -208,7 +208,7 @@ const CaseStudyCard = ({ study, onImageClick }) => {
                                 {study.technologies.map((tech, index) => (
                                     <span
                                         key={index}
-                                        className="px-2.5 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium tracking-wide"
+                                        className="px-2.5 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium tracking-wide font-mono"
                                     >
                                         {tech}
                                     </span>
