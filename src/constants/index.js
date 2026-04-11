@@ -46,7 +46,7 @@ export const PROJECTS = [
     link: "https://autonomous-ai-newsroom-crew.pxxl.click/",
     image: ainewsroomcrew,
     description: "AI Newsroom is a fully automated, multi-agent content generation crew targeting the latest in AI Agents, LLM research, and industry developments. By scouring the web for raw data on emerging AI technologies and flawlessly relaying it through a highly specialized crew of agents, it automatically publishes curated daily news roundups alongside ultra-realistic auto-generated podcasts.",
-    technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini 2.5 Flash/Pro", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis"],
+    technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis"],
   },
   {
     title: "Meerahzz Bridals",
