@@ -71,13 +71,6 @@ export const PROJECTS = [
     technologies: ["PHP", "HTML", "CSS", "JavaScript"],
   },
   {
-    title: "Dabara Solutions",
-    link: "http://dabaras.com/",
-    image: dabaras,
-    description: "A comprehensive corporate site that showcases the firm’s expertise in Software Development and ICT through detailed service offerings, company insights, and integrated contact channels.",
-    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
-  },
-  {
     title: "Restoir Health",
     link: "https://restoir-health.vercel.app",
     image: restoirhealth,
@@ -104,6 +97,13 @@ export const PROJECTS = [
     image: mentora,
     description: "An AI voice coaching platform for mastering high-stakes communication. From public speaking and storytelling to social mastery and conflict resolution, it provides real-time feedback to help you communicate with confidence and impact.",
     technologies: ["Python", "FastAPI", "LiveKit", "Deepgram", "OpenAI", "Prisma", "TailwindCSS"],
+  },
+  {
+    title: "Dabara Solutions",
+    link: "http://dabaras.com/",
+    image: dabaras,
+    description: "A comprehensive corporate site that showcases the firm's expertise in Software Development and ICT through detailed service offerings, company insights, and integrated contact channels.",
+    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
   },
   {
     title: "Dabara Prep",
