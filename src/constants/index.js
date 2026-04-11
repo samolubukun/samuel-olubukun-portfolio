@@ -56,13 +56,6 @@ export const PROJECTS = [
     technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini 2.5 Flash/Pro", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis"],
   },
   {
-    title: "Dabara Prep",
-    link: "https://dabaraprep.dabaras.com",
-    image: dabaraprep,
-    description: "A learning platform with AI-powered features designed for the Nigerian SSCE students. It features a multi-modal Socratic AI tutor for guided academic mastery, collaborative Dabara Circle for community-driven resource sharing, and a robust suite of productivity tools including a gamified Study Marathon and intelligent progress tracker to foster elite study habits.",
-    technologies: ["Next.js", "React", "Convex", "Stack Auth", "Gemini AI", "TailwindCSS", "Node.js"],
-  },
-  {
     title: "Meerahzz Bridals",
     link: "http://meerahzzbridals.com/",
     image: meerahzz,
@@ -111,6 +104,13 @@ export const PROJECTS = [
     image: mentora,
     description: "An AI voice coaching platform for mastering high-stakes communication. From public speaking and storytelling to social mastery and conflict resolution, it provides real-time feedback to help you communicate with confidence and impact.",
     technologies: ["Python", "FastAPI", "LiveKit", "Deepgram", "OpenAI", "Prisma", "TailwindCSS"],
+  },
+  {
+    title: "Dabara Prep",
+    link: "https://dabaraprep.dabaras.com",
+    image: dabaraprep,
+    description: "A learning platform with AI-powered features designed for the Nigerian SSCE students. It features a multi-modal Socratic AI tutor for guided academic mastery, collaborative Dabara Circle for community-driven resource sharing, and a robust suite of productivity tools including a gamified Study Marathon and intelligent progress tracker to foster elite study habits.",
+    technologies: ["Next.js", "React", "Convex", "Stack Auth", "Gemini AI", "TailwindCSS", "Node.js"],
   },
   {
     title: "PDFAxis",
