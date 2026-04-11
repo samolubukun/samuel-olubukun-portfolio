@@ -42,13 +42,6 @@ export const PROJECTS = [
     technologies: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Gemini", "Deepgram", "Hugging Face", "DigitalOcean Spaces", "Creem", "FFmpeg", "Framer Motion", "AI Orchestration", "Distributed Workers"],
   },
   {
-    title: "Nova Clipper AI",
-    link: "https://samuelolubukun-novaclipperai.hf.space/",
-    image: novaclipperai,
-    description: "Nova Video Clipper is an advanced browser-native platform for repurposing long-form video into high-impact shorts. Drop a podcast, interview, or presentation into the browser and get back ready-to-post clips with premium captions, dynamic AI face tracking, and smart cropping. Everything runs securely via WebAssembly and browser-native AI integrations.",
-    technologies: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "FFmpeg.wasm", "face-api.js", "TensorFlow.js", "Google Gemini", "Deepgram"],
-  },
-  {
     title: "AI Newsroom Crew",
     link: "https://autonomous-ai-newsroom-crew.pxxl.click/",
     image: ainewsroomcrew,
@@ -97,6 +90,13 @@ export const PROJECTS = [
     image: mentora,
     description: "An AI voice coaching platform for mastering high-stakes communication. From public speaking and storytelling to social mastery and conflict resolution, it provides real-time feedback to help you communicate with confidence and impact.",
     technologies: ["Python", "FastAPI", "LiveKit", "Deepgram", "OpenAI", "Prisma", "TailwindCSS"],
+  },
+  {
+    title: "Nova Clipper AI",
+    link: "https://samuelolubukun-novaclipperai.hf.space/",
+    image: novaclipperai,
+    description: "Nova Video Clipper is an advanced browser-native platform for repurposing long-form video into high-impact shorts. Drop a podcast, interview, or presentation into the browser and get back ready-to-post clips with premium captions, dynamic AI face tracking, and smart cropping. Everything runs securely via WebAssembly and browser-native AI integrations.",
+    technologies: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "FFmpeg.wasm", "face-api.js", "TensorFlow.js", "Google Gemini", "Deepgram"],
   },
   {
     title: "Dabara Solutions",
