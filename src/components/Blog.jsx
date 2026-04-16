@@ -15,17 +15,17 @@ const Blog = () => {
         .sort((a, b) => new Date(b.date) - new Date(a.date));
 
     return (
-        <div className="border-b border-neutral-900 pb-20">
+        <div className="border-b border-neutral-200 dark:border-neutral-900 pb-20 transition-colors duration-300">
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 1, y: -50 }}
                 transition={{ duration: 0.5 }}
                 className="mt-0 mb-8 text-center"
             >
-                <h2 className="text-4xl md:text-5xl font-bold tracking-wide mb-4">
-                    Blog <span className="text-neutral-500">Posts</span>
+                <h2 className="text-4xl md:text-5xl font-bold tracking-wide mb-4 text-neutral-900 dark:text-white">
+                    Blog <span className="text-neutral-400 dark:text-neutral-500">Posts</span>
                 </h2>
-                <p className="text-neutral-400 max-w-2xl mx-auto mb-8">
+                <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto mb-8">
                     Technical deep dives, tutorials, and insights on AI, full-stack development, and system design.
                 </p>
             </motion.div>
@@ -36,9 +36,9 @@ const Blog = () => {
                     <button
                         key={category}
                         onClick={() => setSelectedCategory(category)}
-                        className={`px-4 py-2 rounded-lg transition-all duration-300 ${selectedCategory === category
-                            ? "bg-blue-600 text-white shadow-lg shadow-blue-600/30"
-                            : "bg-neutral-900/50 text-neutral-400 hover:bg-neutral-800 border border-neutral-800"
+                        className={`px-4 py-2 rounded-lg transition-all duration-300 border ${selectedCategory === category
+                            ? "bg-blue-600 text-white shadow-lg shadow-blue-600/30 border-blue-600"
+                            : "bg-neutral-100 dark:bg-neutral-900/50 text-neutral-600 dark:text-neutral-400 hover:bg-neutral-200 dark:hover:bg-neutral-800 border-neutral-200 dark:border-neutral-800"
                             }`}
                     >
                         {category}
@@ -54,12 +54,12 @@ const Blog = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         initial={{ opacity: 0, y: 50 }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        className="group bg-neutral-900/40 backdrop-blur-xl border border-neutral-800/60 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10 flex flex-col"
+                        className="group bg-white dark:bg-neutral-900/40 backdrop-blur-xl border border-neutral-200 dark:border-neutral-800/60 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-blue-500/10 flex flex-col"
                     >
                         {/* Category Badge */}
                         <div className="p-6 pb-4">
                             <div className="flex items-center justify-between mb-3">
-                                <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium">
+                                <span className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 text-blue-700 dark:text-blue-400 text-xs font-medium">
                                     {post.category}
                                 </span>
                                 <span className="flex items-center gap-1 text-xs text-neutral-500">
@@ -69,12 +69,12 @@ const Blog = () => {
                             </div>
 
                             {/* Title */}
-                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
+                            <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2 leading-tight">
                                 {post.title}
                             </h3>
 
                             {/* Excerpt */}
-                            <p className="text-neutral-400 text-sm leading-relaxed mb-4 line-clamp-3">
+                            <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed mb-4 line-clamp-3">
                                 {post.excerpt}
                             </p>
 
@@ -83,16 +83,16 @@ const Blog = () => {
                                 {post.tags.slice(0, 3).map((tag, i) => (
                                     <span
                                         key={i}
-                                        className="flex items-center gap-1 px-2 py-1 rounded bg-neutral-800/50 text-neutral-400 text-xs"
+                                        className="flex items-center gap-1 px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-800/50 text-neutral-600 dark:text-neutral-400 text-xs border border-neutral-200 dark:border-transparent"
                                     >
-                                        <Tag className="w-3 h-3" />
+                                        <Tag className="w-3 h-3 text-blue-600 dark:text-blue-400" />
                                         {tag}
                                     </span>
                                 ))}
                             </div>
 
                             {/* Date & Read More */}
-                            <div className="flex items-center justify-between pt-4 border-t border-neutral-800">
+                            <div className="flex items-center justify-between pt-4 border-t border-neutral-100 dark:border-neutral-800">
                                 <span className="flex items-center gap-1 text-xs text-neutral-500">
                                     <Calendar className="w-3 h-3" />
                                     {new Date(post.date).toLocaleDateString('en-US', {
@@ -103,7 +103,7 @@ const Blog = () => {
                                 </span>
                                 <Link
                                     to={`/blog/${post.slug}`}
-                                    className="flex items-center gap-1 text-sm text-blue-400 hover:text-blue-300 transition-colors group/link"
+                                    className="flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors group/link font-medium"
                                 >
                                     Read More
                                     <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />

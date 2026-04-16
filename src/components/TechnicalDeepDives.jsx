@@ -44,16 +44,16 @@ const TechnicalDeepDives = () => {
     };
 
     return (
-        <div className="border-b border-neutral-900 pb-20 relative">
-            <div className="custom-gradient-bg absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_10%,rgba(30,50,90,0.2),transparent_50%)]"></div>
+        <div className="border-b border-neutral-200 dark:border-neutral-900 pt-[0.3cm] pb-20 relative transition-colors duration-300">
+            <div className="custom-gradient-bg absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_10%,rgba(30,50,90,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_10%,rgba(30,50,90,0.2),transparent_50%)]"></div>
 
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.5 }}
-                className="my-20 text-center text-4xl font-bold tracking-wide"
+                className="my-20 text-center text-4xl font-bold tracking-wide text-neutral-900 dark:text-white"
             >
-                Technical <span className="text-neutral-500 font-normal">Deep Dives</span>
+                Technical <span className="text-neutral-400 dark:text-neutral-500 font-normal">Deep Dives</span>
             </motion.div>
 
             <div className="container mx-auto px-4 max-w-7xl">
@@ -95,17 +95,17 @@ const TechnicalDeepDives = () => {
 
                     <button
                         onClick={() => paginate(-1)}
-                        className="absolute -left-2 md:-left-12 top-1/2 -translate-y-1/2 z-20 bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-700/50 rounded-full p-3 backdrop-blur-md transition-all duration-300 group shadow-xl"
+                        className="absolute -left-2 md:-left-12 top-1/2 -translate-y-1/2 z-20 bg-white/80 dark:bg-neutral-900/80 hover:bg-neutral-100 dark:hover:bg-neutral-800 border border-neutral-200 dark:border-neutral-700/50 rounded-full p-3 backdrop-blur-md transition-all duration-300 group shadow-xl"
                         aria-label="Previous"
                     >
-                        <ChevronLeft className="w-6 h-6 text-neutral-400 group-hover:text-blue-400 transition-colors" />
+                        <ChevronLeft className="w-6 h-6 text-neutral-600 dark:text-neutral-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
                     </button>
                     <button
                         onClick={() => paginate(1)}
-                        className="absolute -right-2 md:-right-12 top-1/2 -translate-y-1/2 z-20 bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-700/50 rounded-full p-3 backdrop-blur-md transition-all duration-300 group shadow-xl"
+                        className="absolute -right-2 md:-right-12 top-1/2 -translate-y-1/2 z-20 bg-white/80 dark:bg-neutral-900/80 hover:bg-neutral-100 dark:hover:bg-neutral-800 border border-neutral-200 dark:border-neutral-700/50 rounded-full p-3 backdrop-blur-md transition-all duration-300 group shadow-xl"
                         aria-label="Next"
                     >
-                        <ChevronRight className="w-6 h-6 text-neutral-400 group-hover:text-blue-400 transition-colors" />
+                        <ChevronRight className="w-6 h-6 text-neutral-600 dark:text-neutral-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
                     </button>
                 </div>
 
@@ -117,7 +117,7 @@ const TechnicalDeepDives = () => {
                                 setDirection(index > currentIndex ? 1 : -1);
                                 setCurrentIndex(index);
                             }}
-                            className={`h-1.5 rounded-full transition-all duration-500 relative overflow-hidden ${index === currentIndex ? "w-12 bg-blue-600" : "w-2 bg-neutral-800 hover:bg-neutral-700"}`}
+                            className={`h-1.5 rounded-full transition-all duration-500 relative overflow-hidden ${index === currentIndex ? "w-12 bg-blue-600" : "w-2 bg-neutral-300 dark:bg-neutral-800 hover:bg-neutral-400 dark:hover:bg-neutral-700"}`}
                         >
                             {index === currentIndex && (
                                 <motion.div
@@ -172,17 +172,17 @@ const TechnicalDeepDives = () => {
 
 const CaseStudyCard = ({ study, onImageClick }) => {
     return (
-        <div className="h-full bg-neutral-900/40 backdrop-blur-xl border border-neutral-800/60 rounded-3xl overflow-hidden shadow-2xl hover:border-neutral-700/80 transition-colors duration-500">
+        <div className="h-full bg-white/40 dark:bg-neutral-900/40 backdrop-blur-xl border border-neutral-200 dark:border-neutral-800/60 rounded-3xl overflow-hidden shadow-2xl hover:border-neutral-300 dark:hover:border-neutral-700/80 transition-colors duration-500">
             <div className="flex flex-col lg:flex-row h-full">
-                <div className="lg:w-5/12 relative bg-gradient-to-br from-neutral-950/80 to-neutral-900/80 p-4 md:p-6 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-neutral-800/50 group min-h-[200px] lg:min-h-[500px]">
+                <div className="lg:w-5/12 relative bg-gradient-to-br from-neutral-100 dark:from-neutral-950/80 to-white dark:to-neutral-900/80 p-4 md:p-6 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-neutral-200 dark:border-neutral-800/50 group min-h-[200px] lg:min-h-[500px]">
                     <div className="absolute top-2 left-4 md:top-4 z-10">
-                        <div className="px-3 py-1 rounded-full bg-neutral-900/60 border border-neutral-700/50 text-xs font-mono text-neutral-400 backdrop-blur-sm">
+                        <div className="px-3 py-1 rounded-full bg-white dark:bg-neutral-900/60 border border-neutral-200 dark:border-neutral-700/50 text-xs font-mono text-neutral-500 dark:text-neutral-400 backdrop-blur-sm">
                             SYSTEM ARCHITECTURE
                         </div>
                     </div>
 
                     <div 
-                        className="relative rounded-xl overflow-hidden shadow-lg border border-neutral-800/50 bg-neutral-950 group-hover:scale-[1.02] transition-transform duration-500 mt-8 md:mt-0 cursor-zoom-in h-[150px] lg:h-[350px] flex items-center justify-center"
+                        className="relative rounded-xl overflow-hidden shadow-lg border border-neutral-200 dark:border-neutral-800/50 bg-white dark:bg-neutral-950 group-hover:scale-[1.02] transition-transform duration-500 mt-8 md:mt-0 cursor-zoom-in h-[150px] lg:h-[350px] flex items-center justify-center"
                         onClick={() => onImageClick(study.image)}
                     >
                         <img
@@ -191,9 +191,9 @@ const CaseStudyCard = ({ study, onImageClick }) => {
                             className="w-full h-full object-contain p-2 md:p-4"
                             loading="eager"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/20 to-transparent pointer-events-none"></div>
-                        <div className="absolute bottom-3 right-3 p-2 bg-neutral-900/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
-                            <ZoomIn className="w-4 h-4 text-neutral-400" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/5 dark:from-neutral-950/20 to-transparent pointer-events-none"></div>
+                        <div className="absolute bottom-3 right-3 p-2 bg-white/80 dark:bg-neutral-900/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                            <ZoomIn className="w-4 h-4 text-neutral-600 dark:text-neutral-400" />
                         </div>
                     </div>
                 </div>
@@ -201,14 +201,14 @@ const CaseStudyCard = ({ study, onImageClick }) => {
                 <div className="lg:w-7/12 p-6 md:p-10 flex flex-col">
                     <div className="flex items-start justify-between mb-6">
                         <div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">
+                            <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mb-3 tracking-tight">
                                 {study.title}
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {study.technologies.map((tech, index) => (
                                     <span
                                         key={index}
-                                        className="px-2.5 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium tracking-wide font-mono"
+                                        className="px-2.5 py-1 rounded-md bg-blue-100 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 text-blue-700 dark:text-blue-400 text-xs font-medium tracking-wide font-mono"
                                     >
                                         {tech}
                                     </span>
@@ -218,25 +218,25 @@ const CaseStudyCard = ({ study, onImageClick }) => {
                     </div>
 
                     <div className="space-y-8 flex-grow">
-                        <div className="bg-neutral-800/20 rounded-xl p-5 border border-neutral-800/50">
-                            <h4 className="flex items-center gap-2 text-sm font-semibold text-orange-400/90 uppercase tracking-wider mb-2">
+                        <div className="bg-neutral-100 dark:bg-neutral-800/20 rounded-xl p-5 border border-neutral-200 dark:border-neutral-800/50">
+                            <h4 className="flex items-center gap-2 text-sm font-semibold text-orange-600 dark:text-orange-400/90 uppercase tracking-wider mb-2">
                                 <span className="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-md shadow-orange-500/50"></span>
                                 The Challenge
                             </h4>
-                            <p className="text-neutral-300 leading-relaxed">
+                            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed">
                                 {study.challenge}
                             </p>
                         </div>
 
                         <div>
-                            <h4 className="flex items-center gap-2 text-sm font-semibold text-emerald-400/90 uppercase tracking-wider mb-4">
+                            <h4 className="flex items-center gap-2 text-sm font-semibold text-emerald-600 dark:text-emerald-400/90 uppercase tracking-wider mb-4">
                                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-md shadow-emerald-500/50"></span>
                                 Architectural Decisions
                             </h4>
                             <ul className="grid gap-3">
                                 {study.solutions.map((solution, index) => (
-                                    <li key={index} className="flex gap-3 text-neutral-400 leading-relaxed group/item">
-                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neutral-600 group-hover/item:bg-blue-500 transition-colors duration-300 shrink-0"></div>
+                                    <li key={index} className="flex gap-3 text-neutral-600 dark:text-neutral-400 leading-relaxed group/item">
+                                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neutral-300 dark:bg-neutral-600 group-hover/item:bg-blue-500 transition-colors duration-300 shrink-0"></div>
                                         <span>{solution}</span>
                                     </li>
                                 ))}
@@ -244,7 +244,7 @@ const CaseStudyCard = ({ study, onImageClick }) => {
                         </div>
                     </div>
 
-                    <div className="mt-8 pt-6 border-t border-neutral-800/50 flex justify-end">
+                    <div className="mt-8 pt-6 border-t border-neutral-200 dark:border-neutral-800/50 flex justify-end">
                         <span className="text-xs text-neutral-500 font-mono">CASE STUDY {String(TECHNICAL_DEEP_DIVES.indexOf(study) + 1).padStart(2, '0')}</span>
                     </div>
                 </div>

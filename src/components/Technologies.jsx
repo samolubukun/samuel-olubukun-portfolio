@@ -4,22 +4,22 @@ const techCategories = [
   {
     name: "Languages",
     skills: ["Python", "JavaScript", "TypeScript", "PHP", "Java", "SQL", "HTML", "CSS"],
-    color: "text-blue-400",
+    color: "text-blue-600 dark:text-blue-400",
   },
   {
     name: "Frameworks",
     skills: ["React", "Next.js", "Node.js", "Express.js", "FastAPI", "Flask", "Django", "Tailwind CSS", "Bootstrap"],
-    color: "text-green-400",
+    color: "text-green-600 dark:text-green-400",
   },
   {
     name: "AI & Data Science",
     skills: ["Generative AI", "Autonomous AI Agents", "Multi-Agent Systems", "Agentic Workflows", "RAG Pipelines", "Vector Databases", "Prompt Engineering", "OpenAI", "Gemini", "Deep Learning", "NLP", "Machine Learning", "Scikit-learn", "TensorFlow", "PyTorch", "Hugging Face"],
-    color: "text-orange-400",
+    color: "text-orange-600 dark:text-orange-400",
   },
   {
     name: "Tools & Databases",
     skills: ["Git", "GitHub", "Docker", "Google Cloud Platform", "MongoDB", "PostgreSQL", "MySQL", "VS Code", "Jupyter Notebook"],
-    color: "text-purple-400",
+    color: "text-purple-600 dark:text-purple-400",
   },
 ];
 
@@ -43,12 +43,12 @@ const itemVariants = {
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div className="border-b border-neutral-200 dark:border-neutral-800 pb-24 transition-colors duration-300">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl font-bold"
+        className="my-20 text-center text-4xl font-bold text-neutral-900 dark:text-white"
       >
         Technologies & Skills
       </motion.h2>
@@ -69,8 +69,8 @@ const Technologies = () => {
                 <motion.span
                   key={sIndex}
                   variants={itemVariants}
-                  whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.05)" }}
-                  className="rounded border border-neutral-800 bg-neutral-900/30 px-2 py-1 text-xs md:text-sm font-medium text-neutral-400 transition-all hover:border-cyan-500/50 hover:text-cyan-400 cursor-default whitespace-nowrap"
+                  whileHover={{ scale: 1.05, backgroundColor: "rgba(56, 189, 248, 0.1)" }}
+                  className="rounded border border-neutral-200 dark:border-neutral-800 bg-neutral-100/50 dark:bg-neutral-900/30 px-2 py-1 text-xs md:text-sm font-medium text-neutral-600 dark:text-neutral-400 transition-all hover:border-cyan-500/50 hover:text-cyan-600 dark:hover:text-cyan-400 cursor-default whitespace-nowrap shadow-sm dark:shadow-none"
                 >
                   {skill}
                 </motion.span>

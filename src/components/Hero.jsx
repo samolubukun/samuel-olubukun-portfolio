@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <div
-      className="border-b border-neutral-900 pb-4 lg:mb-35 flex flex-wrap justify-center mt-10"
+      className="border-b border-neutral-200 dark:border-neutral-900 pb-4 lg:mb-35 flex flex-wrap justify-center mt-10 transition-colors duration-300"
     >
       <div className="w-full lg:w-1/2">
         <div className="flex flex-col items-center lg:items-start">

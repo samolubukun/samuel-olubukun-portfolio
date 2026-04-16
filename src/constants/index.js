@@ -1,4 +1,4 @@
-﻿import meerahzz from "../assets/projects/meerahzz.png";
+import meerahzz from "../assets/projects/meerahzz.png";
 import project3 from "../assets/projects/project-3.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project9 from "../assets/projects/project-9.jpg";
@@ -24,6 +24,8 @@ import nextjssupabase from "../assets/deep-dives/nextjssupabase creemsaas.png";
 import ainewsroomcrewDeep from "../assets/deep-dives/ainewsroomcrew.png";
 import videoclipperai from "../assets/deep-dives/videoclipperai.png";
 import zenithmeetDeep from "../assets/deep-dives/zenithmeet.png";
+import localmind from "../assets/deep-dives/localmind.png";
+import dbrag from "../assets/deep-dives/dbrag.png";
 
 export const HERO_CONTENT = `I’m Samuel Olubukun, a Full-Stack AI/ML Engineer. My expertise spans specializing in frontend and backend development, data science, and applied artificial intelligence.
 
@@ -238,6 +240,34 @@ export const CERTIFICATIONS = [
     credentialLink: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=E7E1299BDEBFB56D9C28D359A2DB82F0089B8E450D2D7902633EA7AFC46D0AD4",
     badge: "https://brm-workforce.oracle.com/pdf/certview/images/OCI25AICFAV1.png",
   },
+  {
+    title: "Applied AI Lab: Deep Learning for Computer Vision",
+    issuer: "WorldQuant University",
+    year: "2025",
+    credentialLink: "https://www.credly.com/badges/83db4c53-9bd6-4ff0-a02f-0bc9a2a0a077/linked_in_profile",
+    badge: "https://images.credly.com/size/680x680/images/9c380126-9170-46a7-a8b6-1e82f8314c50/blob",
+  },
+  {
+    title: "Applied Data Science Lab",
+    issuer: "WorldQuant University",
+    year: "2025",
+    credentialLink: "https://www.credly.com/badges/3fcf8ac0-8b1b-4a7d-8a5a-40e2788211f1/linked_in_profile",
+    badge: "https://images.credly.com/size/680x680/images/876b01ef-23aa-4a29-b6d2-56c230b89935/image.png",
+  },
+  {
+    title: "Data Analysis with Python",
+    issuer: "freeCodeCamp",
+    year: "2024",
+    credentialLink: "https://freecodecamp.org/certification/samuelolubukun/data-analysis-with-python-v7",
+    badge: "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
+  },
+  {
+    title: "Machine Learning with Python",
+    issuer: "freeCodeCamp",
+    year: "2024",
+    credentialLink: "https://freecodecamp.org/certification/samuelolubukun/machine-learning-with-python-v7",
+    badge: "https://avatars.githubusercontent.com/u/9892522?s=200&v=4",
+  },
 ];
 
 export const TECHNICAL_DEEP_DIVES = [
@@ -285,6 +315,30 @@ export const TECHNICAL_DEEP_DIVES = [
       "Utilized the Deepgram-generated timestamped transcripts within a Gemini 2.5 Flash-Lite 'AI Decision Layer' to programmatically identify viral hooks and 'viral moments'.",
       "Architected a local rendering pipeline using FFmpeg.wasm and Face-api.js for real-time face tracking, ensuring 9:16 vertical crops are generated without data leaving the client.",
       "Optimized storage through a 'Local + Browser State Layer' using IndexedDB and local cache to manage long-form video input and multi-modal project states."
+    ]
+  },
+  {
+    title: "LocalMind: Autonomous Local AI Coding Assistant",
+    image: localmind,
+    technologies: ["Gemini 2.5 Flash-Lite", "Node.js", "TypeScript", "Local-First Architecture", "Shell", "Git"],
+    challenge: "Engineering an autonomous agent capable of resolving complex engineering tasks while keeping all execution and codebase context fully local for security.",
+    solutions: [
+      "Architected a 'CLI → Gemini Agent → Tool Proxy' system that executes prompts via API but runs all tool calls (File I/O, Shell, Git) on the local host.",
+      "Developed an autonomous reasoning loop that auto-diagnoses build failures and self-corrects based on real-time observation, with a 10-cycle safety limit.",
+      "Implemented typed function-calling where Gemini selects tools by name, keeping core reasoning decoupled from execution logic.",
+      "Integrated real-time token streaming and live tool-status indicators to provide full visibility into the agent's autonomous decision-making process."
+    ]
+  },
+  {
+    title: "RAG with Multi-Database Intelligent Routing",
+    image: dbrag,
+    technologies: ["OpenAI GPT-4o", "LangChain", "FAISS", "LanceDB", "Vector Search"],
+    challenge: "Eliminating noise and inaccuracies in massive vector pools by implementing an intelligent distribution system for cross-departmental knowledge.",
+    solutions: [
+      "Engineered an 'AI Router' using GPT-4o that reads user intent to dynamically select the most relevant domain-specific knowledge base.",
+      "Designed a hybrid storage strategy utilizing FAISS for ultra-fast in-memory retrieval and LanceDB for scalable, persistent vector storage.",
+      "Implemented automated RAG pipelines that prepare, chunk, and embed documents for isolated vector stores (e.g., HR, Legal, Engineering).",
+      "Optimized retrieval quality by ensuring queries only pull from specific, validated corpora, significantly reducing hallucinations compared to monolithic RAG pools."
     ]
   }
 ];
