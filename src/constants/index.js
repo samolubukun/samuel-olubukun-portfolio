@@ -101,11 +101,11 @@ export const PROJECTS = [
     technologies: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "FFmpeg.wasm", "face-api.js", "TensorFlow.js", "Google Gemini", "Deepgram"],
   },
   {
-    title: "SaaScreem",
-    link: "https://saasxcreem.vercel.app/",
-    image: saasxcreem,
-    description: "Production-focused SaaS boilerplate built with Next.js 16, Supabase, and Creem. It ships with authentication, subscriptions, credits, licensing, admin tooling, email workflows, and an AI chat surface so you can start from a real billing-ready foundation instead of a landing-page template.",
-    technologies: ["Next.js", "Creem", "Supabase", "TypeScript", "Tailwind", "Upstash", "BullMQ", "S3", "Radix", "Resend", "PostHog", "BetterStack", "Drizzle", "Vercel", "Docker"],
+    title: "Dabara Prep",
+    link: "https://dabaraprep.dabaras.com",
+    image: dabaraprep,
+    description: "A learning platform with AI-powered features designed for the Nigerian SSCE students. It features a multi-modal Socratic AI tutor for guided academic mastery, collaborative Dabara Circle for community-driven resource sharing, and a robust suite of productivity tools including a gamified Study Marathon and intelligent progress tracker to foster elite study habits.",
+    technologies: ["Next.js", "React", "Convex", "Stack Auth", "Gemini AI", "TailwindCSS", "Node.js"],
   },
   {
     title: "Dabara Solutions",
@@ -115,18 +115,18 @@ export const PROJECTS = [
     technologies: ["PHP", "HTML", "CSS", "JavaScript"],
   },
   {
-    title: "Dabara Prep",
-    link: "https://dabaraprep.dabaras.com",
-    image: dabaraprep,
-    description: "A learning platform with AI-powered features designed for the Nigerian SSCE students. It features a multi-modal Socratic AI tutor for guided academic mastery, collaborative Dabara Circle for community-driven resource sharing, and a robust suite of productivity tools including a gamified Study Marathon and intelligent progress tracker to foster elite study habits.",
-    technologies: ["Next.js", "React", "Convex", "Stack Auth", "Gemini AI", "TailwindCSS", "Node.js"],
-  },
-  {
     title: "ThrivePath Psychiatry",
     link: "https://thrivepathpsychiatry.com/",
     image: thrivepath,
     description: "A professional website for a psychiatry practice designed to build trust. It makes it easy for patients to learn about services and book appointments securely.",
     technologies: ["PHP", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "SaaScreem",
+    link: "https://saasxcreem.vercel.app/",
+    image: saasxcreem,
+    description: "Production-focused SaaS boilerplate built with Next.js 16, Supabase, and Creem. It ships with authentication, subscriptions, credits, licensing, admin tooling, email workflows, and an AI chat surface so you can start from a real billing-ready foundation instead of a landing-page template.",
+    technologies: ["Next.js", "Creem", "Supabase", "TypeScript", "Tailwind", "Upstash", "BullMQ", "S3", "Radix", "Resend", "PostHog", "BetterStack", "Drizzle", "Vercel", "Docker"],
   },
   {
     title: "PDFAxis",
@@ -281,6 +281,17 @@ export const CERTIFICATIONS = [
 
 export const TECHNICAL_DEEP_DIVES = [
   {
+    title: "AI Newsroom Crew: Multi-Agent Content Pipeline",
+    image: ainewsroomcrewDeep,
+    technologies: ["Gemini 2.5", "Next.js 14", "Upstash Redis", "Deepgram Aura", "Crawl4AI / Firecrawl", "Neon PostgreSQL", "DigitalOcean Spaces"],
+    challenge: "Orchestrating an autonomous end-to-end news cycle from raw web signals to high-fidelity audio and long-form articles.",
+    solutions: [
+      "Architected a 'Web Ingestion' pipeline using Crawl4AI and Firecrawl that funnels data through an Upstash Redis Queue System for reliable task handoff.",
+      "Developed a 6-Agent AI Newsroom Crew (Investigator, Triage, Editor, Reporter, Podcast Writer, Voice Agent) using Gemini 2.5 to handle research, structured refinement, and Deepgram Aura TTS production.",
+      "Implemented a 'State & Persistence' architecture using Neon PostgreSQL for article metadata and DigitalOcean Spaces for multi-modal asset storage (Audio + Reports)."
+    ]
+  },
+  {
     title: "SaaScreem: Enterprise-Grade Next.js 16 Boilerplate",
     image: nextjssupabase,
     technologies: ["Next.js 16", "React 19", "Supabase (Auth/DB/RLS)", "Creem Billing", "BullMQ + ioredis", "Upstash Redis", "Drizzle ORM", "Better Stack", "S3/R2/MinIO"],
@@ -290,17 +301,6 @@ export const TECHNICAL_DEEP_DIVES = [
       "Architected an atomic 'Credits Wallet' system via Postgres RPC with unlimited-credit sentinel support and an AI assistant with per-response credit deduction logic.",
       "Implemented a multi-tier 'Async Environment' using BullMQ for retriable jobs (emails/webhooks) and Upstash-powered rate limiting for sensitive endpoints like /api/chat and /api/checkout.",
       "Optimized performance with Redis cache-aside patterns for MDX blog reads and S3-compatible storage using presigned URLs for secure file metadata management."
-    ]
-  },
-  {
-    title: "AI Newsroom Crew: Multi-Agent Content Pipeline",
-    image: ainewsroomcrewDeep,
-    technologies: ["Gemini 2.5", "Next.js 14", "Upstash Redis", "Deepgram Aura", "Crawl4AI / Firecrawl", "Neon PostgreSQL", "DigitalOcean Spaces"],
-    challenge: "Orchestrating an autonomous end-to-end news cycle from raw web signals to high-fidelity audio and long-form articles.",
-    solutions: [
-      "Architected a 'Web Ingestion' pipeline using Crawl4AI and Firecrawl that funnels data through an Upstash Redis Queue System for reliable task handoff.",
-      "Developed a 6-Agent AI Newsroom Crew (Investigator, Triage, Editor, Reporter, Podcast Writer, Voice Agent) using Gemini 2.5 to handle research, structured refinement, and Deepgram Aura TTS production.",
-      "Implemented a 'State & Persistence' architecture using Neon PostgreSQL for article metadata and DigitalOcean Spaces for multi-modal asset storage (Audio + Reports)."
     ]
   },
   {
@@ -327,18 +327,6 @@ export const TECHNICAL_DEEP_DIVES = [
     ]
   },
   {
-    title: "LocalMind: Autonomous Local AI Coding Assistant",
-    image: localmind,
-    technologies: ["Gemini 2.5 Flash-Lite", "Node.js", "TypeScript", "Local-First Architecture", "Shell", "Git"],
-    challenge: "Engineering an autonomous agent capable of resolving complex engineering tasks while keeping all execution and codebase context fully local for security.",
-    solutions: [
-      "Architected a 'CLI → Gemini Agent → Tool Proxy' system that executes prompts via API but runs all tool calls (File I/O, Shell, Git) on the local host.",
-      "Developed an autonomous reasoning loop that auto-diagnoses build failures and self-corrects based on real-time observation, with a 10-cycle safety limit.",
-      "Implemented typed function-calling where Gemini selects tools by name, keeping core reasoning decoupled from execution logic.",
-      "Integrated real-time token streaming and live tool-status indicators to provide full visibility into the agent's autonomous decision-making process."
-    ]
-  },
-  {
     title: "RAG with Multi-Database Intelligent Routing",
     image: dbrag,
     technologies: ["OpenAI GPT-4o", "LangChain", "FAISS", "LanceDB", "Vector Search"],
@@ -348,6 +336,18 @@ export const TECHNICAL_DEEP_DIVES = [
       "Designed a hybrid storage strategy utilizing FAISS for ultra-fast in-memory retrieval and LanceDB for scalable, persistent vector storage.",
       "Implemented automated RAG pipelines that prepare, chunk, and embed documents for isolated vector stores (e.g., HR, Legal, Engineering).",
       "Optimized retrieval quality by ensuring queries only pull from specific, validated corpora, significantly reducing hallucinations compared to monolithic RAG pools."
+    ]
+  },
+  {
+    title: "LocalMind: Autonomous Local AI Coding Assistant",
+    image: localmind,
+    technologies: ["Gemini 2.5 Flash-Lite", "Node.js", "TypeScript", "Local-First Architecture", "Shell", "Git"],
+    challenge: "Engineering an autonomous agent capable of resolving complex engineering tasks while keeping all execution and codebase context fully local for security.",
+    solutions: [
+      "Architected a 'CLI → Gemini Agent → Tool Proxy' system that executes prompts via API but runs all tool calls (File I/O, Shell, Git) on the local host.",
+      "Developed an autonomous reasoning loop that auto-diagnoses build failures and self-corrects based on real-time observation, with a 10-cycle safety limit.",
+      "Implemented typed function-calling where Gemini selects tools by name, keeping core reasoning decoupled from execution logic.",
+      "Integrated real-time token streaming and live tool-status indicators to provide full visibility into the agent's autonomous decision-making process."
     ]
   }
 ];

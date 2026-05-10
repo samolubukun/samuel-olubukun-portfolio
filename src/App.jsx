@@ -4,11 +4,14 @@ import HomePage from "./pages/HomePage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import ScrollToTop from "./components/ScrollToTop";
+import CustomScrollbar from "./components/CustomScrollbar";
+
 
 const App = () => {
     return (
         <Router>
             <ScrollToTop />
+            <CustomScrollbar />
             <div className="overflow-x-hidden text-neutral-900 dark:text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900 transition-colors duration-300">
                 <div className="fixed top-0 -z-10 h-full w-full">
                     {/* Dark mode background */}
