@@ -17,6 +17,9 @@ import pdfaxis from "../assets/projects/pdfaxis.png";
 import novaclipperai from "../assets/projects/novaclipperai.png";
 import ainewsroomcrew from "../assets/projects/ainewsroomcrew.png";
 import saasxcreem from "../assets/projects/saasxcreem.png";
+import codexlm from "../assets/projects/codexlm.png";
+import phaneros from "../assets/projects/phaneros.jpg";
+
 
 // Deep Dives
 // Deep Dives
@@ -42,19 +45,18 @@ export const PROJECTS = [
     technologies: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Gemini", "Deepgram", "Hugging Face", "DigitalOcean Spaces", "Creem", "FFmpeg", "Framer Motion", "AI Orchestration", "Distributed Workers"],
   },
   {
-    title: "AI Newsroom Crew",
-    link: "https://autonomous-ai-newsroom-crew.pxxl.click/",
-    image: ainewsroomcrew,
-    description: "A fully automated, multi-agent AI news crew that researches the latest AI trends and LLM developments, scours the web for raw data on emerging AI technologies and industry developments, and publishes curated daily news roundups alongside ultra-realistic AI-generated podcasts.",
-    technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis", "AI Agents"],
+    title: "CodexLM",
+    link: "https://codex-lm.vercel.app/",
+    image: codexlm,
+    description: "A high-performance research ecosystem designed to transform multi-modal data into structured knowledge. It features source ingestion, agentic RAG for hybrid search including web access, and a Creative Studio suite generating professional podcasts, documentation, and social packs from research.",
+    technologies: ["Next.js 15", "Convex", "Stack Auth", "Pinecone", "Deepgram", "Google Gemini", "DigitalOcean Spaces", "Tailwind CSS v4", "Framer Motion"],
   },
   {
-    title: "Meerahzz Bridals",
-    link: "http://meerahzzbridals.com/",
-    image: meerahzz,
-    description:
-      "A boutique online store helping brides find the perfect accessories. I built a smooth shopping experience with secure payments and an easy-to-use inventory system for the shop owner.",
-    technologies: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "Paystack"],
+    title: "Phaneros",
+    link: "https://phaneros-web.vercel.app/",
+    image: phaneros,
+    description: "An intelligent real-time Scripture detection and dynamic show-building suite for live sermons. Available as both a desktop and web platform, it automates the bridge between spoken scripture and visual output, featuring high-speed verse detection and a dual-dashboard suite for instant deployment.",
+    technologies: ["Rust", "Axum", "Tauri", "React", "Node.js", "SQLite", "Cloudflare", "Real-time STT"],
   },
   {
     title: "Restoir Health",
@@ -62,6 +64,13 @@ export const PROJECTS = [
     image: restoirhealth,
     description: "An AI-powered skin health companion that analyzes conditions from photos. It includes a daily tracker and timeline visualization to monitor your progress, plus a specialized AI dermatology chatbot for instant, personalized guidance.",
     technologies: ["Next.js", "React", "TailwindCSS", "Gemini Vision", "Convex", "Stack Auth", "Node.js"],
+  },
+  {
+    title: "AI Newsroom Crew",
+    link: "https://autonomous-ai-newsroom-crew.pxxl.click/",
+    image: ainewsroomcrew,
+    description: "A fully automated, multi-agent AI news crew that researches the latest AI trends and LLM developments, scours the web for raw data on emerging AI technologies and industry developments, and publishes curated daily news roundups alongside ultra-realistic AI-generated podcasts.",
+    technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis", "AI Agents"],
   },
   {
     title: "DealSpotNG",

@@ -81,7 +81,6 @@ const Navbar = () => {
                     <a href="#project" className={getLinkClasses("project")}>Projects</a>
                     <a href="#technologies" className={getLinkClasses("technologies")}>Skills</a>
                     <a href="#certifications" className={getLinkClasses("certifications")}>Certifications</a>
-                    <Link to="/blog" className={location.pathname === "/blog" ? "text-cyan-600 dark:text-cyan-400 font-bold transition-colors duration-300" : "text-neutral-600 dark:text-neutral-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"}>Blog</Link>
                     <a href="#contact" className={getLinkClasses("contact")}>Contact</a>
                 </div>
 
@@ -102,7 +101,6 @@ const Navbar = () => {
                         <a href="#project" onClick={toggleMenu} className={getLinkClasses("project")}>Projects</a>
                         <a href="#technologies" onClick={toggleMenu} className={getLinkClasses("technologies")}>Skills</a>
                         <a href="#certifications" onClick={toggleMenu} className={getLinkClasses("certifications")}>Certifications</a>
-                        <Link to="/blog" onClick={toggleMenu} className={location.pathname === "/blog" ? "text-cyan-600 dark:text-cyan-400 font-bold transition-colors duration-300" : "text-neutral-600 dark:text-neutral-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"}>Blog</Link>
                         <a href="#contact" onClick={toggleMenu} className={getLinkClasses("contact")}>Contact</a>
                     </div>
                     <div className="flex items-center justify-center gap-6 text-3xl text-neutral-900 dark:text-white mt-4">

@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const techCategories = [
   {
     name: "Languages",
-    skills: ["Python", "JavaScript", "TypeScript", "PHP", "Java", "SQL", "HTML", "CSS"],
+    skills: ["Python", "JavaScript", "TypeScript", "PHP", "Rust", "Java", "SQL", "HTML", "CSS"],
     color: "text-blue-600 dark:text-blue-400",
   },
   {
     name: "Frameworks",
-    skills: ["React", "Next.js", "Node.js", "Express.js", "FastAPI", "Flask", "Django", "Tailwind CSS", "Bootstrap"],
+    skills: ["React", "Next.js", "Axum", "Tauri", "Node.js", "Express.js", "FastAPI", "Flask", "Django", "Tailwind CSS", "Bootstrap"],
     color: "text-green-600 dark:text-green-400",
   },
   {
@@ -18,7 +18,7 @@ const techCategories = [
   },
   {
     name: "Tools & Databases",
-    skills: ["Git", "GitHub", "Docker", "Google Cloud Platform", "MongoDB", "PostgreSQL", "MySQL", "VS Code", "Jupyter Notebook"],
+    skills: ["Git", "GitHub", "Docker", "Google Cloud Platform", "SQLite", "MongoDB", "PostgreSQL", "MySQL", "VS Code", "Jupyter Notebook"],
     color: "text-purple-600 dark:text-purple-400",
   },
 ];

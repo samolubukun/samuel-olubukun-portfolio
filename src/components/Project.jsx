@@ -1,11 +1,21 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp, FaTimes, FaExternalLinkAlt } from "react-icons/fa";
+import { AnimatePresence } from "framer-motion";
 
 const Project = () => {
   const [showAll, setShowAll] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [selectedProject]);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 1024);
@@ -35,19 +45,19 @@ const Project = () => {
               transition={{ duration: 0.5 }}
               className="w-full lg:w-7/10 mb-4 lg:mb-0 lg:mr-8 overflow-hidden rounded-xl"
             >
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
+              <div
+                onClick={() => setSelectedProject(project)}
+                className="block cursor-pointer group"
               >
-                <img
-                  className="rounded-xl w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] object-fill bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 transition-transform duration-500 hover:scale-105"
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                />
-              </a>
+                <div className="relative overflow-hidden rounded-xl">
+                  <img
+                    className="rounded-xl w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] object-fill bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 transition-transform duration-500 group-hover:scale-105"
+                    src={project.image}
+                    alt={project.title}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -80,9 +90,9 @@ const Project = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center mt-2 px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300"
+                className="inline-flex items-center justify-center gap-2 mt-4 px-6 py-2.5 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300 font-semibold text-sm shadow-md hover:shadow-lg"
               >
-                View Project
+                View Live Site <FaExternalLinkAlt size={14} />
               </a>
             </motion.div>
           </div>
@@ -107,6 +117,80 @@ const Project = () => {
           </button>
         </div>
       )}
+
+      <AnimatePresence>
+        {selectedProject && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedProject(null)}
+              className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white dark:bg-neutral-900 rounded-2xl shadow-2xl border border-neutral-200 dark:border-neutral-800 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+            >
+              <button
+                onClick={() => setSelectedProject(null)}
+                className="absolute top-4 right-4 z-10 p-2 rounded-full bg-neutral-100/80 dark:bg-neutral-800/80 backdrop-blur-md text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors border border-neutral-200 dark:border-neutral-700"
+              >
+                <FaTimes size={20} />
+              </button>
+
+              <div className="p-6 sm:p-8">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="w-full h-auto rounded-xl mb-8 shadow-lg border border-neutral-200 dark:border-neutral-800"
+                />
+                <h2 className="text-3xl font-bold text-neutral-900 dark:text-white mb-4">
+                  {selectedProject.title}
+                </h2>
+                <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8 leading-relaxed">
+                  {selectedProject.description}
+                </p>
+
+                <div className="mb-8">
+                  <h3 className="text-sm font-semibold text-neutral-500 dark:text-neutral-500 uppercase tracking-wider mb-4">
+                    Technologies
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedProject.technologies.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="rounded-lg bg-blue-50 dark:bg-blue-900/20 px-3 py-1 text-sm font-medium text-blue-700 dark:text-blue-400 border border-blue-100 dark:border-blue-900/30"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href={selectedProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300 font-semibold"
+                  >
+                    View Live Site <FaExternalLinkAlt size={14} />
+                  </a>
+                  <button
+                    onClick={() => setSelectedProject(null)}
+                    className="flex-1 px-6 py-3 border border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 rounded-xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition duration-300 font-semibold"
+                  >
+                    Close Details
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
