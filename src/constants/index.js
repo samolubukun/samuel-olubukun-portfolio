@@ -55,7 +55,7 @@ export const PROJECTS = [
     title: "Phaneros",
     link: "https://phaneros-web.vercel.app/",
     image: phaneros,
-    description: "An intelligent real-time Scripture detection and dynamic show-building suite for live sermons. Available as both a desktop and web platform, it automates the bridge between spoken scripture and visual output, featuring high-speed verse detection and a dual-dashboard suite for instant deployment.",
+    description: "An intelligent real-time Scripture detection and dynamic show-building suite for live sermons. Available as both a desktop and web platform, it automates the bridge between spoken scripture and visual output, featuring high-speed verse detection and a dual-dashboard suite for instant projection.",
     technologies: ["Rust", "Axum", "Tauri", "React", "Node.js", "SQLite", "Cloudflare", "Real-time STT"],
   },
   {
@@ -104,7 +104,7 @@ export const PROJECTS = [
     title: "Dabara Prep",
     link: "https://dabaraprep.dabaras.com",
     image: dabaraprep,
-    description: "A learning platform with AI-powered features designed for the Nigerian SSCE students. It features a multi-modal Socratic AI tutor for guided academic mastery, collaborative Dabara Circle for community-driven resource sharing, and a robust suite of productivity tools including a gamified Study Marathon and intelligent progress tracker to foster elite study habits.",
+    description: "A learning platform with AI-powered features for Nigerian SSCE students. It features a multi-modal Socratic AI tutor, collaborative Dabara Circle for resource sharing, and productivity tools including a gamified Study Marathon and intelligent progress tracker to foster productive study habits.",
     technologies: ["Next.js", "React", "Convex", "Stack Auth", "Gemini AI", "TailwindCSS", "Node.js"],
   },
   {
@@ -194,7 +194,7 @@ export const EXPERT_AREAS = [
   },
   {
     title: "AI & Machine Learning",
-    description: "I specialize in AI Engineering, building autonomous agents and intelligent, context-aware applications. I move beyond simple integration to create production-grade systems that automate workflows and solve high-impact challenges."
+    description: "I specialize in AI and Machine Learning Engineering, building predictive models and intelligent, context-aware agents. I create production-grade AI systems that automate workflows and solve high-impact challenges."
   },
   {
     title: "Data Science",
@@ -202,7 +202,7 @@ export const EXPERT_AREAS = [
   },
   {
     title: "Full-Stack Engineering",
-    description: "I manage the complete development lifecycle, from architecting scalable back-end systems to engineering polished, interactive front-end interfaces."
+    description: "I build and ship end-to-end applications, mastering the entire lifecycle from UI/UX and scalable back-ends to cloud-native infrastructure, DevOps, and AI orchestration to deliver production-ready products."
   }
 ];
 
