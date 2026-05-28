@@ -24,7 +24,9 @@ const Project = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const displayedProjects = isMobile && !showAll ? PROJECTS.slice(0, 6) : PROJECTS;
+  const displayedProjects = showAll
+    ? PROJECTS
+    : (isMobile ? PROJECTS.slice(0, 6) : PROJECTS.slice(0, 8));
 
   return (
     <div className='border-b border-neutral-200 dark:border-neutral-900 pb-4 transition-colors duration-300'>
@@ -76,7 +78,7 @@ const Project = () => {
                 </a>
               </h6>
               <p className="mb-4 text-neutral-600 dark:text-neutral-400">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4 overflow-hidden max-h-[3.2rem] lg:max-h-[1.6rem]">
+              {/* <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
@@ -85,7 +87,7 @@ const Project = () => {
                     {tech}
                   </span>
                 ))}
-              </div>
+              </div> */}
               <a
                 href={project.link}
                 target="_blank"
@@ -99,7 +101,7 @@ const Project = () => {
         ))}
       </div>
 
-      {isMobile && PROJECTS.length > 6 && (
+      {(isMobile ? PROJECTS.length > 6 : PROJECTS.length > 8) && (
         <div className="flex justify-center mt-8">
           <button
             onClick={() => setShowAll(!showAll)}
@@ -120,7 +122,7 @@ const Project = () => {
 
       <AnimatePresence>
         {selectedProject && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10">
+          <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 md:p-10">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -129,10 +131,10 @@ const Project = () => {
               className="absolute inset-0 bg-black/80 backdrop-blur-sm"
             />
             <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              initial={{ opacity: 0, scale: 0.95, y: 40 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white dark:bg-neutral-900 rounded-2xl shadow-2xl border border-neutral-200 dark:border-neutral-800 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+              exit={{ opacity: 0, scale: 0.95, y: 40 }}
+              className="relative w-full sm:max-w-4xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto bg-white dark:bg-neutral-900 rounded-t-3xl sm:rounded-2xl shadow-2xl border-t border-neutral-200 dark:border-neutral-800 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
             >
               <button
                 onClick={() => setSelectedProject(null)}
@@ -141,12 +143,17 @@ const Project = () => {
                 <FaTimes size={20} />
               </button>
 
-              <div className="p-6 sm:p-8">
+              {/* Image — contained with rounded corners */}
+              <div className="p-2 sm:p-6 pb-0">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="w-full h-auto rounded-xl mb-8 shadow-lg border border-neutral-200 dark:border-neutral-800"
+                  className="w-full h-auto rounded-2xl shadow-xl border border-neutral-200 dark:border-neutral-800"
                 />
+              </div>
+
+              {/* Content */}
+              <div className="p-6 sm:p-8">
                 <h2 className="text-3xl font-bold text-neutral-900 dark:text-white mb-4">
                   {selectedProject.title}
                 </h2>
@@ -154,7 +161,7 @@ const Project = () => {
                   {selectedProject.description}
                 </p>
 
-                <div className="mb-8">
+                {/* <div className="mb-8">
                   <h3 className="text-sm font-semibold text-neutral-500 dark:text-neutral-500 uppercase tracking-wider mb-4">
                     Technologies
                   </h3>
@@ -168,7 +175,7 @@ const Project = () => {
                       </span>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a

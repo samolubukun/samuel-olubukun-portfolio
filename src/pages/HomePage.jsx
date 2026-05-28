@@ -4,6 +4,7 @@ import Project from "../components/Project";
 import Technologies from "../components/Technologies";
 import Certifications from "../components/Certifications";
 import TechnicalDeepDives from "../components/TechnicalDeepDives";
+import Publications from "../components/Publications";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -25,8 +26,11 @@ const HomePage = () => {
             <section id="certifications" style={{ scrollMarginTop: '3cm' }}>
                 <Certifications />
             </section>
-            <section id="deep-dives" style={{ scrollMarginTop: '3cm' }}>
+            {/* <section id="deep-dives" style={{ scrollMarginTop: '3cm' }}>
                 <TechnicalDeepDives />
+            </section> */}
+            <section id="publications" style={{ scrollMarginTop: '3cm' }}>
+                <Publications />
             </section>
             <section id="contact">
                 <Contact />

@@ -12,6 +12,7 @@ import thrivepath from "../assets/projects/thrivepath.jpg";
 import dabaras from "../assets/projects/dabaras.jpg";
 import contentnova from "../assets/projects/contentnova.png";
 import commitpulse from "../assets/projects/commitpulse.png";
+import dabaraprepmobile from "../assets/projects/dabaraprepmobile.jpg";
 import dabaraprep from "../assets/projects/dabaraprep.png";
 import pdfaxis from "../assets/projects/pdfaxis.png";
 import novaclipperai from "../assets/projects/novaclipperai.png";
@@ -19,6 +20,9 @@ import ainewsroomcrew from "../assets/projects/ainewsroomcrew.png";
 import saasxcreem from "../assets/projects/saasxcreem.png";
 import codexlm from "../assets/projects/codexlm.png";
 import phaneros from "../assets/projects/phaneros.jpg";
+import catalyst from "../assets/projects/catalyst.png";
+import threadscape from "../assets/projects/threadscape.png";
+import chronos from "../assets/projects/chronos.png";
 
 
 // Deep Dives
@@ -29,11 +33,14 @@ import videoclipperai from "../assets/deep-dives/videoclipperai.png";
 import zenithmeetDeep from "../assets/deep-dives/zenithmeet.png";
 import localmind from "../assets/deep-dives/localmind.png";
 import dbrag from "../assets/deep-dives/dbrag.png";
+import catalystDeep from "../assets/deep-dives/catalyst.png";
+import threadscapeDeep from "../assets/deep-dives/threadscape.png";
+import dabaraprepmobileDeep from "../assets/deep-dives/dabaraprepmobile.png";
+import chronosDeep from "../assets/deep-dives/chronos.png";
 
 export const HERO_CONTENT = `I’m Samuel Olubukun, a Full-Stack AI/ML Engineer. My expertise spans specializing in frontend and backend development, data science, and applied artificial intelligence.
 
 I build modern software systems that integrate AI models, intelligent agents, and automation workflows into real-world applications.`;
-
 
 export const PROJECTS = [
   {
@@ -45,11 +52,48 @@ export const PROJECTS = [
     technologies: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Gemini", "Deepgram", "Hugging Face", "DigitalOcean Spaces", "Creem", "FFmpeg", "Framer Motion", "AI Orchestration", "Distributed Workers"],
   },
   {
-    title: "CodexLM",
-    link: "https://codex-lm.vercel.app/",
-    image: codexlm,
-    description: "A high-performance research ecosystem designed to transform multi-modal data into structured knowledge. It features source ingestion, agentic RAG for hybrid search including web access, and a Creative Studio suite generating professional podcasts, documentation, and social packs from research.",
-    technologies: ["Next.js 15", "Convex", "Stack Auth", "Pinecone", "Deepgram", "Google Gemini", "DigitalOcean Spaces", "Tailwind CSS v4", "Framer Motion"],
+    title: "Catalyst",
+    link: "https://trycataylst.vercel.app/",
+    image: catalyst,
+    description:
+      "A conversational spreadsheet intelligence platform enabling natural language analytics, deterministic code-generated transformations, live dashboard generation, academic research ingestion, and schema-first privacy-preserving AI analysis. Catalyst combines Gemini-powered orchestration with client-side sandbox execution for mathematically precise spreadsheet intelligence.",
+    technologies: [
+      "Next.js 15",
+      "Convex",
+      "Google Gemini",
+      "Stack Auth",
+      "AG Grid",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Firecrawl",
+      "LangSearch",
+      "JavaScript Sandboxing",
+      "AI Agents",
+      "Real-time Dashboards",
+      "Spreadsheet Intelligence"
+    ],
+  },
+  {
+    title: "Threadscape",
+    link: "https://threadscape-workspace.vercel.app/",
+    image: threadscape,
+    description:
+      "An async-first collaborative workspace engineered to eliminate real-time chat fatigue through structured threaded discussions, polymorphic Kanban boards, wiki documentation, live polls, and reactive unread tracking. Built on Convex's real-time reactive infrastructure with deep multi-tenant collaboration and instant search orchestration.",
+    technologies: [
+      "Next.js 15",
+      "React 19",
+      "Convex",
+      "Stack Auth",
+      "Tailwind CSS v4",
+      "Framer Motion",
+      "TipTap",
+      "Radix UI",
+      "Convex Reactive Queries",
+      "Convex ACID Mutations",
+      "Real-time Collaboration",
+      "WebSockets",
+      "Multi-tenant Architecture"
+    ],
   },
   {
     title: "Phaneros",
@@ -59,11 +103,40 @@ export const PROJECTS = [
     technologies: ["Rust", "Axum", "Tauri", "React", "Node.js", "SQLite", "Cloudflare", "Real-time STT"],
   },
   {
+    title: "CodexLM",
+    link: "https://codex-lm.vercel.app/",
+    image: codexlm,
+    description: "A high-performance research ecosystem designed to transform multi-modal data into structured knowledge. It features source ingestion, agentic RAG for hybrid search including web access, and a Creative Studio suite generating professional podcasts, documentation, and social packs from research.",
+    technologies: ["Next.js 15", "Convex", "Stack Auth", "Pinecone", "Deepgram", "Google Gemini", "DigitalOcean Spaces", "Tailwind CSS v4", "Framer Motion"],
+  },
+  {
     title: "Restoir Health",
     link: "https://restoir-health.vercel.app",
     image: restoirhealth,
     description: "An AI-powered skin health companion that analyzes conditions from photos. It includes a daily tracker and timeline visualization to monitor your progress, plus a specialized AI dermatology chatbot for instant, personalized guidance.",
     technologies: ["Next.js", "React", "TailwindCSS", "Gemini Vision", "Convex", "Stack Auth", "Node.js"],
+  },
+  {
+    title: "Dabara Prep Mobile App",
+    link: "https://github.com/samolubukun/Dabara-Prep-Flutter",
+    image: dabaraprepmobile,
+    description:
+      "An offline-first AI-powered Nigerian exam preparation platform running Google's Gemma 4 model entirely on-device. It combines WAEC and JAMB CBT simulations, personalized AI tutoring, lesson notes, flashcards, LaTeX rendering, and native offline multimodal inference without requiring continuous internet connectivity.",
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Gemma 4",
+      "LiteRT",
+      "SQLite",
+      "SharedPreferences",
+      "flutter_gemma",
+      "flutter_math_fork",
+      "Dio",
+      "Offline AI",
+      "On-device Inference",
+      "WAEC CBT",
+      "JAMB CBT"
+    ],
   },
   {
     title: "AI Newsroom Crew",
@@ -105,7 +178,15 @@ export const PROJECTS = [
     link: "https://dabaraprep.dabaras.com",
     image: dabaraprep,
     description: "A learning platform with AI-powered features for Nigerian SSCE students. It features a multi-modal Socratic AI tutor, collaborative Dabara Circle for resource sharing, and productivity tools including a gamified Study Marathon and intelligent progress tracker to foster productive study habits.",
-    technologies: ["Next.js", "React", "Convex", "Stack Auth", "Gemini AI", "TailwindCSS", "Node.js"],
+    technologies: [
+      "Next.js",
+      "React",
+      "Convex",
+      "Stack Auth",
+      "Gemini AI",
+      "TailwindCSS",
+      "Node.js"
+    ],
   },
   {
     title: "Dabara Solutions",
@@ -128,7 +209,7 @@ export const PROJECTS = [
     description: "Production-focused SaaS boilerplate built with Next.js 16, Supabase, and Creem. It ships with authentication, subscriptions, credits, licensing, admin tooling, email workflows, and an AI chat surface so you can start from a real billing-ready foundation instead of a landing-page template.",
     technologies: ["Next.js", "Creem", "Supabase", "TypeScript", "Tailwind", "Upstash", "BullMQ", "S3", "Radix", "Resend", "PostHog", "BetterStack", "Drizzle", "Vercel", "Docker"],
   },
-  {
+  /* {
     title: "PDFAxis",
     link: "https://pdfaxis.dabaras.com",
     image: pdfaxis,
@@ -141,7 +222,7 @@ export const PROJECTS = [
     image: commitpulse,
     description: "A dual-component system featuring a PyPI package that crawls local Git metadata and a cloud platform for visualizing engineering impact. It allows developers to showcase hidden contributions from private and organizational repositories with premium analytics dashboards.",
     technologies: ["Python", "Next.js", "React", "PostgreSQL", "Drizzle", "Tailwind CSS"],
-  },
+  }, */
   {
     title: "VOCAL VISTA",
     link: "https://vocalvista.netlify.app/",
@@ -149,23 +230,41 @@ export const PROJECTS = [
     description: "A versatile AI partner for voice-first interactions. It supports everything from immersive language learning and topic-based lectures to polished presentations and mock interviews, all with instant speech feedback.",
     technologies: ["Next.js", "TypeScript", "Deepgram", "Gemini AI", "Convex", "TTS/STT"],
   },
-
   {
-
+    title: "Chronos",
+    link: "https://chronos-ai-timeline-orchestrator.vercel.app/",
+    image: chronos,
+    description:
+      "An AI-native timeline orchestration system transforming conversational plans into reactive execution graphs with recursive dependency reflow, Monte Carlo forecasting, live collaborative Gantt presence layers, and event-action automations. Chronos combines deterministic sandboxed scheduling logic with real-time Convex synchronization for intelligent roadmap execution.",
+    technologies: [
+      "Next.js 15",
+      "Convex",
+      "Google Gemini",
+      "Stack Auth",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Topological Scheduling",
+      "Monte Carlo Forecasting",
+      "Realtime Collaboration",
+      "Sandboxed Script Execution",
+      "Timeline Orchestration",
+      "Automation Engine"
+    ],
+  },
+  /* {
     title: "VoxEval",
     link: "https://voxeval.netlify.app/",
     image: voxeval,
     description: "An AI mock-interview platform that conducts voice-first interviews. It listens to your answers, transcribes them in real-time, and uses AI to give you instant feedback, helping you master your interviewing skills.",
     technologies: ["Next.js", "Supabase", "Google Gemini", "Deepgram", "Web Speech API", "Tailwind CSS"],
-  },
-
-  {
+  }, */
+  /* {
     title: "Socially",
     link: "https://socially-delta-eight.vercel.app/",
     image: project9,
     description: "A modern social platform built for community engagement. It features real-time notifications, media sharing, and everything you need to connect and interact with others.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Clerk", "UploadThing"],
-  },
+  } */
 
   // keep remaining projects below (preserve existing entries)
   /* {
@@ -189,8 +288,8 @@ export const PROJECTS = [
 
 export const EXPERT_AREAS = [
   {
-    title: "Web Applications",
-    description: "I build modern web apps, high-converting landing pages, and robust eCommerce platforms. My focus is on creating fast, secure, and responsive designs that deliver a premium user experience."
+    title: "Full-Stack Engineering",
+    description: "I build and ship end-to-end applications, mastering the entire lifecycle from UI/UX and scalable back-ends to cloud-native infrastructure, DevOps, and AI orchestration to deliver production-ready products."
   },
   {
     title: "AI & Machine Learning",
@@ -201,8 +300,8 @@ export const EXPERT_AREAS = [
     description: "I perform deep data analysis and advanced visualization to uncover trends. By combining statistical modeling with data processing, I transform raw numbers into clear, actionable business strategies."
   },
   {
-    title: "Full-Stack Engineering",
-    description: "I build and ship end-to-end applications, mastering the entire lifecycle from UI/UX and scalable back-ends to cloud-native infrastructure, DevOps, and AI orchestration to deliver production-ready products."
+    title: "Web Applications",
+    description: "I build modern web apps, high-converting landing pages, and robust eCommerce platforms. My focus is on creating fast, secure, and responsive designs that deliver a premium user experience."
   }
 ];
 
@@ -281,6 +380,39 @@ export const CERTIFICATIONS = [
 
 export const TECHNICAL_DEEP_DIVES = [
   {
+    title: "Catalyst: Conversational Spreadsheet Intelligence",
+    image: catalystDeep,
+    technologies: ["Next.js 15", "Convex", "Google Gemini", "Stack Auth", "AG Grid", "Tailwind CSS", "Framer Motion", "Firecrawl", "LangSearch"],
+    challenge: "Enabling natural language spreadsheet analysis, deterministic sandboxed code execution, and real-time dashboard generation with strict user privacy.",
+    solutions: [
+      "Architected a Gemini-powered Agentic Orchestrator that plans data transformations and generates mathematically precise client-side JavaScript execution code.",
+      "Implemented a secure, fully sandboxed in-browser sandboxing layer to execute code-generated spreadsheet operations with mathematically deterministic precision.",
+      "Integrated real-time database reactivity using Convex and AG Grid for instant spreadsheet updates, collaborative features, and dynamic client-side visualization."
+    ]
+  },
+  {
+    title: "Threadscape: Async-First Collaboration Workspace",
+    image: threadscapeDeep,
+    technologies: ["Next.js 15", "React 19", "Convex", "Stack Auth", "Tailwind CSS v4", "Framer Motion", "TipTap", "Radix UI"],
+    challenge: "Eliminating real-time chat fatigue by designing a structured threaded workspace with absolute real-time sync and multi-tenant security.",
+    solutions: [
+      "Designed a tree-structured discussion schema in Convex to support nested discussion threads and granular, real-time unread tracking.",
+      "Engineered polymorphic Kanban boards and rich-text document wikis utilizing TipTap, Radix UI, and Framer Motion for premium UX interactions.",
+      "Leveraged Convex ACID Mutations and Reactive Queries to orchestrate instant multi-tenant WS sync and instant global search routing."
+    ]
+  },
+  {
+    title: "Dabara Prep Mobile: On-Device Multimodal AI Tutoring",
+    image: dabaraprepmobileDeep,
+    technologies: ["Flutter", "Dart", "Gemma 4", "LiteRT", "SQLite", "flutter_gemma", "Dio", "Offline AI"],
+    challenge: "Executing production-grade AI-powered educational simulations and multimodal tutor assistance entirely offline on low-resource mobile hardware.",
+    solutions: [
+      "Engineered a local inference engine utilizing LiteRT and flutter_gemma to run Google's Gemma 4 model directly on iOS/Android devices without network latency or cloud server costs.",
+      "Designed a robust SQLite-powered offline state manager to cache WAEC and JAMB CBT simulations, personalized progress reports, flashcards, and lesson notes.",
+      "Built a Flutter-native layout with flutter_math_fork for responsive LaTeX mathematical equations and real-time offline Socratic AI feedback."
+    ]
+  },
+  {
     title: "AI Newsroom Crew: Multi-Agent Content Pipeline",
     image: ainewsroomcrewDeep,
     technologies: ["Gemini 2.5", "Next.js 14", "Upstash Redis", "Deepgram Aura", "Crawl4AI / Firecrawl", "Neon PostgreSQL", "DigitalOcean Spaces"],
@@ -349,6 +481,28 @@ export const TECHNICAL_DEEP_DIVES = [
       "Implemented typed function-calling where Gemini selects tools by name, keeping core reasoning decoupled from execution logic.",
       "Integrated real-time token streaming and live tool-status indicators to provide full visibility into the agent's autonomous decision-making process."
     ]
+  },
+  {
+    title: "Chronos: AI-Native Timeline Orchestration",
+    image: chronosDeep,
+    technologies: ["Next.js 15", "Convex", "Google Gemini", "Stack Auth", "Tailwind CSS", "Framer Motion", "Topological Scheduling"],
+    challenge: "Transforming fluid natural-language plans into complex, deterministically constrained timeline graphs with live multi-user synchronization.",
+    solutions: [
+      "Architected a topological scheduling engine featuring recursive dependency reflowing and Monte Carlo forecasting to forecast plan completion confidence.",
+      "Developed a real-time collaborative Gantt charting layer with Convex presence synchronization and interactive Framer Motion controls.",
+      "Created a deterministically sandboxed action engine that executes custom timeline automations and handles events dynamically without server overhead."
+    ]
+  }
+];
+
+export const PUBLICATIONS = [
+  {
+    title: "Fraudulent Image and Video Detection System Using Deep Learning",
+    description: "A deep learning-based forensics platform designed to detect fraudulent digital media. The system integrates four specialized CNN and RNN architectures trained with GPU acceleration to identify deepfakes and media forgeries across images and videos. It achieves high-accuracy detection (up to 95% for deepfake images) coupled with a reactive Streamlit interface for real-time analysis.",
+    link: "https://www.researchgate.net/publication/405209832_Fraudulent_Image_and_Video_Detection_System_Using_Deep_Learning",
+    publisher: "ResearchGate",
+    year: "2025",
+    tags: ["Deep Learning", "CNNs", "RNNs", "Computer Vision", "Digital Forensics", "Streamlit"]
   }
 ];
 
