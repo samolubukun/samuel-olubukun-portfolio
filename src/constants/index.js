@@ -56,7 +56,7 @@ export const PROJECTS = [
     link: "https://trycataylst.vercel.app/",
     image: catalyst,
     description:
-      "A conversational spreadsheet intelligence platform enabling natural language analytics, deterministic code-generated transformations, live dashboard generation, academic research ingestion, and schema-first privacy-preserving AI analysis. Catalyst combines Gemini-powered orchestration with client-side sandbox execution for mathematically precise spreadsheet intelligence.",
+      "A conversational spreadsheet intelligence platform enabling natural language analytics, code-generated transformations, live dashboards, and schema-first AI analysis. Catalyst combines agent orchestration with client-side sandbox execution for precise data manipulation.",
     technologies: [
       "Next.js 15",
       "Convex",
@@ -235,7 +235,7 @@ export const PROJECTS = [
     link: "https://chronos-ai-timeline-orchestrator.vercel.app/",
     image: chronos,
     description:
-      "An AI-native timeline orchestration system transforming conversational plans into reactive execution graphs with recursive dependency reflow, Monte Carlo forecasting, live collaborative Gantt presence layers, and event-action automations. Chronos combines deterministic sandboxed scheduling logic with real-time Convex synchronization for intelligent roadmap execution.",
+      "An AI-native timeline orchestrator turning conversational plans into reactive execution graphs with live collaborative Gantt scheduling, predictive forecasting, and real-time synchronization.",
     technologies: [
       "Next.js 15",
       "Convex",
