@@ -70,7 +70,7 @@ const Contact = () => {
             transition={{ duration: 0.7 }}
             className="space-y-6 order-1 lg:col-start-1 lg:row-start-1"
           >
-            <h3 className="text-3xl font-semibold bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">Let's collaborate</h3>
+            <h3 className="text-3xl font-semibold bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent">Let's collaborate</h3>
             <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-md">
               I'm currently open to new projects and exciting challenges. Feel free to reach out, and let's discuss how we can build something great together!
             </p>
@@ -86,7 +86,7 @@ const Contact = () => {
           >
             <form onSubmit={handleSubmit} className="bg-white dark:bg-neutral-950 p-6 md:p-10 rounded-3xl border border-neutral-200 dark:border-neutral-800 shadow-2xl relative overflow-hidden transition-colors duration-300">
               {/* Form gradient glow */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-[80px] -z-10"></div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-[80px] -z-10"></div>
 
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -148,7 +148,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full flex items-center justify-center px-6 py-4 rounded-xl font-semibold text-lg transition-all duration-300 ${isSubmitting ? 'bg-neutral-800 text-neutral-500 cursor-not-allowed' : 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5'}`}
+                  className={`w-full flex items-center justify-center px-6 py-4 rounded-xl font-semibold text-lg transition-all duration-300 ${isSubmitting ? 'bg-neutral-800 text-neutral-500 cursor-not-allowed' : 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5'}`}
                 >
                   {isSubmitting ? 'Sending...' : (
                     <>

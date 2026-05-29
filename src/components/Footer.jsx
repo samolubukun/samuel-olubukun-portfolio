@@ -10,26 +10,37 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           {/* Social Links */}
           <div className="flex items-center justify-center gap-8 text-2xl mb-8">
-            <a href="https://github.com/samolubukun" className="text-neutral-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+            <a href="https://github.com/samolubukun" className="text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/samuel-olubukun" className="text-neutral-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+            <a href="https://www.linkedin.com/in/samuel-olubukun" className="text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <FaLinkedin />
             </a>
-            <a href="https://x.com/samuelolubukun" className="text-neutral-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+            <a href="https://x.com/samuelolubukun" className="text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <FaXTwitter />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello" className="text-neutral-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+            <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello" className="text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <FaWhatsapp />
             </a>
           </div>
 
           {/* Copyright */}
           <div className="text-sm text-neutral-600 dark:text-neutral-500 font-medium">
-            <a href="/" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+            <a href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               © {currentYear} Samuel Olubukun
             </a>
           </div>
+        </div>
+        {/* Large footer name */}
+        <div className="mt-10 mb-2 select-none pointer-events-none w-full text-center">
+          <p
+            className="footer-brand-name leading-none whitespace-nowrap"
+            style={{
+              fontSize: "clamp(1.5rem, 8.2vw, 13rem)",
+            }}
+          >
+            SAMUEL OLUBUKUN
+          </p>
         </div>
       </div>
     </footer>
@@ -37,3 +48,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

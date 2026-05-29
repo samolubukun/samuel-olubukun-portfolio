@@ -54,7 +54,7 @@ const Navbar = () => {
     }, [location.pathname]);
 
     const getLinkClasses = (id) =>
-        `transition-colors duration-300 ${activeSection === id ? "text-cyan-600 dark:text-cyan-400 font-bold" : "text-neutral-600 dark:text-neutral-300 hover:text-cyan-600 dark:hover:text-cyan-400"}`;
+        `transition-colors duration-300 ${activeSection === id ? "text-blue-600 dark:text-blue-400 font-bold" : "text-neutral-600 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400"}`;
 
     return (
         <>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex items-center justify-center gap-8 text-lg">
-                    <Link to="/" className={location.pathname === "/" && activeSection === "home" ? "text-cyan-600 dark:text-cyan-400 font-bold transition-colors duration-300" : "text-neutral-600 dark:text-neutral-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"}>Home</Link>
+                    <Link to="/" className={location.pathname === "/" && activeSection === "home" ? "text-blue-600 dark:text-blue-400 font-bold transition-colors duration-300" : "text-neutral-600 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"}>Home</Link>
                     <a href="#project" className={getLinkClasses("project")}>Projects</a>
                     <a href="#technologies" className={getLinkClasses("technologies")}>Skills</a>
                     <a href="#certifications" className={getLinkClasses("certifications")}>Certifications</a>
@@ -86,10 +86,10 @@ const Navbar = () => {
 
                 <div className="hidden md:flex items-center justify-center gap-4 text-2xl">
                     <ThemeToggle />
-                    <a href="https://github.com/samolubukun" className="text-neutral-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><FaGithub /></a>
-                    <a href="https://www.linkedin.com/in/samuel-olubukun" className="text-neutral-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><FaLinkedin /></a>
-                    <a href="https://x.com/samuelolubukun" className="text-neutral-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><FaXTwitter /></a>
-                    <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello" className="text-neutral-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><FaWhatsapp /></a>
+                    <a href="https://github.com/samolubukun" className="text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><FaGithub /></a>
+                    <a href="https://www.linkedin.com/in/samuel-olubukun" className="text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><FaLinkedin /></a>
+                    <a href="https://x.com/samuelolubukun" className="text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><FaXTwitter /></a>
+                    <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello" className="text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><FaWhatsapp /></a>
                 </div>
             </nav>
 
@@ -97,24 +97,24 @@ const Navbar = () => {
             {isMenuOpen && (
                 <div className="fixed inset-0 bg-white dark:bg-neutral-950 z-40 flex flex-col justify-center items-center md:hidden transition-colors duration-300">
                     <div className="flex flex-col items-center gap-6 text-xl mb-10 text-neutral-900 dark:text-white">
-                        <Link to="/" onClick={toggleMenu} className={location.pathname === "/" && activeSection === "home" ? "text-cyan-600 dark:text-cyan-400 font-bold transition-colors duration-300" : "text-neutral-600 dark:text-neutral-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-300"}>Home</Link>
+                        <Link to="/" onClick={toggleMenu} className={location.pathname === "/" && activeSection === "home" ? "text-blue-600 dark:text-blue-400 font-bold transition-colors duration-300" : "text-neutral-600 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"}>Home</Link>
                         <a href="#project" onClick={toggleMenu} className={getLinkClasses("project")}>Projects</a>
                         <a href="#technologies" onClick={toggleMenu} className={getLinkClasses("technologies")}>Skills</a>
                         <a href="#certifications" onClick={toggleMenu} className={getLinkClasses("certifications")}>Certifications</a>
                         <a href="#contact" onClick={toggleMenu} className={getLinkClasses("contact")}>Contact</a>
                     </div>
                     <div className="flex items-center justify-center gap-6 text-3xl text-neutral-900 dark:text-white mt-4">
-                        <a href="https://github.com/samolubukun" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><FaGithub /></a>
-                        <a href="https://www.linkedin.com/in/samuel-olubukun" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><FaLinkedin /></a>
-                        <a href="https://x.com/samuelolubukun" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><FaXTwitter /></a>
-                        <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"><FaWhatsapp /></a>
+                        <a href="https://github.com/samolubukun" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><FaGithub /></a>
+                        <a href="https://www.linkedin.com/in/samuel-olubukun" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><FaLinkedin /></a>
+                        <a href="https://x.com/samuelolubukun" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><FaXTwitter /></a>
+                        <a href="https://api.whatsapp.com/send?phone=2348083273795&text=hello" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><FaWhatsapp /></a>
                     </div>
                 </div>
             )}
 
             {/* Scroll Progress Bar */}
             <motion.div
-                className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-cyan-500 to-blue-600 origin-left z-50"
+                className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 origin-left z-50"
                 style={{ scaleX }}
             />
         </>
@@ -122,3 +122,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -63,9 +63,9 @@ const Publications = () => {
                 href={pub.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-blue-700 transition duration-300 shadow-md shadow-blue-500/20"
+                className="inline-flex items-center gap-2 mt-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors group"
               >
-                Read Paper on ResearchGate <FaExternalLinkAlt size={12} />
+                Read Paper on ResearchGate <FaExternalLinkAlt size={12} className="group-hover:translate-x-0.5 transition-transform" />
               </a>
             </motion.div>
           ))}

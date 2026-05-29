@@ -40,7 +40,7 @@ const Project = () => {
       </motion.h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {displayedProjects.map((project, index) => (
-          <div key={index} className="flex flex-wrap lg:justify-center items-center mb-8 lg:mb-0">
+          <div key={index} className="flex flex-wrap lg:justify-center items-center mb-8 lg:mb-0 p-4 rounded-2xl border border-transparent hover:border-neutral-200 dark:hover:border-neutral-800 hover:bg-neutral-50/50 dark:hover:bg-neutral-900/30 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -53,7 +53,7 @@ const Project = () => {
               >
                 <div className="relative overflow-hidden rounded-xl">
                   <img
-                    className="rounded-xl w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] object-fill bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 transition-transform duration-500 group-hover:scale-105"
+                    className="rounded-xl w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] object-fill bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 group-hover:border-blue-400/30 transition-all duration-500 group-hover:scale-105"
                     src={project.image}
                     alt={project.title}
                     loading="lazy"
@@ -92,9 +92,9 @@ const Project = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 mt-4 px-6 py-2.5 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300 font-semibold text-sm shadow-md hover:shadow-lg"
+                className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors group"
               >
-                View Live Site <FaExternalLinkAlt size={14} />
+                View Live <FaExternalLinkAlt size={12} className="group-hover:translate-x-0.5 transition-transform" />
               </a>
             </motion.div>
           </div>
@@ -105,7 +105,7 @@ const Project = () => {
         <div className="flex justify-center mt-8">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="text-cyan-400 hover:text-cyan-300 font-medium transition-colors flex items-center gap-2 group"
+            className="text-blue-500 hover:text-blue-400 font-medium transition-colors flex items-center gap-2 group"
           >
             {showAll ? (
               <>

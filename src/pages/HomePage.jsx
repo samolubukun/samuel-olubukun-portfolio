@@ -1,4 +1,4 @@
-import Expertise from "../components/Expertise";
+import PersonBehindCode from "../components/PersonBehindCode";
 import Hero from "../components/Hero";
 import Project from "../components/Project";
 import Technologies from "../components/Technologies";
@@ -14,8 +14,8 @@ const HomePage = () => {
             <section id="home">
                 <Hero />
             </section>
-            <section id="expertise">
-                <Expertise />
+            <section id="about" style={{ scrollMarginTop: '3cm' }}>
+                <PersonBehindCode />
             </section>
             <section id="project" style={{ scrollMarginTop: '3cm' }}>
                 <Project />

@@ -2,6 +2,7 @@ import { HERO_CONTENT } from "../constants/index";
 import aboutImg from "../assets/SamuelOlubukun.png";
 import resumePdf from "../assets/samuel_olubukun_resume.pdf";
 import { motion } from 'framer-motion';
+import { FiDownload } from 'react-icons/fi';
 
 const Hero = () => {
   const container = (delay) => ({
@@ -31,7 +32,7 @@ const Hero = () => {
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
-            className="bg-gradient-to-r from-blue-400 via-cyan-500 to-blue-600 bg-clip-text text-3xl tracking-tight text-transparent"
+            className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-3xl tracking-tight text-transparent"
           >
             Full Stack AI/ML Engineer
           </motion.span>
@@ -43,15 +44,27 @@ const Hero = () => {
           >
             {HERO_CONTENT}
           </motion.p>
-          <motion.a
+          {/* Desktop buttons */}
+          <motion.div
             variants={container(1.5)}
             initial="hidden"
             animate="visible"
-            href={resumePdf}
-            className="hidden lg:inline-block mt-6 mb-8 md:mb-0 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
+            className="hidden lg:flex items-center gap-4 mt-6 mb-8"
           >
-            My Resume
-          </motion.a>
+            <a
+              href="#contact"
+              className="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-xl shadow-md transition-all duration-300"
+            >
+              Contact
+            </a>
+            <a
+              href={resumePdf}
+              download
+              className="flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-blue-600/80 text-neutral-700 dark:text-neutral-300 hover:border-blue-500 hover:text-blue-500 dark:hover:text-blue-400 font-semibold transition-all duration-300"
+            >
+              <FiDownload size={16} /> Resume
+            </a>
+          </motion.div>
         </div>
       </div>
       <div className="w-full lg:w-5/12 lg:p-8">
@@ -65,15 +78,27 @@ const Hero = () => {
             className="w-56 h-56 md:w-64 md:h-64 lg:w-96 lg:h-96 lg:ml-8 rounded-full shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_40px_rgba(56,189,248,0.5)] transition-all duration-500 filter brightness-95 hover:brightness-110 object-cover"
             fetchpriority="high"
           />
-          <motion.a
+          {/* Mobile buttons */}
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
-            href={resumePdf}
-            className="lg:hidden mt-8 bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
+            className="lg:hidden flex items-center gap-4 mt-8"
           >
-            My Resume
-          </motion.a>
+            <a
+              href="#contact"
+              className="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-xl shadow-md transition-all duration-300"
+            >
+              Contact
+            </a>
+            <a
+              href={resumePdf}
+              download
+              className="flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-blue-600/80 text-neutral-700 dark:text-neutral-300 hover:border-blue-500 hover:text-blue-500 dark:hover:text-blue-400 font-semibold transition-all duration-300"
+            >
+              <FiDownload size={16} /> Resume
+            </a>
+          </motion.div>
         </div>
       </div>
     </div>

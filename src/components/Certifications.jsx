@@ -34,7 +34,7 @@ const Certifications = () => {
                         initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }} // Alternate entrance
                         transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered delay
                         key={index}
-                        className="w-full bg-neutral-100/50 dark:bg-neutral-900/50 p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 hover:border-cyan-500/50 hover:shadow-lg dark:hover:shadow-cyan-500/20 transition-all hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden"
+                        className="w-full bg-neutral-100/50 dark:bg-neutral-900/50 p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-blue-500/20 transition-all hover:-translate-y-2 flex flex-col justify-between relative overflow-hidden"
                     >
                         <span className="absolute top-4 right-4 text-xs font-semibold text-neutral-600 dark:text-neutral-500 bg-neutral-200 dark:bg-neutral-800 px-2 py-1 rounded border border-neutral-300 dark:border-neutral-700 z-10">
                             {cert.year}
@@ -65,7 +65,7 @@ const Certifications = () => {
                             href={cert.credentialLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center text-sm font-medium text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 transition-colors mt-auto mx-auto group"
+                            className="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors mt-auto mx-auto group"
                         >
                             View Credential <FaExternalLinkAlt className="ml-2 text-xs group-hover:translate-x-1 transition-transform" />
                         </a>
@@ -77,7 +77,7 @@ const Certifications = () => {
                 <div className="flex justify-center mt-8">
                     <button
                         onClick={() => setShowAll(!showAll)}
-                        className="text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 font-medium transition-colors flex items-center gap-2 group"
+                        className="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 font-medium transition-colors flex items-center gap-2 group"
                     >
                         {showAll ? (
                             <>
@@ -96,3 +96,4 @@ const Certifications = () => {
 };
 
 export default Certifications;
+

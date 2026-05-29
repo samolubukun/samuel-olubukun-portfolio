@@ -70,7 +70,7 @@ const Technologies = () => {
                   key={sIndex}
                   variants={itemVariants}
                   whileHover={{ scale: 1.05, backgroundColor: "rgba(56, 189, 248, 0.1)" }}
-                  className="rounded border border-neutral-200 dark:border-neutral-800 bg-neutral-100/50 dark:bg-neutral-900/30 px-2 py-1 text-xs md:text-sm font-medium text-neutral-600 dark:text-neutral-400 transition-all hover:border-cyan-500/50 hover:text-cyan-600 dark:hover:text-cyan-400 cursor-default whitespace-nowrap shadow-sm dark:shadow-none"
+                  className="rounded border border-neutral-200 dark:border-neutral-800 bg-neutral-100/50 dark:bg-neutral-900/30 px-2 py-1 text-xs md:text-sm font-medium text-neutral-600 dark:text-neutral-400 transition-all hover:border-blue-500/50 hover:text-blue-600 dark:hover:text-blue-400 cursor-default whitespace-nowrap shadow-sm dark:shadow-none"
                 >
                   {skill}
                 </motion.span>
@@ -84,3 +84,4 @@ const Technologies = () => {
 };
 
 export default Technologies;
+
