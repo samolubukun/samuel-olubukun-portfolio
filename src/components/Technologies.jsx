@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const techCategories = [
   {
     name: "Languages",
-    skills: ["Python", "JavaScript", "TypeScript", "PHP", "Rust", "Java", "SQL", "HTML", "CSS"],
+    skills: ["Python", "JavaScript", "TypeScript", "Dart", "PHP", "Rust", "Java", "SQL", "HTML", "CSS"],
     color: "text-blue-600 dark:text-blue-400",
   },
   {
     name: "Frameworks",
-    skills: ["React", "Next.js", "Axum", "Tauri", "Node.js", "Express.js", "FastAPI", "Flask", "Django", "Tailwind CSS", "Bootstrap"],
+    skills: ["React", "React Native", "Next.js", "Flutter", "Axum", "Tauri", "Node.js", "Express.js", "FastAPI", "Flask", "Django", "Tailwind CSS", "Bootstrap"],
     color: "text-green-600 dark:text-green-400",
   },
   {

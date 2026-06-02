@@ -117,6 +117,13 @@ export const PROJECTS = [
     technologies: ["Next.js", "React", "TailwindCSS", "Gemini Vision", "Convex", "Stack Auth", "Node.js"],
   },
   {
+    title: "VocalVista",
+    link: "https://vocalvista.netlify.app/",
+    image: vocalvista,
+    description: "VocalVista is an AI-native voice-coaching workspace to sharpen public speaking, interview delivery, storytelling, and language fluency. Powered by Deepgram's voice agent API, it matches you with specialized AI personas to simulate real-world scenarios, analyze verbal habits, and generate progress diagnostics.",
+    technologies: ["Next.js", "TypeScript", "Deepgram", "Gemini AI", "Convex", "TTS/STT"],
+  },
+  {
     title: "Dabara Prep Mobile App",
     link: "https://github.com/samolubukun/Dabara-Prep-Flutter",
     image: dabaraprepmobile,
@@ -223,13 +230,6 @@ export const PROJECTS = [
     description: "A dual-component system featuring a PyPI package that crawls local Git metadata and a cloud platform for visualizing engineering impact. It allows developers to showcase hidden contributions from private and organizational repositories with premium analytics dashboards.",
     technologies: ["Python", "Next.js", "React", "PostgreSQL", "Drizzle", "Tailwind CSS"],
   }, */
-  {
-    title: "VOCAL VISTA",
-    link: "https://vocalvista.netlify.app/",
-    image: vocalvista,
-    description: "A versatile AI partner for voice-first interactions. It supports everything from immersive language learning and topic-based lectures to polished presentations and mock interviews, all with instant speech feedback.",
-    technologies: ["Next.js", "TypeScript", "Deepgram", "Gemini AI", "Convex", "TTS/STT"],
-  },
   {
     title: "Chronos",
     link: "https://chronos-ai-timeline-orchestrator.vercel.app/",

@@ -14,7 +14,7 @@ const Certifications = () => {
         return () => window.removeEventListener("resize", checkMobile);
     }, []);
 
-    const defaultItems = isMobile ? 5 : 6;
+    const defaultItems = 6;
     const displayedCerts = !showAll ? CERTIFICATIONS.slice(0, defaultItems) : CERTIFICATIONS;
 
     return (
@@ -27,7 +27,62 @@ const Certifications = () => {
             >
                 Certifications
             </motion.h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+
+            {/* Mobile View - 2 per row, full details in small font, image size completely unaffected */}
+            <div className="grid grid-cols-2 gap-4 px-4 md:hidden">
+                {displayedCerts.map((cert, index) => (
+                    <motion.div
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        transition={{ duration: 0.3, delay: index * 0.05 }}
+                        key={`mobile-${index}`}
+                        className="w-full flex justify-center"
+                    >
+                        <a
+                            href={cert.credentialLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full bg-neutral-100/50 dark:bg-neutral-900/50 p-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 hover:border-blue-500/50 active:scale-95 transition-all duration-300 flex flex-col justify-between relative overflow-hidden shadow-sm"
+                        >
+                            {/* Absolute Year Badge */}
+                            <span className="absolute top-2 right-2 text-[8px] font-semibold text-neutral-600 dark:text-neutral-500 bg-neutral-200 dark:bg-neutral-800 px-1.5 py-0.5 rounded border border-neutral-300 dark:border-neutral-700 z-10">
+                                {cert.year}
+                            </span>
+
+                            <div className="flex flex-col items-center w-full">
+                                {/* Badge Image Container (size remains completely unaffected) */}
+                                <div className={`aspect-square w-full bg-white dark:bg-neutral-800 rounded-xl flex items-center justify-center border border-neutral-200 dark:border-neutral-700 shadow-inner relative overflow-hidden ${cert.issuer === 'DataCamp' ? 'p-1.5' : 'p-0'}`}>
+                                    {cert.badge ? (
+                                        <img
+                                            src={cert.badge}
+                                            alt={`${cert.title} badge`}
+                                            className={`w-full h-full ${cert.issuer === 'DataCamp' ? 'object-contain' : 'object-cover'}`}
+                                        />
+                                    ) : (
+                                        <FaAward className="text-2xl text-neutral-400 dark:text-neutral-500" />
+                                    )}
+                                </div>
+
+                                {/* Small Font Details */}
+                                <h3 className="text-[10px] font-bold text-neutral-900 dark:text-neutral-200 mt-2.5 mb-0.5 leading-tight text-center w-full px-0.5">
+                                    {cert.title}
+                                </h3>
+                                <p className="text-neutral-500 dark:text-neutral-400 text-[8.5px] leading-tight mb-2 text-center w-full px-0.5">
+                                    {cert.issuer}
+                                </p>
+                            </div>
+
+                            {/* View Link */}
+                            <div className="text-[10px] font-semibold text-blue-600 dark:text-blue-400 flex items-center justify-center gap-1 mt-auto mx-auto">
+                                View <FaExternalLinkAlt size={8} />
+                            </div>
+                        </a>
+                    </motion.div>
+                ))}
+            </div>
+
+            {/* Desktop/Tablet View - Full Cards */}
+            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
                 {displayedCerts.map((cert, index) => (
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
