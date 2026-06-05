@@ -6,12 +6,12 @@ import voxeval from "../assets/projects/voxeval.jpg";
 import dealspotng from "../assets/projects/dealspotng.png";
 import zenithmeet from "../assets/projects/zenithmeet.png";
 import vocalvista from "../assets/projects/vocalvista.png";
-import mentora from "../assets/projects/mentora.jpg";
 import restoirhealth from "../assets/projects/restoirhealth.png";
 import thrivepath from "../assets/projects/thrivepath.jpg";
 import dabaras from "../assets/projects/dabaras.jpg";
 import contentnova from "../assets/projects/contentnova.png";
 import commitpulse from "../assets/projects/commitpulse.png";
+import chowscan from "../assets/projects/chowscan.jpg";
 import dabaraprepmobile from "../assets/projects/dabaraprepmobile.jpg";
 import dabaraprep from "../assets/projects/dabaraprep.png";
 import pdfaxis from "../assets/projects/pdfaxis.png";
@@ -118,10 +118,33 @@ export const PROJECTS = [
   },
   {
     title: "VocalVista",
-    link: "https://vocalvista.netlify.app/",
+    link: "https://vocal-vista.vercel.app/",
     image: vocalvista,
     description: "VocalVista is an AI-native voice-coaching workspace to sharpen public speaking, interview delivery, storytelling, and language fluency. Powered by Deepgram's voice agent API, it matches you with specialized AI personas to simulate real-world scenarios, analyze verbal habits, and generate progress diagnostics.",
     technologies: ["Next.js", "TypeScript", "Deepgram", "Gemini AI", "Convex", "TTS/STT"],
+  },
+  {
+    title: "Chow Scan Mobile App",
+    link: "https://github.com/samolubukun/Chow-Scan/",
+    image: chowscan,
+    description: `ChowScan is an offline AI-powered food analysis and nutrition tracking mobile application. It utilizes Google's Gemma model to execute full visual plate scans, nutrition label scans, and natural language descriptions entirely on-device, offering a private and self-contained nutrition tracking ecosystem.
+
+On-Device AI Engine (Gemma):
+Powered entirely by Google's Gemma 4 E2B IT (LiteRT-LM) model (~2.59GB), executing locally on your device via the flutter_gemma package with hardware acceleration interfacing automatically with the device GPU (PreferredBackend.gpu) for swift and efficient response generation.
+
+Capabilities:
+• Multimodal Scanning: Processes camera frames of nutrition labels and meal plates directly to identify foods and extract text layout arrays.
+• Structured Extraction: Translates complex, arbitrary visual/textual data into structured JSON objects (Calories, Protein, Carbs, Fat, and micronutrients) that can be inserted into the database.
+• Conversational Coaching: Local context-aware text generation for the in-app AI Chat screen with full message history and image attachment support.
+
+Key Features:
+• Scan a Label: Capture or select an image of a nutrition facts label to extract and analyze every macro and micronutrient offline.
+• Scan a Plate: Take a photo of your food to generate real-time estimates of calories and macronutrients.
+• Describe a Meal: Type a natural language description of what you ate to retrieve instant nutritional information.
+• Daily Intake Log: Manage your logged historical meals via a horizontal weekly date strip or integrated calendar modal.
+• AI Chat: Converse with an on-device wellness coach to ask follow-up questions with image support.
+• Offline Security: Zero data leaves the user's phone, preserving complete privacy.`,
+    technologies: ["Flutter", "Gemma", "Dart", "Android", "SharedPreferences"],
   },
   {
     title: "Dabara Prep Mobile App",
@@ -165,13 +188,6 @@ export const PROJECTS = [
     image: zenithmeet,
     description: "A premium video conferencing platform built for high-end enterprise collaboration. Utilizing ultra-low latency infrastructure, it provides encrypted meeting rooms, role-based access controls, and a minimalist celestial-inspired UI for focused professional communication.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Cloudflare Workers", "RealtimeKit", "Vite"]
-  },
-  {
-    title: "Mentora",
-    link: "https://samuelolubukun-mentora.hf.space",
-    image: mentora,
-    description: "An AI voice coaching platform for mastering high-stakes communication. From public speaking and storytelling to social mastery and conflict resolution, it provides real-time feedback to help you communicate with confidence and impact.",
-    technologies: ["Python", "FastAPI", "LiveKit", "Deepgram", "OpenAI", "Prisma", "TailwindCSS"],
   },
   {
     title: "Nova Clipper AI",

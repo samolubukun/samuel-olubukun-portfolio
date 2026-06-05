@@ -77,7 +77,7 @@ const Project = () => {
                   {project.title}
                 </a>
               </h6>
-              <p className="mb-4 text-neutral-600 dark:text-neutral-400">{project.description}</p>
+              <p className="mb-4 text-neutral-600 dark:text-neutral-400">{project.description.split("\n\n")[0]}</p>
               {/* <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, index) => (
                   <span
@@ -157,7 +157,7 @@ const Project = () => {
                 <h2 className="text-3xl font-bold text-neutral-900 dark:text-white mb-4">
                   {selectedProject.title}
                 </h2>
-                <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8 leading-relaxed">
+                <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8 leading-relaxed whitespace-pre-line">
                   {selectedProject.description}
                 </p>
 

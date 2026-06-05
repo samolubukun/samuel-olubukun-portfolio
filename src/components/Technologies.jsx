@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const techCategories = [
   {
     name: "Languages",
-    skills: ["Python", "JavaScript", "TypeScript", "Dart", "PHP", "Rust", "Java", "SQL", "HTML", "CSS"],
+    skills: ["Python", "JavaScript", "TypeScript", "PHP", "Rust", "Dart", "Java", "SQL", "HTML", "CSS"],
     color: "text-blue-600 dark:text-blue-400",
   },
   {
@@ -13,7 +13,7 @@ const techCategories = [
   },
   {
     name: "AI & Data Science",
-    skills: ["Generative AI", "Autonomous AI Agents", "Multi-Agent Systems", "Agentic Workflows", "RAG Pipelines", "Vector Databases", "Prompt Engineering", "OpenAI", "Gemini", "Deep Learning", "NLP", "Machine Learning", "Scikit-learn", "TensorFlow", "PyTorch", "Hugging Face"],
+    skills: ["Generative AI", "Autonomous AI Agents", "Multi-Agent Systems", "Agentic Workflows", "RAG Pipelines", "Vector Databases", "Prompt Engineering", "OpenAI", "Gemini", "Deep Learning", "NLP", "Machine Learning", "Data Analysis", "Scikit-learn", "TensorFlow", "PyTorch", "Hugging Face"],
     color: "text-orange-600 dark:text-orange-400",
   },
   {
