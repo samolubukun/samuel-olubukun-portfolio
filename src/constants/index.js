@@ -49,7 +49,18 @@ export const PROJECTS = [
     image: contentnova,
     description:
       "An AI-powered creator workspace unifying ideation, creation, repurposing, planning, publishing, and tracking across six platforms. I engineered the platform to automate distribution and scale content production, cutting manual effort by 85% while maintaining a seamless end-to-end workflow.",
-    technologies: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Gemini", "Deepgram", "Hugging Face", "DigitalOcean Spaces", "Creem", "FFmpeg", "Framer Motion", "AI Orchestration", "Distributed Workers"],
+    /* technologies: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Gemini", "Deepgram", "Hugging Face", "DigitalOcean Spaces", "Creem", "FFmpeg", "Framer Motion", "AI Orchestration", "Distributed Workers"], */
+    details: {
+      overview: "An AI-powered creator workspace structured around six foundational pillars to streamline and automate the entire content success journey from ideation to tracking.",
+      features: [
+        "Ideation: Instantly generates ideas tailored to your niche, audience, and platforms, and acts as a central repository for capturing thoughts.",
+        "Creation: Accelerates content production to transform concepts into polished, multi-format assets while maintaining your unique brand voice.",
+        "Repurposing: Adapts a single source asset (long-form video/text) into multiple formats optimized for six different platforms to maximize reach.",
+        "Planning & Strategy: A unified hub to manage campaigns, organize timelines, and orchestrate scheduling for a consistent posting cadence.",
+        "Publishing: Automates seamless multi-platform delivery with smart optimization, autotagging, and intelligent hashtagging.",
+        "Tracking & Analytics: A centralized dashboard to monitor key performance metrics and manage audience comments/interactions in one place."
+      ]
+    }
   },
   {
     title: "Catalyst",
@@ -57,7 +68,7 @@ export const PROJECTS = [
     image: catalyst,
     description:
       "A conversational spreadsheet intelligence platform enabling natural language analytics, code-generated transformations, live dashboards, and schema-first AI analysis. Catalyst combines agent orchestration with client-side sandbox execution for precise data manipulation.",
-    technologies: [
+    /* technologies: [
       "Next.js 15",
       "Convex",
       "Google Gemini",
@@ -71,7 +82,16 @@ export const PROJECTS = [
       "AI Agents",
       "Real-time Dashboards",
       "Spreadsheet Intelligence"
-    ],
+    ], */
+    details: {
+      overview: "Catalyst is a conversational spreadsheet intelligence platform that lets you analyze complex spreadsheets using pure natural language with 100% mathematical precision and schema-first privacy.",
+      features: [
+        "Conversational Analytics: Formula-free Q&A compiling precise mathematical aggregates instantly.",
+        "Schema-First Privacy: Table metadata and small samples are sent to the AI, keeping raw data completely private in Convex.",
+        "Web Data Augmentation: Autonomous web crawling (Firecrawl) queries the web and merges live info back into your grid.",
+        "Interactive Dashboards & Reports: AI-generated chart layouts with customizable themes and report design tools."
+      ]
+    }
   },
   {
     title: "Threadscape",
@@ -79,7 +99,7 @@ export const PROJECTS = [
     image: threadscape,
     description:
       "An async-first collaborative workspace engineered to eliminate real-time chat fatigue through structured threaded discussions, polymorphic Kanban boards, wiki documentation, live polls, and reactive unread tracking. Built on Convex's real-time reactive infrastructure with deep multi-tenant collaboration and instant search orchestration.",
-    technologies: [
+    /* technologies: [
       "Next.js 15",
       "React 19",
       "Convex",
@@ -93,35 +113,80 @@ export const PROJECTS = [
       "Real-time Collaboration",
       "WebSockets",
       "Multi-tenant Architecture"
-    ],
+    ], */
+    details: {
+      overview: "An async-first team collaboration workspace built to eliminate real-time chat fatigue by organizing team work into structured, contextual discussion threads, sprint task boards, wiki pages, and interactive polls.",
+      features: [
+        "Structured Discussion Threads: Async conversations with rich-text formatting, bookmarks, pins, and tag extraction.",
+        "Polymorphic Kanban Sprints: Interactive task boards (Backlog to Done) built directly into the space workflow.",
+        "Wiki Pages & Live Polls: Document project resources and gather team consensus with live animated percentages.",
+        "Ctrl+K Command Palette: Sub-second, multi-table fuzzy search across comments, tasks, and documentation."
+      ]
+    }
   },
   {
     title: "Phaneros",
     link: "https://phaneros-web.vercel.app/",
     image: phaneros,
     description: "An intelligent real-time Scripture detection and dynamic show-building suite for live sermons. Available as both a desktop and web platform, it automates the bridge between spoken scripture and visual output, featuring high-speed verse detection and a dual-dashboard suite for instant projection.",
-    technologies: ["Rust", "Axum", "Tauri", "React", "Node.js", "SQLite", "Cloudflare", "Real-time STT"],
+    /* technologies: ["Rust", "Axum", "Tauri", "React", "Node.js", "SQLite", "Cloudflare", "Real-time STT"], */
+    details: {
+      overview: "An intelligent, real-time Scripture detection and dynamic show-building suite for live sermon streams and church broadcasts.",
+      features: [
+        "Multi-Strategy Verse Detection: Combines high-speed Aho-Corasick matching with semantic Qwen-embedding theological allusions.",
+        "Dual-Dashboard Suite: Classic view for high-density feed monitoring, and Studio view for logic-based slide composition.",
+        "Resilient STT Proxy: Integrates local Whisper ASR, Vosk offline recognition, and authenticated Deepgram Nova-3 connections.",
+        "Professional Broadcast Integration: Transparent overlays, custom OBS browser sources, and OSC remote triggers."
+      ]
+    }
   },
   {
     title: "CodexLM",
     link: "https://codex-lm.vercel.app/",
     image: codexlm,
     description: "A high-performance research ecosystem designed to transform multi-modal data into structured knowledge. It features source ingestion, agentic RAG for hybrid search including web access, and a Creative Studio suite generating professional podcasts, documentation, and social packs from research.",
-    technologies: ["Next.js 15", "Convex", "Stack Auth", "Pinecone", "Deepgram", "Google Gemini", "DigitalOcean Spaces", "Tailwind CSS v4", "Framer Motion"],
+    /* technologies: ["Next.js 15", "Convex", "Stack Auth", "Pinecone", "Deepgram", "Google Gemini", "DigitalOcean Spaces", "Tailwind CSS v4", "Framer Motion"], */
+    details: {
+      overview: "A high-performance research ecosystem designed to transform multi-modal data sources (PDFs, audio, web transcripts) into structured, actionable knowledge.",
+      features: [
+        "Multi-Modal Ingestion: Full support for PDF, DOCX, PPTX, YouTube transcripts, and audio files.",
+        "Agentic RAG Engine: Combines semantic Pinecone vector embeddings with citation mapping and voice search.",
+        "Creative Studio Suite: Renders interactive slide decks, 3D flashcards, quizzes, diagrams (Mermaid.js), and social packs.",
+        "Audio Briefings: Auto-generates structured two-person dialogue scripts and audio files using Deepgram Aura-2."
+      ]
+    }
   },
   {
     title: "Restoir Health",
     link: "https://restoir-health.vercel.app",
     image: restoirhealth,
     description: "An AI-powered skin health companion that analyzes conditions from photos. It includes a daily tracker and timeline visualization to monitor your progress, plus a specialized AI dermatology chatbot for instant, personalized guidance.",
-    technologies: ["Next.js", "React", "TailwindCSS", "Gemini Vision", "Convex", "Stack Auth", "Node.js"],
+    /* technologies: ["Next.js", "React", "TailwindCSS", "Gemini Vision", "Convex", "Stack Auth", "Node.js"], */
+    details: {
+      overview: "An advanced, patient-first skincare platform that detects, analyzes, and helps patients manage acne, eczema, and other skin conditions.",
+      features: [
+        "AI Skin Scan: Detects skin conditions with dermatology-grade accuracy using Gemini Vision.",
+        "Progress Tracker: Daily logs of habits and products with side-by-side visual photo comparisons.",
+        "HD Telehealth Video Room: Conflict-free scheduling with live video consultations and audio/video controls.",
+        "SOAP Clinical Charting: Secure, direct clinician charting integrated into telehealth sessions."
+      ]
+    }
   },
   {
     title: "VocalVista",
     link: "https://vocal-vista.vercel.app/",
     image: vocalvista,
     description: "VocalVista is an AI-native voice-coaching workspace to sharpen public speaking, interview delivery, storytelling, and language fluency. Powered by Deepgram's voice agent API, it matches you with specialized AI personas to simulate real-world scenarios, analyze verbal habits, and generate progress diagnostics.",
-    technologies: ["Next.js", "TypeScript", "Deepgram", "Gemini AI", "Convex", "TTS/STT"],
+    /* technologies: ["Next.js", "TypeScript", "Deepgram", "Gemini AI", "Convex", "TTS/STT"], */
+    details: {
+      overview: "An AI-native voice-coaching workspace designed to sharpen public speaking, interview delivery, storytelling, and language fluency.",
+      features: [
+        "Unified Voice-to-Voice: Sub-second, full-duplex conversational voice training via Deepgram's Voice Agent API.",
+        "Expert Coach Cast: Train with specialized AI expert personas (Sofia, Ethan, Justin) for realistic scenarios.",
+        "Feedback Diagnostics: Structured post-session analysis and action plans powered by Gemini.",
+        "Real-Time Transcripts & Safety: Speech-bubble conversation logs with auto-suspend triggers when credits run out."
+      ]
+    }
   },
   {
     title: "Chow Scan Mobile App",
@@ -144,7 +209,16 @@ Key Features:
 • Daily Intake Log: Manage your logged historical meals via a horizontal weekly date strip or integrated calendar modal.
 • AI Chat: Converse with an on-device wellness coach to ask follow-up questions with image support.
 • Offline Security: Zero data leaves the user's phone, preserving complete privacy.`,
-    technologies: ["Flutter", "Gemma", "Dart", "Android", "SharedPreferences"],
+    /* technologies: ["Flutter", "Gemma", "Dart", "Android", "SharedPreferences"], */
+    details: {
+      overview: "An offline-first AI-powered food analysis and nutrition tracking mobile app that runs fully on-device without internet access, preserving complete privacy.",
+      features: [
+        "Multimodal Scanner: Scans nutrition labels and meal plates to estimate calories and macros.",
+        "Describe a Meal: Input natural language descriptions of meals for instant nutrition estimation.",
+        "AI Chat Coach: Chat with a local, context-aware wellness coach (supports conversation history and image attachments).",
+        "Daily Intake Log: Track historical meals via a weekly date strip and an integrated calendar modal."
+      ]
+    }
   },
   {
     title: "Dabara Prep Mobile App",
@@ -152,7 +226,7 @@ Key Features:
     image: dabaraprepmobile,
     description:
       "An offline-first AI-powered Nigerian exam preparation platform running Google's Gemma 4 model entirely on-device. It combines WAEC and JAMB CBT simulations, personalized AI tutoring, lesson notes, flashcards, LaTeX rendering, and native offline multimodal inference without requiring continuous internet connectivity.",
-    technologies: [
+    /* technologies: [
       "Flutter",
       "Dart",
       "Gemma 4",
@@ -166,42 +240,85 @@ Key Features:
       "On-device Inference",
       "WAEC CBT",
       "JAMB CBT"
-    ],
+    ], */
+    details: {
+      overview: "An offline-first Nigerian exam preparation mobile app running Google's Gemma model entirely on-device, offering WAEC and JAMB exam simulation.",
+      features: [
+        "Offline AI Tutor: Interactive high-school tutor that handles academic Q&A and image-based visual explanations.",
+        "WAEC & JAMB Simulators: Real past questions (2011-2024) across 30+ subjects with custom UTME subject combinations.",
+        "LaTeX Math Rendering: Pixel-perfect math/science rendering with swipe-scroll containers to prevent line wrapping.",
+        "Curriculum Study Notes: Full, term-by-term high school lesson notes with streaks and countdown study timers."
+      ]
+    }
   },
   {
     title: "AI Newsroom Crew",
     link: "https://autonomous-ai-newsroom-crew.pxxl.click/",
     image: ainewsroomcrew,
     description: "A fully automated, multi-agent AI news crew that researches the latest AI trends and LLM developments, scours the web for raw data on emerging AI technologies and industry developments, and publishes curated daily news roundups alongside ultra-realistic AI-generated podcasts.",
-    technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis", "AI Agents"],
+    /* technologies: ["Next.js 14", "React 18", "Framer Motion", "Tailwind CSS", "Google Gemini", "Deepgram Aura", "Crawl4AI", "Firecrawl", "PostgreSQL", "DigitalOcean Spaces", "Upstash Redis", "AI Agents"], */
+    details: {
+      overview: "A fully automated, multi-agent content generation crew that researches AI trends and publishes daily roundups and podcasts.",
+      features: [
+        "6-Agent Autonomous Crew: Investigator (Firecrawl), Chief Editor (Triage), Editor, Reporter, Podcast Editor, and Voice.",
+        "Audio Podcast Production: Converts research scripts into dialogue and synthesizes audio via Deepgram Aura.",
+        "Serverless Queue Pipeline: Prevents duplicate scraper execution and API usage via serverless Upstash Redis queues."
+      ]
+    }
   },
   {
     title: "DealSpotNG",
     link: "http://dealspotng.dabaras.com",
     image: dealspotng,
     description: "A high-performance classifieds marketplace tailored for the Nigerian market. It features a real-time negotiation system with price history tracking, advanced geolocation discovery, and a comprehensive admin suite for ad moderation and user verification.",
-    technologies: ["React", "Firebase Auth", "Firestore", "Cloud Storage", "Bootstrap", "React Helmet"]
+    /* technologies: ["React", "Firebase Auth", "Firestore", "Cloud Storage", "Bootstrap", "React Helmet"], */
+    details: {
+      overview: "A high-performance classifieds marketplace tailored for the Nigerian market featuring price history tracking and negotiation.",
+      features: [
+        "Real-Time Negotiation: Direct price bidding and buyer-seller price history tracking.",
+        "Advanced Geolocation: Localized discovery to easily find items and vendors nearby.",
+        "Moderator Dashboard: Admin console for listing verification and user trust scoring."
+      ]
+    }
   },
   {
     title: "ZenithMeet",
     link: "https://zenithmeet.samuelolubukun.workers.dev",
     image: zenithmeet,
     description: "A premium video conferencing platform built for high-end enterprise collaboration. Utilizing ultra-low latency infrastructure, it provides encrypted meeting rooms, role-based access controls, and a minimalist celestial-inspired UI for focused professional communication.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Cloudflare Workers", "RealtimeKit", "Vite"]
+    /* technologies: ["React", "TypeScript", "Tailwind CSS", "Cloudflare Workers", "RealtimeKit", "Vite"], */
+    details: {
+      overview: "A premium video conferencing platform built on edge-native serverless WebRTC infrastructure.",
+      features: [
+        "Edge-Native SFU: Ultra-low latency video routing powered by Cloudflare Workers and RealtimeKit.",
+        "Celestial Minimalist UI: Focused, high-end design optimized for distraction-free professional communication.",
+        "Granular Controls: Fully encrypted rooms, role-based access, and screen sharing."
+      ]
+    }
   },
   {
     title: "Nova Clipper AI",
     link: "https://samuelolubukun-novaclipperai.hf.space/",
     image: novaclipperai,
-    description: "Advanced browser-native platform for repurposing long-form video into high-impact shorts. Drop a podcast, interview, or presentation into the browser and get ready-to-post clips with premium captions, dynamic AI face tracking, and smart cropping. Runs securely via WebAssembly.",
-    technologies: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "FFmpeg.wasm", "face-api.js", "TensorFlow.js", "Google Gemini", "Deepgram"],
+    description: "Nova Video Clipper is an advanced browser-native platform for repurposing long-form video into high-impact vertical shorts. Everything runs securely client-side via WebAssembly and browser-native AI integrations.",
+    /* technologies: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "FFmpeg.wasm", "face-api.js", "TensorFlow.js", "Google Gemini", "Deepgram"], */
+    details: {
+      overview: "Nova Video Clipper is an advanced browser-native AI platform for repurposing long-form video into high-impact shorts with automated face tracking, transcription, and premium captions.",
+      features: [
+        "Intelligent Client-Side Transcription: Extracts audio locally and transcribes with word-level timestamps and speaker diarization.",
+        "AI Clip Selection: Leverages Gemini-2.5-Flash-Lite to automatically identify the most viral hooks and complete thoughts.",
+        "Dynamic AI Face Tracking: Portrays 9:16 vertical video by automatically following the speaker's face with professional smoothing.",
+        "Premium Captions: Highly readable, custom-designed captions with phrase-aware grouping and smart line-wrapping.",
+        "Local Rendering & Export: Encodes and exports the final video directly within the browser utilizing FFmpeg.wasm."
+      ]
+    }
   },
   {
-    title: "Dabara Prep",
+    title: "Dabara Prep Web App",
     link: "https://dabaraprep.dabaras.com",
     image: dabaraprep,
-    description: "A learning platform with AI-powered features for Nigerian SSCE students. It features a multi-modal Socratic AI tutor, collaborative Dabara Circle for resource sharing, and productivity tools including a gamified Study Marathon and intelligent progress tracker to foster productive study habits.",
-    technologies: [
+    description: "Dabara Prep is an AI-powered exam preparation platform designed to help Nigerian students excel in JAMB, WAEC, and NECO exams. It combines authentic past questions with step-by-step AI explanations, voice learning, and instant problem-solving.",
+    /* technologies: [
       "Next.js",
       "React",
       "Convex",
@@ -209,50 +326,71 @@ Key Features:
       "Gemini AI",
       "TailwindCSS",
       "Node.js"
-    ],
+    ], */
+    details: {
+      overview: "Dabara Prep transforms the way students study for major Nigerian examinations by providing authentic CBT practice and personal AI tutor guidance.",
+      features: [
+        "AI Personal Tutor: Get step-by-step explanations for complex concepts and problem-solving 24/7.",
+        "Snap & Solve: Take a photo or upload an image of any question to receive instant step-by-step guidance.",
+        "Voice Learning Support: Ask questions using voice inputs to get quick, spoken clarifications.",
+        "JAMB CBT Mastery: Practice in a realistic CBT exam simulator with thousands of verified past questions.",
+        "WAEC & NECO Prep: Master objective and theory questions aligned with the official exam curriculum and marking schemes."
+      ]
+    }
   },
   {
     title: "Dabara Solutions",
     link: "http://dabaras.com/",
     image: dabaras,
     description: "A comprehensive corporate site that showcases the firm's expertise in Software Development and ICT through detailed service offerings, company insights, and integrated contact channels.",
-    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
+    /* technologies: ["PHP", "HTML", "CSS", "JavaScript"], */
+    details: {
+      overview: "A corporate marketing site presenting engineering consultation, software delivery, and ICT systems.",
+      features: [
+        "Service Showcases: Clean, responsive presentation of professional IT consulting and bespoke software services.",
+        "Contact Integration: Secure inquiry form processing with database logging and email dispatch."
+      ]
+    }
   },
   {
     title: "ThrivePath Psychiatry",
     link: "https://thrivepathpsychiatry.com/",
     image: thrivepath,
     description: "A professional website for a psychiatry practice designed to build trust. It makes it easy for patients to learn about services and book appointments securely.",
-    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
+    /* technologies: ["PHP", "HTML", "CSS", "JavaScript"], */
+    details: {
+      overview: "A responsive psychiatric practice marketing platform that facilitates patient acquisition and booking.",
+      features: [
+        "Conflict-Free Booking: Intuitive scheduling widget to book patient appointments safely.",
+        "Services Layout: Clear and readable sections explaining treatments, insurance, and clinical focus areas."
+      ]
+    }
   },
   {
     title: "SaaScreem",
     link: "https://saasxcreem.vercel.app/",
     image: saasxcreem,
     description: "Production-focused SaaS boilerplate built with Next.js 16, Supabase, and Creem. It ships with authentication, subscriptions, credits, licensing, admin tooling, email workflows, and an AI chat surface so you can start from a real billing-ready foundation instead of a landing-page template.",
-    technologies: ["Next.js", "Creem", "Supabase", "TypeScript", "Tailwind", "Upstash", "BullMQ", "S3", "Radix", "Resend", "PostHog", "BetterStack", "Drizzle", "Vercel", "Docker"],
+    /* technologies: ["Next.js", "Creem", "Supabase", "TypeScript", "Tailwind", "Upstash", "BullMQ", "S3", "Radix", "Resend", "PostHog", "BetterStack", "Drizzle", "Vercel", "Docker"], */
+    details: {
+      overview: "Production-focused SaaS boilerplate built with Next.js 16, Supabase, and Creem, shipping with database schema, authentication, subscriptions, credits wallet, and workers.",
+      features: [
+        "Authentication & Security: Email/password, Google OAuth, and session-aware route protection via proxy and Supabase SSR helpers.",
+        "Payments & Subscriptions: Creem checkout session, upgrades, scheduled/immediate cancellations, seat updates, and billing portal access.",
+        "Automated Webhooks: Complete event handling for checkouts, renewals, disputes, refunds, and access hooks with HMAC verification and idempotency tracking.",
+        "Credits & Licenses: Atomic credit spending wallet, top-tier unlimited credit sentinel, and full license key validation/activation/deactivation flow.",
+        "Job Queues (BullMQ): Asynchronous background worker queues for emails, audit logging, and webhook post-processing with automatic retry logic.",
+        "Admin Console & Monitoring: Centralized admin dashboard displaying user records, subscription lifecycles, licenses, and revenue/activity stats."
+      ]
+    }
   },
-  /* {
-    title: "PDFAxis",
-    link: "https://pdfaxis.dabaras.com",
-    image: pdfaxis,
-    description: "A high-performance PDF platform ensuring absolute privacy with 100% local processing. It features professional tools that manage sensitive documents with zero data leakage, achieving enterprise-grade speed, 100% security, reliability.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "WASM", "WebAssembly"],
-  },
-  {
-    title: "CommitPulse",
-    link: "http://commitpulse.pxxl.click/",
-    image: commitpulse,
-    description: "A dual-component system featuring a PyPI package that crawls local Git metadata and a cloud platform for visualizing engineering impact. It allows developers to showcase hidden contributions from private and organizational repositories with premium analytics dashboards.",
-    technologies: ["Python", "Next.js", "React", "PostgreSQL", "Drizzle", "Tailwind CSS"],
-  }, */
   {
     title: "Chronos",
     link: "https://chronos-ai-timeline-orchestrator.vercel.app/",
     image: chronos,
     description:
       "An AI-native timeline orchestrator turning conversational plans into reactive execution graphs with live collaborative Gantt scheduling, predictive forecasting, and real-time synchronization.",
-    technologies: [
+    /* technologies: [
       "Next.js 15",
       "Convex",
       "Google Gemini",
@@ -265,7 +403,16 @@ Key Features:
       "Sandboxed Script Execution",
       "Timeline Orchestration",
       "Automation Engine"
-    ],
+    ], */
+    details: {
+      overview: "Chronos is an AI-native timeline orchestrator that converts natural language roadmap coordinates into topological execution graphs.",
+      features: [
+        "Recursive Date Reflow: Date shifts automatically propagate forward across dependent blocked chains.",
+        "Presence Cursors: Figma-style real-time mouse pointer tracking and teammate presence overlays.",
+        "Monte Carlo Forecaster: Simulates 300 randomized schedule variations to output P50/P90 probability curves.",
+        "Event Action Studio: Bind alert hooks to milestones to send Slack/email alerts when tasks are completed or delayed."
+      ]
+    }
   },
   /* {
     title: "VoxEval",
@@ -337,7 +484,7 @@ export const CERTIFICATIONS = [
     badge: "https://media.datacamp.com/cms/certification-ai-engineer-for-data-scientist-associate-badge.png",
   },
   {
-    title: "Data Engineer Associate",
+    title: "Data Engineer\nAssociate",
     issuer: "DataCamp",
     year: "2026",
     credentialLink: "https://www.datacamp.com/certificate/DEA0019923677771",

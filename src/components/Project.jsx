@@ -154,28 +154,67 @@ const Project = () => {
 
               {/* Content */}
               <div className="p-6 sm:p-8">
-                <h2 className="text-3xl font-bold text-neutral-900 dark:text-white mb-4">
+                <h2 className="text-3xl font-bold text-neutral-900 dark:text-white mb-6">
                   {selectedProject.title}
                 </h2>
-                <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8 leading-relaxed whitespace-pre-line">
-                  {selectedProject.description}
-                </p>
 
-                {/* <div className="mb-8">
-                  <h3 className="text-sm font-semibold text-neutral-500 dark:text-neutral-500 uppercase tracking-wider mb-4">
-                    Technologies
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedProject.technologies.map((tech, index) => (
-                      <span
-                        key={index}
-                        className="rounded-lg bg-blue-50 dark:bg-blue-900/20 px-3 py-1 text-sm font-medium text-blue-700 dark:text-blue-400 border border-blue-100 dark:border-blue-900/30"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                {selectedProject.details ? (
+                  <>
+                    <div className="mb-6">
+                      <h3 className="text-xs font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider mb-2">
+                        Overview
+                      </h3>
+                      <p className="text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                        {selectedProject.details.overview}
+                      </p>
+                    </div>
+
+                    <div className="mb-6">
+                      <h3 className="text-xs font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider mb-3">
+                        Key Features
+                      </h3>
+                      <ul className="list-disc pl-5 space-y-1.5">
+                        {selectedProject.details.features.map((feature, i) => (
+                          <li key={i} className="text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    {selectedProject.details.engine && (
+                      <div className="mb-6">
+                        <h3 className="text-xs font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider mb-2">
+                          Engine & Architecture
+                        </h3>
+                        <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed font-mono bg-neutral-50 dark:bg-neutral-950 p-3 rounded-lg border border-neutral-200 dark:border-neutral-800/80">
+                          {selectedProject.details.engine}
+                        </p>
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed whitespace-pre-line">
+                    {selectedProject.description}
+                  </p>
+                )}
+
+                {selectedProject.technologies && selectedProject.technologies.length > 0 && (
+                  <div className="mb-8">
+                    <h3 className="text-xs font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider mb-3">
+                      Technologies
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedProject.technologies.map((tech, index) => (
+                        <span
+                          key={index}
+                          className="rounded-lg bg-blue-50/50 dark:bg-blue-900/10 px-3 py-1 text-xs font-semibold text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900/30"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div> */}
+                )}
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
